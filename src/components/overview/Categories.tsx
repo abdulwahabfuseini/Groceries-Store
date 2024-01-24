@@ -76,7 +76,7 @@ const Categories = () => {
             </h1>
             <div className="relative w-full h-36">
               <Image
-                src="/images/iceCreams/icecream.webp"
+                src="/images/icecream.webp"
                 fill
                 alt="iceCream"
                 className="object-cover"
@@ -100,19 +100,6 @@ const Categories = () => {
             </div>
           </div>
         </Link>
-
-        {/* <div className="w-full h-full pt-4 overflow-hidden bg-blue-100 rounded-lg shadow-sm">
-          <h1 className="text-lg font-semibold px-1.5 pb-1.5">Icecreams</h1>
-          <div className="relative w-full h-36">
-            <Image src="/images/fruits2.jpeg" fill alt="icreams" className="object-cover" />
-          </div>
-        </div>
-        <div className="w-full h-full pt-4 overflow-hidden bg-purple-100 rounded-lg shadow-sm">
-          <h1 className="text-lg font-semibold px-1.5 pb-1.5">Fruits</h1>
-          <div className="relative w-full h-36">
-            <Image src="/images/fruits2.jpeg" fill alt="fruit" className="object-cover" />
-          </div>
-        </div> */}
       </div>
     </div>
   );

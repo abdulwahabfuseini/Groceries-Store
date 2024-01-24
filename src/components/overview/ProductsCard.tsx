@@ -19,26 +19,26 @@ const ProductsCard = ({
 }: CardProps) => {
   const dispatch = useDispatch();
 
-  const favoriteData = useSelector((state: StateProps) => state.cart);
+//   const favoriteData = useSelector((state: StateProps) => state.cart);
 
-  const isFavorite = (productId: any) => {
-    return favoriteData?.some(
-      (favoriteItem: { name: any }) => favoriteItem.name === productId
-    );
-  };
+//   const isFavorite = (productId: any) => {
+//     return favoriteData?.some(
+//       (favoriteItem: { name: any }) => favoriteItem.name === productId
+//     );
+//   };
 
   return (
     <div className="bg-white rounded-lg relative">
       <Heart
-        fill={isFavorite(name) ? "red" : "white"}
-        onClick={() => {
-          dispatch(addToFavorite({ id, name, image, price }));
-          if (isFavorite(name)) {
-            toast.error(`${name} removed from favorites!`);
-          } else {
-            toast.success(`${name} added to favorites!`);
-          }
-        }}
+        // fill={isFavorite(name) ? "red" : "white"}
+        // onClick={() => {
+        //   dispatch(addToFavorite({ id, name, image, price }));
+        //   if (isFavorite(name)) {
+        //     toast.error(`${name} removed from favorites!`);
+        //   } else {
+        //     toast.success(`${name} added to favorites!`);
+        //   }
+        // }}
         className="absolute top-2 right-2 text-zinc-500 w-7 h-7 z-40 hover:text-black cursor-pointer duration-200"
       />
       <div className="relative  h-36 sm:h-40 w-full">
@@ -54,7 +54,7 @@ const ProductsCard = ({
         <Typography.Paragraph className=" font-semibold">
           GH₵: {price}
           <Typography.Text delete type="danger" className="pl-4">
-            {parseFloat(price + (price * discount) / 100).toFixed(2)}
+          {parseFloat((price + (price * (discount ?? 0)) / 100).toFixed(2)).toString()}
           </Typography.Text>
         </Typography.Paragraph>
         <div className="flex items-center justify-between w-full">

@@ -84,26 +84,34 @@ const Footer = () => {
               alt="playStore"
               className="object-contain border-2"
             /> */}
-              <button className="flex gap-2 bg-black mb-2  sm:bg-white sm:text-black rounded-md text-white px-2 py-1 items-center">
-                <FaAppStore className="w-9 h-9" />
-                <p className="text-xs grid place-items-start font-semibold">
-                  GET IT ON
-                  <span className="text-lg">Google Play</span>
-                </p>
-              </button>
-              <button className="flex gap-2 bg-black sm:bg-white sm:text-black rounded-md text-white px-2 py-1 items-center">
-                <FaAppStore className="w-9 h-9" />
-                <p className="text-sm grid place-items-start font-semibold">
-                  Download on the
-                  <span className="text-lg">App Store</span>
-                </p>
-              </button>
+              <div className="flex gap-2 items-center flex-wrap w-full">
+                <button className="flex gap-2 bg-black  sm:bg-white sm:text-black rounded-md text-white px-2 sm:pr-3.5 py-1 items-center">
+                  <FaAppStore className="w-9 h-9" />
+                  <p className="text-xs grid place-items-start font-semibold">
+                    GET IT ON
+                    <span className="text-lg">Google Play</span>
+                  </p>
+                </button>
+                <button className="flex gap-2 bg-black sm:bg-white sm:text-black rounded-md text-white px-2 py-1 items-center">
+                  <FaAppStore className="w-9 h-9" />
+                  <p className="text-sm grid place-items-start font-semibold">
+                    Download on the
+                    <span className="text-lg">App Store</span>
+                  </p>
+                </button>
+              </div>
             </div>
           </div>
           <div className="px-4 sm:px-0 sm:col-span-2 sm:mr-6">
             <h1 className="text-lg font-semibold">Subscribe Now!</h1>
-            <p className="text-sm py-2">Subcribe to our newsletter and get a discount when checking out</p>
-            <Form onFinish={handleSubmit} form={form} className="sm:flex w-full gap-1">
+            <p className="text-sm py-2">
+              Subcribe to our newsletter and get a discount when checking out
+            </p>
+            <Form
+              onFinish={handleSubmit}
+              form={form}
+              className="sm:flex w-full gap-1"
+            >
               <Form.Item
                 name="email"
                 className="text-lg w-full"
@@ -138,9 +146,7 @@ const Footer = () => {
             <p className="text-lg pb-2">
               Copyright &copy; 2024 All Rights Reserved
             </p>
-            <h1 className="font-semibold">
-              Developed By: Fuseini Abdul Wahab
-            </h1>
+            <h1 className="font-semibold">Developed By: Fuseini Abdul Wahab</h1>
           </div>
         </div>
       </div>

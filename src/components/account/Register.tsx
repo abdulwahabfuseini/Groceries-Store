@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -6,7 +6,7 @@ import { Button, Card, Form, Input } from "antd";
 import toast from "react-hot-toast";
 import Link from "next/link";
 
-const Signup = () => {
+const Register = () => {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState("");
   const router = useRouter();
@@ -181,4 +181,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Register;

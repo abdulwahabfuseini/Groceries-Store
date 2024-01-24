@@ -1,3 +1,4 @@
+
 import Background from "@/components/aboutUs/Background";
 import Services from "@/components/aboutUs/Services";
 import Footer from "@/components/footer/Footer";
@@ -7,7 +8,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full max-w-7xl mx-auto py-20 px-4">
+      <div className="w-full max-w-7xl mx-auto py-14 lg:py-20 px-3">
         <Background />
         <Services />
       </div>

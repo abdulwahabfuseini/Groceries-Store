@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ToastContext from "@/contexts/ToastContext";
-import { ShoppingCartProvider } from "@/contexts/CartContext";
+import Providers from "@/contexts/Providers";
+import Head from "next/head";
+import Loading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+      </Head>
       <body className={`${inter.className} bg-slate-100`}>
-        <ShoppingCartProvider>
+        <Providers>
           <ToastContext />
-          {children}
-        </ShoppingCartProvider>
+          <Loading>
+            {children}
+            </Loading>
+        </Providers>
       </body>
     </html>
   );

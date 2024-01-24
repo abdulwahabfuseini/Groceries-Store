@@ -1,9 +1,34 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import Continue from "../Continue";
 
 const Banner = () => {
   return (
-    <div className='w-full my-10 py-10 bg-blue-100 h-96'>Banner</div>
-  )
-}
+    <div className="w-full h-full py-20 sm:py-6 bg-green-50 my-10 relative overflow-hidden">
+      <div className="mx-auto max-w-5xl px-4 py-4 relative grid grid-auto-fit gap-3 z-40 justify-center place-content-center place-items-center">
+        <div className="order-2 sm:order-1 " >
+          <Image
+            src="/images/baked.png"
+            alt="organic"
+            width={400}
+            height={400}
+            className="object-contain"
+            draggable={false}
+          />
+        </div>
+        <div className=" order-1 sm:order-2 ">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl leading-10">
+            Save up come to 30% <br />
+            <span className=" font-semibold">Fresh & Organic Foods</span>
+          </h1>
+          <p className="py-3 text-lg">
+            Start your daily shopping with some Organic foods
+          </p>
+          <Continue text="Order Now" url="/category/Vegetables" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;

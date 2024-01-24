@@ -38,6 +38,7 @@ const SingleFruit = ({ params }: any) => {
   const DesCart = () => {
     dispatch(decreaseQuantity(fruit));
   };
+  
   const AddToCart = () => {
     dispatch(addToCart(fruit));
     toast.success(`${name} added to cart`);

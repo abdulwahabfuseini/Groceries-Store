@@ -1,23 +1,29 @@
 export interface ProductType {
   id: number;
   name: string;
-  desc: string;
+  // desc: string;
   image: string;
   price: number;
-  previousPrice: number;
+  totalPrice: number;
   quantity: number;
+  // totalQuantity: number
 }
 
-export type CartProps = {
-  getItemQuantity: (id: number) => void;
-  increaseCartQty: (id: number) => void;
-  decreaseCartQty: (id: number) => void;
-  removeFromCart: (id: number) => void;
-};
+// export type CartProps = {
+//   getItemQuantity: (id: number) => void;
+//   increaseCartQty: (id: number) => void;
+//   decreaseCartQty: (id: number) => void;
+//   removeFromCart: (id: number) => void;
+// };
 
-export interface ItemProps {
-  item: ProductType;
+export interface CartState {
+  items: ProductType[];
+  totalQuantity?: number
 }
+
+// export interface ItemProps {
+//   item: ProductType;
+// }
 
 export interface StateProps {
   cart: {

@@ -238,3 +238,47 @@ export const TopProducts = [
     rating: 5,
   },
 ];
+
+export const Choose = [
+  {
+    id: 1,
+    image: "bag.png",
+    text: "Fresh and Organic Products",
+  },
+  {
+    id: 2,
+    image: "fresh.png",
+    text: "Fresh and locally Grown products",
+  },
+  {
+    id: 3,
+    image: "free.png",
+    text: "Fast delivery across nationwide",
+  },
+];
+
+export const ContactData = [
+  {
+    title: "Leave us a message",
+    header: "Get In Touch",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fuga vel nesciunt eos  Id fuga vel nesciunt eos",
+    connects: [
+      {
+        icon: "gmail.png",
+        text: "Email: Info@GroceriesStore.com",
+        info: "Info@GroceriesStore.com",
+      },
+
+      {
+        icon: "call.png",
+        tel: "Phone: +233 33 456 567",
+        num: "+233 33 478 6495",
+      },
+      {
+        icon: "location.png",
+        text: "Address: Kumasi - Ghana",
+        visit: "PremPeh II Street - Adum",
+      },
+    ],
+  },
+];

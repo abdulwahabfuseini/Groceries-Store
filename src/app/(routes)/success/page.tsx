@@ -38,7 +38,7 @@ const Success = () => {
           doorstep as soon as possible!
         </p>
         <div className="flex items-center gap-x-5">
-          <Continue />
+          <Continue text="Continue Shopping" url="/category" />
         </div>
       </div>
     </div>

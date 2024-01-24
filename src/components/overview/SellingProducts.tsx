@@ -18,8 +18,8 @@ const SellingProducts = () => {
     <div className="relative mx-auto max-w-7xl px-3">
       <div className="flex items-center justify-between">
         <div>
-          <h1>Top Selling Products</h1>
-          <p>Fresh From Farm</p>
+          <h1 className="text-2xl font-semibold sm:text-3xl">Top Selling Products</h1>
+          <p className="text-lg pt-2 text-green-500 font-semibold">Fresh From Farm</p>
         </div>
         <div className=" hidden sm:flex items-center justify-center gap-6 py-4">
           {/* ref={(node) => setPrevtEl(node)} */}
