@@ -1,9 +1,8 @@
 // redux/store.ts
-import { configureStore } from '@reduxjs/toolkit';
-import CartSlice from './CartSlice';
-import FavoritesSlice from './FavoritesSlice';
-import { ProductType } from './Types';
-
+import { configureStore } from "@reduxjs/toolkit";
+import CartSlice from "./CartSlice";
+import FavoritesSlice from "../Store/FavoritesSlice";
+import { ProductType } from "./Types";
 
 export const store = configureStore({
   reducer: {
@@ -19,11 +18,11 @@ store.subscribe(() => {
 });
 
 function saveCartToLocalStorage(cart: ProductType[]) {
-  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function saveFavoritesToLocalStorage(favorites: ProductType[]) {
-  localStorage.setItem('favorites', JSON.stringify(favorites));
+  localStorage.setItem("favorites", JSON.stringify(favorites));
 }
 
 export type RootState = ReturnType<typeof store.getState>;

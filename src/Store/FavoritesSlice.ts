@@ -1,6 +1,6 @@
 // redux/FavoritesSlice.ts
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { CartState, ProductType } from './Types';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { CartState, ProductType } from "../contexts/Types";
 // import { RootState } from './store';
 
 // interface ProductType {
@@ -17,7 +17,7 @@ const initialState: CartState = {
 };
 
 const FavoritesSlice = createSlice({
-  name: 'favorites',
+  name: "favorites",
   initialState,
   reducers: {
     addToFavorite: (state, action: PayloadAction<ProductType>) => {
@@ -28,12 +28,12 @@ const FavoritesSlice = createSlice({
 });
 
 function loadFavoritesFromLocalStorage(): ProductType[] {
-  const storedFavorites = localStorage.getItem('favorites');
+  const storedFavorites = localStorage.getItem("favorites");
   return storedFavorites ? JSON.parse(storedFavorites) : [];
 }
 
 function saveFavoritesToLocalStorage(favorites: ProductType[]) {
-  localStorage.setItem('favorites', JSON.stringify(favorites));
+  localStorage.setItem("favorites", JSON.stringify(favorites));
 }
 
 export const { addToFavorite } = FavoritesSlice.actions;

@@ -1,85 +1,81 @@
-// import { ProductType } from "@/contexts/Types";
-// import { createSlice } from "@reduxjs/toolkit";
+// cartSlice.ts
 
-// const items =
-//   localStorage.getItem("itemsList") !== null
-//     ? JSON.parse(localStorage.getItem("itemsList"))
-//     : [];
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { CartState, ProductType } from '../contexts/Types';
 
-// const totalQuantity =
-//   localStorage.getItem("totalQuantity") !== null
-//     ? JSON.parse(localStorage.getItem("totalQuantity"))
-//     : 0;
+const initialState: CartState = {
+  items: loadCartFromLocalStorage(),
+  totalQuantity: calculateTotalQuantity(loadCartFromLocalStorage()),
+};
 
-// const setItemsFunc = (item: ProductType, totalQuantity: number) => {
-//   localStorage.setItem("itemsList", JSON.stringify(item));
-//   localStorage.setItem("totalQuantity", JSON.stringify(totalQuantity));
-// };
+const CartSlice = createSlice({
+  name: 'cart',
+  initialState,
+  reducers: {
+    addToCart: (state, action: PayloadAction<ProductType>) => {
+      const newItem = action.payload;
+      const existingItem = state.items.find(item => item.id === newItem.id);
+      if (existingItem) {
+        existingItem.quantity++;
+        existingItem.totalPrice += newItem.price;
+      } else {
+        state.items.push({
+          id: newItem.id,
+          name: newItem.name,
+          image: newItem.image,
+          quantity: 1,
+          price: newItem.price,
+          totalPrice: newItem.price,
+        });
+      }
+      state.totalQuantity = calculateTotalQuantity(state.items);
+      saveCartToLocalStorage(state.items);
+    },
+    removeFromCart: (state, action: PayloadAction<number>) => {
+      const id = action.payload;
+      const existingItem = state.items.find(item => item.id === id);
+      if (existingItem) {
+        if (existingItem.quantity === 1) {
+          state.items = state.items.filter(item => item.id !== id);
+        } else {
+          existingItem.quantity--;
+          existingItem.totalPrice -= existingItem.price;
+        }
+        state.totalQuantity = calculateTotalQuantity(state.items);
+        saveCartToLocalStorage(state.items);
+      }
+    },
+    deleteFromCart: (state, action: PayloadAction<number>) => {
+      const id = action.payload;
+      state.items = state.items.filter(item => item.id !== id);
+      state.totalQuantity = calculateTotalQuantity(state.items);
+      saveCartToLocalStorage(state.items);
+    },
+    clearCart: (state) => {
+      state.items = [];
+      state.totalQuantity = 0;
+      saveCartToLocalStorage(state.items);
+    },
+  },
+});
 
-// const initialState = {
-//   itemsList: items,
-//   totalQuantity: totalQuantity,
-// };
+function loadCartFromLocalStorage(): ProductType[] {
+  try {
+    const storedCart = localStorage.getItem('cart');
+    return storedCart ? JSON.parse(storedCart) : [];
+  } catch (error) {
+    console.error('Error loading cart from localStorage:', error);
+    return [];
+  }
+}
 
-// const cartSlice = createSlice({
-//   name: "Cart",
-//   initialState,
-//   reducers: {
-//     // ==== AddToCart ====
-//     addToCart(state, action){
-//         const newItem = action.payload
-//         const existingItem = state.itemsList.find((item: ProductType)  => item.id === newItem.id)
-//         if (existingItem) {
-//             existingItem.quantity++
-//             existingItem.totalPrice += newItem.price
-//         } else {
-//             state.itemsList.push({
-//                 id: newItem.id,
-//                 name: newItem.name,
-//                 cover: newItem.cover,
-//                 quantity: 1,
-//                 price: newItem.price,
-//                 totalPrice: newItem.price,
-//             })
-//             state.totalQuantity++
-//         }
-//         setItemsFunc(
-//             state.itemsList.map((item: ProductType) => item),
-//             state.totalQuantity
-//         )
-//     },
+function saveCartToLocalStorage(cart: ProductType[]) {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
 
-//     // ==== RemoveFromCart ====
-//     removeFromCart(state, action){
-//         const id = action.payload
-//         const existingItem = state.itemsList.find((item: ProductType) => item.id === id)
-//         if (existingItem.quantity === 1) {
-//             state.itemsList = state.itemsList.filter((item: ProductType) => item.id !== id)
-//             state.totalQuantity--
-//             localStorage.setItem("itemsList", JSON.stringify(state.itemsList))
-//         } else {
-//             existingItem.quantity--
-//             existingItem.totalPrice -= existingItem.price
-//         }
-//     },
+function calculateTotalQuantity(items: ProductType[]): number {
+  return items.reduce((total, item) => total + item.quantity, 0);
+}
 
-//     // ==== DeleteFromCart ====
-//     deleteFromCart(state, action){
-//         const id = action.payload
-//         const existingItem = state.itemsList.find((item: ProductType) => item.id === id)
-//         if (existingItem) {
-//             state.itemsList = state.itemsList.filter((item: ProductType) => item.id !== id)
-//             localStorage.setItem("itemsList", JSON.stringify(state.itemsList))
-//         }
-//     },
-
-//     // ==== ClearCart ====
-//     clearCart(state){
-//         state.itemsList = []
-//         localStorage.setItem("itemsList", JSON.stringify(state.itemsList))
-//     }
-//   },
-// });
-
-// export const CartActions = cartSlice.actions;
-// export default cartSlice;
+export const CartAction = CartSlice.actions;
+export default CartSlice.reducer;
