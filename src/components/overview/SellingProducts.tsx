@@ -11,23 +11,26 @@ import { TopProducts } from "@/assets/Data";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const SellingProducts = () => {
-  const [nextEl, setNextEl] = useState(null);
-  const [prevEl, setPrevtEl] = useState(null);
+  const [nextEl, setNextEl] = useState<HTMLButtonElement | null>(null);
+  const [prevEl, setPrevtEl] = useState<HTMLButtonElement | null>(null);
 
   return (
     <div className="relative mx-auto max-w-7xl px-3">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-semibold sm:text-3xl">Top Selling Products</h1>
-          <p className="text-lg pt-2 text-green-500 font-semibold">Fresh From Farm</p>
+          <h1 className="text-2xl font-semibold sm:text-3xl">
+            Top Selling Products
+          </h1>
+          <p className="text-lg pt-2 text-green-500 font-semibold">
+            Fresh From Farm
+          </p>
         </div>
         <div className=" hidden sm:flex items-center justify-center gap-6 py-4">
-          {/* ref={(node) => setPrevtEl(node)} */}
-          <button>
+          <button ref={(node) => setPrevtEl(node)}>
             <FaChevronLeft className="w-8 h-8 p-2 text-lg font-bold text-white rounded-full sm:w-10 sm:h-10 pattern" />
           </button>
-          {/* ref={(node) => setNextEl(node)} */}
-          <button>
+         
+          <button  ref={(node) => setNextEl(node)}>
             <FaChevronRight className="w-8 h-8 p-2 text-lg font-bold text-white rounded-full sm:w-10 sm:h-10 pattern " />
           </button>
         </div>

@@ -1,4 +1,5 @@
-import SoftDrink from "@/components/softDrinks/SoftDrink";
+
+import SoftDrink from "@/components/productTypes/softDrinks/SoftDrink";
 import React from "react";
 
 export const metadata = {
