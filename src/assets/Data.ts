@@ -40,30 +40,30 @@ export const ServicesData = [
 export const HeroData = [
   {
     id: 1,
-    title: "Fresh Grocery",
+    title: "Fresh & Organic Groceries",
     subTitle: "For Healthy Life",
     desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
     button: "Shop Now",
-    cover: "delivery1.png",
-    color: "yellow",
+    cover: "gro.png",
+    link: "/category/vegetables",
   },
   {
     id: 2,
     title: "Stay Home & Order",
     subTitle: "For Your Best Groceries",
     desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
-    button: "Shop Now",
+    button: "Order Now",
     cover: "order.png",
-    color: "green",
+    link: "/category/fruits",
   },
   {
     id: 3,
-    title: "Organic & Fresh Products",
+    title: "We delivery across nationwide",
     subTitle: "Fast Delivery",
     desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
     button: "Shop Now",
-    cover: "vegetables.png",
-    color: "order.png",
+    cover: "delivery.png",
+    link: "/support",
   },
   // {
   //   id: 1,
@@ -74,6 +74,51 @@ export const HeroData = [
   //   cover: "",
   //   color: "",
   // },
+];
+
+export const CategoryData = [
+  {
+    id: 1,
+    title: "Fresh Fruits",
+    image: "fruits2.png",
+    link: "/category/fruits",
+    background: "bg-red-100 ",
+  },
+  {
+    id: 2,
+    title: "Oranic Vegtables",
+    image: "gro1.png",
+    link: "/category/vegetables",
+    background: "bg-green-100",
+  },
+  {
+    id: 3,
+    title: "Baked Foods",
+    image: "baked3.png",
+    link: "/category/bakeries",
+    background: "bg-purple-100",
+  },
+  {
+    id: 4,
+    title: "Fresh Meats",
+    image: "meat2.png",
+    link: "/category/meats",
+    background: "bg-pink-100",
+  },
+  {
+    id: 5,
+    title: "Ice Creams",
+    image: "icecream.webp",
+    link: "/category/iceCreams",
+    background: "bg-orange-100",
+  },
+  {
+    id: 6,
+    title: "Drinks & Beverages",
+    image: "drinks.png",
+    link: "/category/drinksandBeverages",
+    background: "bg-yellow-100",
+  },
 ];
 
 export const TopProducts = [
@@ -87,10 +132,10 @@ export const TopProducts = [
   },
   {
     id: 2,
-    name: "Scoop Wafer",
+    name: "Strawberry",
     price: 20,
     discount: 3.5,
-    image: "scoopwafer.png",
+    image: "Strawberry.jpeg",
     rating: 3.5,
   },
   {
@@ -119,10 +164,10 @@ export const TopProducts = [
   },
   {
     id: 6,
-    name: "IceCream Ball",
+    name: "Steak",
     price: 20,
     discount: 4,
-    image: "icecreamball.jpg",
+    image: "Steak.jpg",
     rating: 3.5,
   },
   {
@@ -135,10 +180,10 @@ export const TopProducts = [
   },
   {
     id: 8,
-    name: "Sliced Bread",
+    name: "Grapes",
     price: 20,
     discount: 7,
-    image: "slicedbread.jpg",
+    image: "grapes.jpg",
     rating: 2.5,
   },
   {
@@ -159,10 +204,10 @@ export const TopProducts = [
   },
   {
     id: 11,
-    name: "Butter Cookies",
+    name: "Cluster Eggs",
     price: 20,
     discount: 4.8,
-    image: "buttercookies.png",
+    image: "clustereggplant.jpg",
     rating: 5,
   },
   {
@@ -207,18 +252,18 @@ export const TopProducts = [
   },
   {
     id: 17,
-    name: "Batticuori",
+    name: "Onions",
     price: 20,
     discount: 4,
-    image: "batticuori.jpg",
+    image: "onions.jpg",
     rating: 3.5,
   },
   {
     id: 18,
-    name: "Grapes",
+    name: "Guava",
     price: 20,
     discount: 4.5,
-    image: "grapes.jpg",
+    image: "guava.jpg",
     rating: 4.5,
   },
   {

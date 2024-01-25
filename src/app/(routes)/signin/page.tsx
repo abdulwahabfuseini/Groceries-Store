@@ -1,132 +1,36 @@
-"use client";
 
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { Button, Card, Form, Input } from "antd";
-import { signIn, useSession } from "next-auth/react";
-import toast from "react-hot-toast";
 import Link from "next/link";
+import Design from "@/components/account/Design";
+import Login from "@/components/account/Login";
 
 const Signin = () => {
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState("");
-  const router = useRouter();
-  const session = useSession();
-  const [form] = Form.useForm();
-  const [userDetails, setUserDetails] = useState({
-    email: "",
-    password: "",
-  });
-
-  useEffect(() => {
-    if (session?.status == "authenticated") {
-      router.push("/");
-    }
-  });
-
-  const handleLogin = async () => {
-    setLoading(true);
-    signIn("credentials", { ...userDetails, redirect: false })
-      .then((callback) => {
-        if (callback?.error) {
-          toast.error(callback.error);
-          setErrors(callback.error);
-        }
-        if (callback?.ok || !callback?.error) {
-          toast.success("Logged In Successfully");
-        }
-        setLoading(false);
-      })
-      .catch(() => {
-        toast.error("Oooops!!! Failed to Login");
-      });
-  };
 
   return (
-    <div className="mx-auto max-w-7xl w-full grid place-content-center px-4 h-screen">
-     <Card className="w-full sm:w-[390px]">
-        <Form
-          form={form}
-          layout="vertical"
-          onFinish={handleLogin}
-          initialValues={{ remember: true }}
-        >
-          <header className="text-lg pb-2 font-semibold text-center">
-            Welcome Back! 
-             Signin to your account
-          </header>
-          <span className="text-red-600 text-lg">{errors}</span>
-          <Form.Item
-            name="email"
-            label="Email"
-            className=" font-semibold text-base"
-            rules={[
-              {
-                required: true,
-                message: "Please Enter Email",
-              },
-              { type: "email" },
-            ]}
-            hasFeedback
-          >
-            <Input
-              type="email"
-              placeholder="myname@gmail.com"
-              className="h-11 cursor-pointer w-full border-2 text-base"
-              value={userDetails.email}
-              onChange={(e) =>
-                setUserDetails({ ...userDetails, email: e.target.value })
-              }
-            />
-          </Form.Item>
-          <Form.Item
-            name="password"
-            label="Password"
-            className=" font-semibold text-base"
-            rules={[
-              {
-                required: true,
-                message: "Please Enter Password",
-              },
-            ]}
-            hasFeedback
-          >
-            <Input.Password
-              type="password"
-              placeholder="Enter Password"
-              className="h-11 cursor-pointer w-full border-2 text-base"
-              value={userDetails.password}
-              onChange={(e) =>
-                setUserDetails({ ...userDetails, password: e.target.value })
-              }
-            />
-          </Form.Item>
-          <Button
-            disabled={loading}
-            htmlType="submit"
-            type="primary"
-            className=" disabled:cursor-not-allowed bg-green-400 text-lg w-full h-10 hover:ring-2 text-white font-semibold"
-          >
-            {loading ? "Processing..." : "Login With Email"}
-          </Button>
-        </Form>
-        <div className="flex items-center gap-2 py-3">
-          <span className="w-full h-[0.5px] bg-gray-200"></span>
-          <p className="text-lg font-semibold">Or</p>
-          <span className="w-full h-[0.5px] bg-gray-200"></span>
+    <div className="mx-auto max-w-5xl w-full grid sm:place-content-center sm:px-4 h-full md:h-screen sm:grid-cols-2 lg:grid-cols-5 sm:pt-14 pt-20 pb-6 sm:pb-12">
+      <div className=" sm:hidden">
+        <Design />
+      </div>
+      <div className="hidden sm:block sm:col-span-1 shadow bg-white lg:col-span-3 relative overflow-hidden px-2">
+        <div className="text-center hidden sm:flex items-center justify-center h-full flex-col">
+          <header className="text-3xl font-semibold">Groceries Store</header>
+          <h1 className="text-2xl py-3 font-medium">
+            Welcome Back! <br className="lg:hidden"/> Signin to your account
+          </h1>
+          <Link href="/signup">
+            <h6 className="hover:underline text-center pt-4 text-lg hover:text-green-600 hidden sm:block cursor-pointer">
+              {" "}
+              Don&apos;t have an account?{" "}
+              <span className=" font-semibold text-green-600">
+                Sign Up
+              </span>{" "}
+            </h6>
+          </Link>
         </div>
-       <div className="grid gap-y-3">
-       <button onClick={() => signIn("google")} className="flex items-center justify-center w-full p-2 bg-red-400 text-white text-lg font-semibold rounded-md">
-          <span>Signin With Google</span>
-        </button>
-        <button  onClick={() => signIn("github")}  className="flex items-center justify-center w-full p-2 bg-gray-700 text-white text-lg font-semibold rounded-md">
-          <span>Signin With Github</span>
-        </button>
-       </div>
-      </Card>
-      <Link href="/signup" className=" hover:underline text-center pt-2 hover:text-green-600">
-        Don&apos;t have an account! Sign Up
-      </Link>
+        <Design />
+      </div>
+      <div className="sm:col-span-1 lg:col-span-2 ">
+        <Login />
+      </div>
     </div>
   );
 };

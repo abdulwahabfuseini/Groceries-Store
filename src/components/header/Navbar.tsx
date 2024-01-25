@@ -10,9 +10,11 @@ import { useSelector } from "react-redux";
 import { StateProps } from "@/contexts/Types";
 import { GrBasket } from "react-icons/gr";
 import MobileNav from "./MobileNav";
+import { useSession } from "next-auth/react";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
+  const { data: session } = useSession();
   const productData = useSelector((state: StateProps) => state.cart);
   const favoriteData = useSelector((state: StateProps) => state.cart);
 
@@ -25,16 +27,16 @@ const Navbar = () => {
     <div
       className={`${
         sticky
-          ? "h-16 w-full top-0 left-0 fixed shadow-lg transition-all ease-in-out bg-white z-50"
-          : "h-20 w-full bg-gray-100"
-      } bg-white px-4 py-5`}
+          ? "h-16 w-full top-0 left-0 fixed shadow-lg transition-all ease-in-out bg-white z-50 py-3"
+          : "h-20 w-full bg-gray-100 py-5"
+      } bg-white px-4 `}
     >
       <nav
         aria-label="navbar"
         className="flex items-center justify-between mx-auto max-w-7xl"
       >
         <Link href="/category">
-          <h4 className="text-xl sm:text-2xl font-semibold">Groceries Store</h4>
+          <h1 className="text-xl sm:text-2xl font-semibold">Groceries Store</h1>
         </Link>
         <ul className="items-center hidden gap-6 lg:flex">
           {Navigation.map((navItem) => (
@@ -43,22 +45,23 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="flex items-end gap-5">
-          <Link href="/myFavorite">
-            <button>
-              <Badge count={favoriteData?.length}>
-                <FaHeartCircleCheck className="h-6 w-7" />
-              </Badge>
-            </button>
-          </Link>
-          <Link href="/shoppingCart">
-            <button>
-              <Badge count={productData?.length}>
-                <GrBasket className="h-6 w-7" />
-              </Badge>
-            </button>
-          </Link>
-          {/* <Link href="/dashboard/profile" className="flex items-center gap-2">
+        {session?.user ? (
+          <div className="flex items-end gap-5">
+            <Link href="/myFavorite">
+              <button>
+                <Badge count={favoriteData?.length}>
+                  <FaHeartCircleCheck className="h-6 w-7" />
+                </Badge>
+              </button>
+            </Link>
+            <Link href="/shoppingCart">
+              <button>
+                <Badge count={productData?.length}>
+                  <GrBasket className="h-6 w-7" />
+                </Badge>
+              </button>
+            </Link>
+            {/* <Link href="/dashboard/profile" className="flex items-center gap-2">
             <button className="relative w-10 h-10 rounded-full lg:w-11 lg:h-11">
               <Image
                 src="/images/delivery1.jpg"
@@ -68,10 +71,15 @@ const Navbar = () => {
                 
               />
             </button>
-            <span className="hidden text-xs font-medium lg:block">Hi, Abdul Wahab</span>
+            <span className="hidden text-xs font-medium lg:block">Hi, {session?user.name}</span>
           </Link> */}
-          <MobileNav />
-        </div>
+            <MobileNav />
+          </div>
+        ) : (
+          <Link href="/signin">
+            <button className=" bg-green-600 rounded-md text-white font-semibold px-2 py-1.5 hover:bg-blue-600 hover:trasnsition-all hover:ease-in hover:scale-95  text-lg">Sign In</button>
+          </Link>
+        )}
       </nav>
     </div>
   );

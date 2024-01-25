@@ -12,7 +12,7 @@ import { ServicesData } from "@/assets/Data";
 
 const Services = () => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <Swiper
         spaceBetween={10}
         loop={true}
@@ -37,11 +37,11 @@ const Services = () => {
           },
         }}
       >
-        <div>
+        <div className="">
           {ServicesData.map((item, index) => {
             return (
               <SwiperSlide key={index} className="my-6">
-                <div className="grid place-content-center place-items-center text-center gap-y-1">
+                <div className="grid place-content-center place-items-center text-center gap-y-1 ">
                   <Image
                     src={`/SVG/${item?.image}`}
                     width={55}

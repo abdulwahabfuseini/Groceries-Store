@@ -9,11 +9,11 @@ import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import Continue from "../Continue";
+import Button from "../Button";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-full px-3 sm:px-4  bg-green-100 overflow-hidden">
+    <div className="relative w-full h-full px-3 sm:px-4  bg-green-50 overflow-hidden">
       <div className="grid grid-auto-fit mx-auto max-w-7xl place-content-center  place-items-center justify-center">
         <Swiper
           direction="vertical"
@@ -23,17 +23,17 @@ const Hero = () => {
           speed={8000}
           modules={[Autoplay]}
           autoplay={{ delay: 9000, disableOnInteraction: false }}
-          className="h-[340px] sm:h-[400px]"
+          className="h-[310px] sm:h-[400px]"
         >
           {HeroData.map((item) => (
             <SwiperSlide
               key={item.id}
               className="flex items-center py-10 sm:py-20"
             >
-              <h1 className="text-2xl sm:text-3xl uppercase">{item?.title}</h1>
-              <h4 className="text-xl sm:text-2xl py-2">{item?.subTitle}</h4>
+              <h1 className="text-xl sm:text-2xl uppercase font-semibold">{item?.title}</h1>
+              <h4 className="text-xl sm:text-2xl py-2 font-medium">{item?.subTitle}</h4>
               <p className="text-lg w-full sm:w-5/6">{item?.desc}</p>
-              <Continue text="Shop Now" url="/category/fruits" />
+              <Button text={item?.button} url={item?.link}  />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -47,7 +47,7 @@ const Hero = () => {
           className="w-full h-[340px] sm:h-[400px]"
         >
           {HeroData.map((item) => (
-            <SwiperSlide key={item.id} className="py-3 realtive">
+            <SwiperSlide key={item.id} className="py-3 relative">
               <Image
                 src={`/images/${item?.cover}`}
                 // width={500}
@@ -67,5 +67,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-

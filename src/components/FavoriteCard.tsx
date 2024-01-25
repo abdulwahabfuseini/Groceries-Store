@@ -14,7 +14,7 @@ const FavoriteCard = ({ name, image, price }: CardProps) => {
           <Image
             src={`/images/${image}`}
             fill
-            alt="favorite"
+            alt={name}
             className="lg:hover:scale-105 object-contain"
           />
         </div>

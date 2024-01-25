@@ -1,182 +1,34 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { Button, Card, Form, Input } from "antd";
-import toast from "react-hot-toast";
 import Link from "next/link";
+import Design from "@/components/account/Design";
+import Register from "@/components/account/Register";
 
 const Signup = () => {
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState("");
-  const router = useRouter();
-  const [form] = Form.useForm();
-  const [userDetails, setUserDetails] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
-
-  const handleRegister = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch("/api/auth/register", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "content-Type": "application/json",
-        },
-        body: JSON.stringify(userDetails),
-      });
-
-      // if (!response.ok) {
-      //   setErrors("Email already exist! Please Use another email");
-      //   toast.error("Email already exist! Please Use another email");
-      // }
-
-      if (response.ok) {
-        toast.success("Logged in successfully");
-        router.push("/signin");
-      }
-    } catch (error) {
-      toast.error("Ooop!!! Failed to create an account");
-    }
-    setLoading(false);
-  };
-
   return (
-    <div className="mx-auto max-w-7xl w-full grid place-content-center px-4 h-screen">
-      <Card className="w-full sm:w-[390px]">
-        <Form
-          form={form}
-          layout="vertical"
-          onFinish={handleRegister}
-          initialValues={{ remember: true }}
-        >
-          <header className="text-lg pb-2 font-semibold text-center">
-            New Here! Create an account
-          </header>
-
-          <span className="text-red-600 text-lg">{errors}</span>
-          <Form.Item
-            name="username"
-            label="Username"
-            className=" font-semibold text-base"
-            rules={[
-              {
-                required: true,
-                message: "Please Enter Username",
-              },
-              {
-                min: 8,
-                max: 30,
-              },
-            ]}
-            hasFeedback
-          >
-            <Input
-              type="username"
-              placeholder="Enter Username"
-              className="h-11 cursor-pointer w-full border-2 text-base"
-              value={userDetails.username}
-              onChange={(e) =>
-                setUserDetails({ ...userDetails, username: e.target.value })
-              }
-            />
-          </Form.Item>
-          <Form.Item
-            name="email"
-            label="Email"
-            className=" font-semibold text-base"
-            rules={[
-              {
-                required: true,
-                message: "Please Enter Email",
-              },
-              { type: "email" },
-            ]}
-            hasFeedback
-          >
-            <Input
-              type="email"
-              placeholder="myname@gmail.com"
-              className="h-11 cursor-pointer w-full border-2 text-base"
-              value={userDetails.email}
-              onChange={(e) =>
-                setUserDetails({ ...userDetails, email: e.target.value })
-              }
-            />
-          </Form.Item>
-          <Form.Item
-            name="password"
-            label="Password"
-            className=" font-semibold text-base"
-            rules={[
-              {
-                required: true,
-                message: "Please Enter Password",
-              },
-              {
-                min: 6,
-                max: 12,
-              },
-            ]}
-            hasFeedback
-          >
-            <Input.Password
-              type="password"
-              placeholder="Enter Password"
-              className="h-11 cursor-pointer w-full border-2 text-base"
-              value={userDetails.password}
-              onChange={(e) =>
-                setUserDetails({ ...userDetails, password: e.target.value })
-              }
-            />
-          </Form.Item>
-          <Form.Item
-            label="Confirm Password"
-            name="ConfirmPassword"
-            className=" font-semibold text-base"
-            dependencies={["password"]}
-            rules={[
-              {
-                required: true,
-                message: "Please Confirm Password",
-              },
-              ({ getFieldValue }) => ({
-                validator(_, value) {
-                  if (!value || getFieldValue("password") === value) {
-                    return Promise.resolve();
-                  }
-                  return Promise.reject("Password don't match");
-                },
-              }),
-            ]}
-            hasFeedback
-          >
-            <Input.Password
-              type="password"
-              placeholder="Confirm Password"
-              className="h-11 cursor-pointer w-full border-2 text-base"
-            />
-          </Form.Item>
-          <Button
-            disabled={loading}
-            htmlType="submit"
-            type="primary"
-            className=" disabled:cursor-not-allowed bg-blue-600 text-lg w-full h-10 hover:ring-2 hover:bg-black text-white font-semibold"
-          >
-            {loading ? "Processing..." : "Create  Account"}
-          </Button>
-        </Form>
-      </Card>
-      <Link
-        href="/signin"
-        className=" hover:underline text-center pt-2 hover:text-green-600"
-      >
-        Already have an account Sign In
-      </Link>
+    <div className="mx-auto max-w-5xl w-full grid sm:place-content-center sm:px-4 h-full md:h-screen sm:grid-cols-2 lg:grid-cols-5 sm:pt-14 pt-20 pb-6 sm:pb-12">
+      <div className="sm:hidden z-40">
+        <Design />
+      </div>
+      <div className=" sm:col-span-1 lg:col-span-2">
+        <Register />
+      </div>
+      <div className="hidden sm:block sm:col-span-1 shadow bg-white lg:col-span-3 relative overflow-hidden">
+        <div className="text-center hidden sm:flex items-center justify-center h-full flex-col">
+        <header className="text-3xl font-semibold">Groceries Store</header>
+          <h1 className="text-2xl py-3 font-medium">
+            New Here! <br className="lg:hidden" /> Create an account
+          </h1>
+          <Link href="/signin">
+            <h6 className="hover:underline text-center pt-4 text-lg hover:text-green-600 hidden sm:block cursor-pointer font-medium">
+              {" "}
+              Already have an account!{" "}
+              <span className=" font-semibold text-green-600">
+                Sign In
+              </span>{" "}
+            </h6>
+          </Link>
+        </div>
+        <Design />
+      </div>
     </div>
   );
 };

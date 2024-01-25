@@ -39,7 +39,7 @@ const ProductsCard = ({
         //     toast.success(`${name} added to favorites!`);
         //   }
         // }}
-        className="absolute top-2 right-2 text-zinc-500 w-7 h-7 z-40 hover:text-black cursor-pointer duration-200"
+        className="absolute top-2 right-2 text-orange-500 w-8 bg-orange-100 rounded-full p-1 h-8 z-40 hover:text-red-600 cursor-pointer duration-200"
       />
       <div className="relative  h-36 sm:h-40 w-full">
         <Image

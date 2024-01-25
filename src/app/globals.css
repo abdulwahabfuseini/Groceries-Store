@@ -1,3 +1,233 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h2,
+  h4,
+  h5,
+  h6 {
+    font-family: "Frank Ruhl Libre", serif;
+  }
+
+  header,
+  p,
+  li {
+    font-family: "Mohave", sans-serif;
+  }
+
+  h1,
+  h3,
+  a,
+  button,
+  span {
+    font-family: "Saira Condensed", sans-serif;
+  }
+}
+
+@layer utilities {
+  .clip {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  }
+}
+
+ /* ==== Card Loading ====  */
+.cardloader {
+  width: 215px;
+  height: 215px;
+  display: block;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+.cardloader::after {
+  content: "";
+  width: calc(100% - 30px);
+  height: calc(100% - 15px);
+  top: 15px;
+  left: 15px;
+  position: absolute;
+  background-image: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.5) 50%,
+      transparent 100%
+    ),
+    linear-gradient(#ddd 100px, transparent 0),
+    linear-gradient(#ddd 16px, transparent 0),
+    linear-gradient(#ddd 50px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px;
+  background-position: -185px 0, center 0, center 115px, center 142px;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+  to {
+    background-position: 185px 0, center 0, center 115px, center 142px;
+  }
+}
+
+
+/* ==== Loading Spinner ====  */
+.spinloader {
+  color: #000;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+.spinloader::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: currentColor;
+  position: absolute;
+  top: 16px;
+  right: -7px;
+  box-sizing: border-box;
+  animation: animspinloader 1s linear infinite;
+}
+
+@keyframes animspinloader {
+  0% {
+    box-shadow: 10px 0 rgba(0, 0, 0, 0), 20px 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 10px 0 black, 20px 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 10px 0 black, 20px 0 black;
+  }
+}
+
+.spin {
+  animation: rotate 1s infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.spin:before,
+.spin:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+.spin:before {
+  animation: ball1 1s infinite;
+  background-color: #000;
+  box-shadow: 30px 0 0 #ff3d00;
+  margin-top: 10px;
+}
+.spin:after {
+  animation: ball2 1s infinite;
+  background-color: green;
+  box-shadow: 30px 0 0 #000;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #ff3d00;
+  }
+  50% {
+    box-shadow: 0 0 0 red;
+    margin-top: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #ff3d00;
+    margin-top: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #fff;
+  }
+  50% {
+    box-shadow: 0 0 0 #fff;
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #fff;
+    margin-top: 0;
+  }
+}
+
+
+/* ==== Foot Waves ====  */
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: green;
+  background-size: 1000px 100px;
+}
+
+.wave.wave1 {
+   animation: animate 30s linear infinite;
+   z-index: 100;
+   opacity: 1;
+   animation-display: 0s;
+   top: 0;
+}
+
+@keyframes animate {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+
+.wave.wave2 {
+   animation: animate2 15s linear infinite;
+   z-index: 80;
+   opacity: 0.5;
+   animation-display: -5s;
+   top: 12px;
+}
+
+@keyframes animate2 {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+
+.wave.wave3 {
+   animation: animate3 15s linear infinite;
+   z-index: 60;
+   opacity: 0.8;
+   animation-display: -2s;
+   top: 12px;
+}
+
+@keyframes animate3 {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}

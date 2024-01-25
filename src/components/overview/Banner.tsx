@@ -1,17 +1,18 @@
 import Image from "next/image";
 import React from "react";
-import Continue from "../Continue";
+import Continue from "../Button";
 
 const Banner = () => {
   return (
-    <div className="w-full h-full py-20 sm:py-6 bg-green-50 my-10 relative overflow-hidden">
-      <div className="mx-auto max-w-5xl px-4 py-4 relative grid grid-auto-fit gap-3 z-40 justify-center place-content-center place-items-center">
-        <div className="order-2 sm:order-1 " >
+    <div className="w-full h-full py-20 sm:py-6 bg-green-50 my-10 overflow-hidden">
+      <div className="mx-auto max-w-5xl px-4 py-4 grid grid-auto-fit gap-3 z-40 justify-center place-content-center place-items-center">
+        <div className="order-2 sm:order-1 relative">
           <Image
-            src="/images/baked.png"
+            src="/images/man2.png"
             alt="organic"
-            width={400}
-            height={400}
+            width={700}
+            height={700}
+           
             className="object-contain"
             draggable={false}
           />

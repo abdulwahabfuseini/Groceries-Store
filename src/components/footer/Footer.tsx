@@ -19,14 +19,13 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full h-full sm:h-[800px] lg:h-[550px] relative overflow-hidden">
-      <Image
-        src="/images/foot.jpeg"
-        fill
-        alt="footImage"
-        className="w-full h-full object-cover hidden sm:block"
-      />
-      <div className="sm:text-white shadow-lg sm:top-0 sm:left-0 right-0 sm:absolute sm:bg-slate-950 w-full h-full sm:bg-opacity-90 bg-green-50 rounded-tr-3xl rounded-tl-3xl sm:rounded-none">
+    <div className="w-full h-full relative overflow-hidden bg-green-100">
+      <div className="wave wave1"></div>
+      <div className="wave wave2"></div>
+      <div className="wave wave3"></div>
+      <div className="wave wave4"></div>
+
+      <div>
         <div className="grid w-full grid-auto-fit-xs mx-auto max-w-7xl place-content-center py-8 sm:px-5 gap-y-6 gap-x-10">
           <div className="px-3 sm:px-0  sm:col-span-2">
             <h1 className="text-2xl pb-3">Groceries Store</h1>
@@ -70,22 +69,8 @@ const Footer = () => {
           <div className="px-4 sm:px-0">
             <h1 className="text-lg font-semibold pb-3">Download Our App</h1>
             <div className=" ">
-              {/* <Image
-              src="/SVG/download1.png"
-              width={220}
-              height={220}
-              alt="playStore"
-              className="object-contain border-2"
-            />
-            <Image
-              src="/SVG/download2.jpg"
-              width={220}
-              height={220}
-              alt="playStore"
-              className="object-contain border-2"
-            /> */}
               <div className="flex gap-2 items-center flex-wrap w-full">
-                <button className="flex gap-2 bg-black  sm:bg-white sm:text-black rounded-md text-white px-2 sm:pr-3.5 py-1 items-center">
+                <button className="flex gap-2 bg-black  sm:bg-white sm:text-black rounded-md text-white px-2 pr-4 py-1 items-center">
                   <FaAppStore className="w-9 h-9" />
                   <p className="text-xs grid place-items-start font-semibold">
                     GET IT ON

@@ -22,7 +22,7 @@ export default function RootLayout({
       <Head>
         <meta name="viewport" content="width=device-width, user-scalable=no" />
       </Head>
-      <body className={`${inter.className} bg-slate-100`}>
+      <body className={`${inter.className} bg-slate-100 overflow-x-hidden w-full h-full`}>
         <Providers>
           <ToastContext />
           <Loading>

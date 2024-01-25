@@ -2,7 +2,6 @@ import { ProductType } from "@/contexts/Types";
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-
 export const POST = async (request: NextRequest) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
   try {
@@ -15,8 +14,8 @@ export const POST = async (request: NextRequest) => {
         currency: "GHC",
         unit_amount: item.price * 100,
         product_data: {
-          name: item.title,
-          description: item.description,
+          name: item.name,
+          // description: item.description,
           images: [item.image],
         },
       },

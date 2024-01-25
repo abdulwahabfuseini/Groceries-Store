@@ -1,25 +1,24 @@
 import Image from "next/image";
 import React from "react";
-import Continue from "../Continue";
+import Continue from "../Button";
 
 const Discount = () => {
   return (
     <div className="w-full h-full py-20 sm:py-6 bg-green-50 my-10 relative overflow-hidden">
       <div className="mx-auto max-w-5xl px-4 py-4 relative grid grid-auto-fit gap-3 z-40 justify-center place-content-center place-items-center">
-      
-        <div className="order-2 sm:order-1 " >
+        <div className="order-2 sm:order-1 ">
           <Image
-            src="/images/baked.png"
+            src="/images/gro3.png"
             alt="organic"
-            width={400}
-            height={400}
+            width={600}
+            height={600}
             className="object-contain"
             draggable={false}
           />
         </div>
         <div className=" order-1 sm:order-2 ">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl leading-10">
-            Save up come to 30% <br />
+          <h1 className="text-xl sm:text-2xl lg:text-3xl leading-10 uppercase">
+            Save up to 30% <br />
             <span className=" font-semibold">Fresh & Organic Foods</span>
           </h1>
           <p className="py-3 text-lg">

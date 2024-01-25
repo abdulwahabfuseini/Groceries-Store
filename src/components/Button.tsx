@@ -2,14 +2,14 @@ import { ButtonProps } from "@/contexts/Types";
 import Link from "next/link";
 import React from "react";
 
-const Continue = ({text, url}: ButtonProps) => {
+const Button = ({text, url}: ButtonProps) => {
   return (
     <button type="button" className="my-8">
       <Link
-        className="group flex items-center justify-between gap-2 rounded-lg border border-green-600 bg-green-600 py-1 px-2 transition-colors hover:bg-indigo-600 focus:outline-none focus:ring hover:scale-x-105"
+        className="group flex items-center justify-between gap-2 rounded-lg border bg-green-600 border-green-600 py-1 px-2 transition-colors hover:bg-indigo-600 focus:outline-none focus:ring hover:scale-x-105"
         href={url}
       >
-        <span className="font-medium text-white transition-colors group-hover:text-white group-active:text-blue-500 text-base">
+        <span className="font-medium text-white transition-colors group-hover:text-white group-active:text-blue-500 text-lg">
           {text}
         </span>
 
@@ -34,4 +34,4 @@ const Continue = ({text, url}: ButtonProps) => {
   );
 };
 
-export default Continue;
+export default Button;
