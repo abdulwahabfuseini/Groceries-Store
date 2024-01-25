@@ -29,15 +29,15 @@ const Discount = () => {
       </div>
       <div>
         <Image
-          src="/images/baked.png"
+          src="/images/loose.png"
           alt="organic"
           width={150}
           height={150}
-          className="object-contain -top-14 -left-14 lg:-top-9 lg:-left-12 absolute"
+          className="object-contain -top-14 -left-14 lg:-top-6 lg:-left-14 absolute"
           draggable={false}
         />
         <Image
-          src="/images/cabbage.jpg"
+          src="/images/cabbage.png"
           alt="organic"
           width={150}
           height={150}
@@ -45,7 +45,7 @@ const Discount = () => {
           draggable={false}
         />
         <Image
-          src="/images/strawberry.jpeg"
+          src="/images/strawberry.png"
           alt="organic"
           width={150}
           height={150}

@@ -4,7 +4,7 @@ const Design = () => {
   return (
     <div className="">
       <Image
-        src="/images/baked.png"
+        src="/images/loose.png"
         alt="organic"
         width={150}
         height={150}
@@ -12,7 +12,7 @@ const Design = () => {
         draggable={false}
       />
       <Image
-        src="/images/cabbage.jpg"
+        src="/images/cabbage.png"
         alt="organic"
         width={150}
         height={150}
@@ -20,7 +20,7 @@ const Design = () => {
         draggable={false}
       />
       <Image
-        src="/images/strawberry.jpeg"
+        src="/images/strawberry.png"
         alt="organic"
         width={150}
         height={150}
