@@ -9,15 +9,8 @@ import toast from "react-hot-toast";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { TbChevronLeft } from "react-icons/tb";
 import { useDispatch, useSelector } from "react-redux";
-import { StateProps } from "@/contexts/Types";
-import {
-  addToCart,
-  increaseQuantity,
-  decreaseQuantity,
-} from "@/redux/CartSlice";
 import { GrBasket } from "react-icons/gr";
-// import { useDispatch } from "react-redux";
-// import { useShoppingCart } from "@/contexts/CartContext";
+
 
 const SingleFruit = ({ params }: any) => {
   const name = decodeURIComponent(params.id).replace(/-/g, " ");
@@ -25,24 +18,9 @@ const SingleFruit = ({ params }: any) => {
     (fruit) => fruit.name.toLowerCase() === name.toLowerCase()
   );
 
-  // const {image, price, rating, desc} = fruit
 
-  const dispatch = useDispatch();
-  const productData = useSelector((state: StateProps) => state.cart);
-  // const favoriteData = useSelector((state: StateProps) => state.cart);
 
-  const IncreCart = () => {
-    dispatch(increaseQuantity(fruit));
-  };
 
-  const DesCart = () => {
-    dispatch(decreaseQuantity(fruit));
-  };
-  
-  const AddToCart = () => {
-    dispatch(addToCart(fruit));
-    toast.success(`${name} added to cart`);
-  };
 
   return (
     <div className="w-full pt-6 mx-auto max-w-7xl sm:pt-10 sm:px-4 bg-white sm:bg-gray-100">
@@ -53,9 +31,9 @@ const SingleFruit = ({ params }: any) => {
           </button>
         </Link>
         <Link href="/shoppingCart" className="bg-slate-100 sm:bg-white p-2 rounded-full">
-          <Badge count={productData?.length}>
+          {/* <Badge count={productData?.length}>
             <GrBasket className="h-7 w-8 " />
-          </Badge>
+          </Badge> */}
         </Link>
       </div>
 
@@ -75,7 +53,7 @@ const SingleFruit = ({ params }: any) => {
             Unit Price: GH₵: <span>{fruit?.price.toLocaleString()}</span>
           </p>
           <p>{fruit?.desc}</p>
-          <div className="flex flex-wrap font-semibold items-center gap-3 py-10">
+          {/* <div className="flex flex-wrap font-semibold items-center gap-3 py-10">
             <span>Qty:</span>
             <button
               onClick={IncreCart}
@@ -100,7 +78,7 @@ const SingleFruit = ({ params }: any) => {
             >
               Add To Cart
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="py-2 pb-9 font-semibold sm:pt-14 bg-gray-100 px-3 sm:px-0">

@@ -1,8 +1,8 @@
 "use client";
 
 
+import { CartActions } from "@/Store/cartSlice";
 import Button from "@/components/Button";
-import { resetCart } from "@/redux/CartSlice";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,7 +14,7 @@ const Success = () => {
   const { data: session } = useSession();
 
   useEffect(() => {
-    dispatch(resetCart());
+    dispatch(CartActions.clearCart());
   });
 
   return (
