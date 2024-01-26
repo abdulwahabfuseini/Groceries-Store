@@ -20,7 +20,7 @@ const Register = () => {
     username: "",
     email: "",
     password: "",
-    confirmPassword: "",
+    // confirmPassword: "",
   });
 
   const handleRegister = async () => {
@@ -35,10 +35,10 @@ const Register = () => {
         body: JSON.stringify(userDetails),
       });
 
-      // if (!response.ok) {
-      //   setErrors("Email already exist! Please Use another email");
-      //   toast.error("Email already exist! Please Use another email");
-      // }
+      if (!response.ok) {
+        setErrors("Email already exist! Please Use another email");
+        toast.error("Email already exist! Please Use another email");
+      }
 
       if (response.ok) {
         toast.success("Logged in successfully");
@@ -51,7 +51,7 @@ const Register = () => {
   };
 
   return (
-    <Card className="w-full sm:shadow rounded-none bg-slate-100 sm:bg-white">
+    <Card className="w-full shadow-none border-none sm:border sm:shadow rounded-none bg-white">
       <Form
         form={form}
         layout="vertical"
@@ -141,7 +141,7 @@ const Register = () => {
             }
           />
         </Form.Item>
-        <Form.Item
+        {/* <Form.Item
           label="Confirm Password"
           name="ConfirmPassword"
           className=" font-semibold text-base"
@@ -168,12 +168,12 @@ const Register = () => {
             placeholder="Confirm Password"
             className="h-11 cursor-pointer w-full border-2 text-base"
           />
-        </Form.Item>
+        </Form.Item> */}
         <Button
           disabled={loading}
           htmlType="submit"
           type="primary"
-          className=" disabled:cursor-not-allowed bg-blue-600 text-lg w-full h-10 hover:ring-2 hover:bg-black text-white font-semibold"
+          className=" disabled:cursor-not-allowed bg-blue-600 text-lg w-full h-10 hover:ring-2 text-white font-semibold"
         >
           {loading ? (
             <span className="spinloader">Creating Account</span>

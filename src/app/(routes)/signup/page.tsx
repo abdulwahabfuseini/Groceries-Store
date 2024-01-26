@@ -2,9 +2,14 @@ import Link from "next/link";
 import Design from "@/components/account/Design";
 import Register from "@/components/account/Register";
 
+// export const metadata = {
+//   title: "Groceries Store | Create Account",
+//   description: "New Here! Create an Account",
+// };
+
 const Signup = () => {
   return (
-    <div className="mx-auto max-w-5xl w-full grid sm:place-content-center sm:px-4 h-full md:h-screen sm:grid-cols-2 lg:grid-cols-5 sm:pt-14 pt-20 pb-6 sm:pb-12">
+    <div className="mx-auto max-w-5xl w-full grid sm:place-content-center sm:px-4 h-full md:h-screen sm:grid-cols-2 lg:grid-cols-5 sm:pt-14 pt-20 pb-10 sm:pb-12 bg-white sm:bg-slate-100">
       <div className="sm:hidden z-40">
         <Design />
       </div>

@@ -46,7 +46,7 @@ const Login = () => {
   };
 
   return (
-    <Card className="w-full sm:shadow rounded-none bg-slate-100 sm:bg-white">
+    <Card className="w-full shadow-none border-none sm:border sm:shadow rounded-none bg-white">
       <Form
         form={form}
         layout="vertical"

@@ -35,6 +35,18 @@ export const ServicesData = [
     image: "cash.png",
     desc: "Round the clock convience, shop anytime",
   },
+  {
+    id: 7,
+    title: "Cash on delivery",
+    image: "cash.png",
+    desc: "Round the clock convience, shop anytime",
+  },
+  {
+    id: 8,
+    title: "Cash on delivery",
+    image: "cash.png",
+    desc: "Round the clock convience, shop anytime",
+  },
 ];
 
 export const HeroData = [
@@ -49,7 +61,7 @@ export const HeroData = [
   },
   {
     id: 2,
-    title: "Stay Home & Order",
+    title: "Stay @ Home & Order",
     subTitle: "For Your Best Groceries",
     desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
     button: "Order Now",
@@ -58,8 +70,8 @@ export const HeroData = [
   },
   {
     id: 3,
-    title: "We delivery across nationwide",
-    subTitle: "Fast Delivery",
+    title: "Door 2 Door Delivery",
+    subTitle: "Fastest Delivery & Easy Pickup",
     desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
     button: "Shop Now",
     cover: "delivery.png",
@@ -76,50 +88,6 @@ export const HeroData = [
   // },
 ];
 
-export const CategoryData = [
-  {
-    id: 1,
-    title: "Fresh Fruits",
-    image: "fruits2.png",
-    link: "/category/fruits",
-    background: "bg-red-100 ",
-  },
-  {
-    id: 2,
-    title: "Oranic Vegtables",
-    image: "gro1.png",
-    link: "/category/vegetables",
-    background: "bg-green-100",
-  },
-  {
-    id: 3,
-    title: "Baked Foods",
-    image: "baked3.png",
-    link: "/category/bakeries",
-    background: "bg-purple-100",
-  },
-  {
-    id: 4,
-    title: "Fresh Meats",
-    image: "meat2.png",
-    link: "/category/meats",
-    background: "bg-pink-100",
-  },
-  {
-    id: 5,
-    title: "Ice Creams",
-    image: "icecream.webp",
-    link: "/category/iceCreams",
-    background: "bg-orange-100",
-  },
-  {
-    id: 6,
-    title: "Drinks & Beverages",
-    image: "drinks.png",
-    link: "/category/drinksandBeverages",
-    background: "bg-yellow-100",
-  },
-];
 
 export const TopProducts = [
   {

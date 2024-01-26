@@ -133,7 +133,7 @@ const ContactForm = () => {
         type="primary"
         className="mt-2 text-xl text-white bg-green-600 h-12 w-full font-semibold hover:shadow-md"
       >
-        {loading ? <h1>Sending...</h1> : "Submit"}
+        {loading ? <h1>Sending Message...</h1> : "Send a Message"}
       </Button>
     </Form>
   );

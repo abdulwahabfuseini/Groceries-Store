@@ -11,7 +11,7 @@ const MobileFoot = ({ foot }: any) => {
 
   return (
     <div>
-      <div onClick={() => setAccordion((prev) => !prev)} className="flex items-center justify-between  bg-green-50 shadow p-3 mb-2">
+      <div onClick={() => setAccordion((prev) => !prev)} className="flex items-center justify-between  bg-white shadow p-3 mb-2">
         <h1 className="text-xl font-semibold ">{foot?.title}</h1>
         <button >
           {accordion ? (
@@ -38,12 +38,4 @@ const MobileFoot = ({ foot }: any) => {
 
 export default MobileFoot;
 
-{
-  /* <ul key={foot.id} className="">
-<div className="flex items-center justify-between pb-2 bg-white p-3 shadow">
 
-  
-</div>
-
-</ul> */
-}

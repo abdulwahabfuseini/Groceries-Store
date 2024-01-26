@@ -1,18 +1,18 @@
-// redux/FavoritesSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { CartState, ProductType } from "../contexts/Types";
-// import { RootState } from './store';
+import { RootState } from "./Store";
 
-// interface ProductType {
-//   id: string;
-//   name: string;
-// }
+interface ProductType {
+  id: number;
+  name: string;
+  image: string;
+  price: number;
+}
 
-// interface FavoritesState {
-//   items: ProductType[];
-// }
+interface FavoritesState {
+  items: ProductType[];
+}
 
-const initialState: CartState = {
+const initialState: FavoritesState = {
   items: loadFavoritesFromLocalStorage(),
 };
 
@@ -24,10 +24,22 @@ const FavoritesSlice = createSlice({
       state.items.push(action.payload);
       saveFavoritesToLocalStorage(state.items);
     },
+    deleteFavorite: (state, action: PayloadAction<number>) => {
+      state.items = state.items.filter((item) => item.id !== action.payload);
+      saveFavoritesToLocalStorage(state.items);
+    },
+    clearFavorites: (state) => {
+      state.items = [];
+      saveFavoritesToLocalStorage(state.items);
+    },
   },
 });
 
 function loadFavoritesFromLocalStorage(): ProductType[] {
+  if (typeof window === 'undefined') {
+    return [];
+  }
+
   const storedFavorites = localStorage.getItem("favorites");
   return storedFavorites ? JSON.parse(storedFavorites) : [];
 }
@@ -36,8 +48,8 @@ function saveFavoritesToLocalStorage(favorites: ProductType[]) {
   localStorage.setItem("favorites", JSON.stringify(favorites));
 }
 
-export const { addToFavorite } = FavoritesSlice.actions;
+export const FavoriteActions = FavoritesSlice.actions;
 
-// export const selectFavoriteItems = (state: RootState) => state.favorites.items;
+export const selectFavoriteItems = (state: RootState) => state.favorites.items;
 
 export default FavoritesSlice.reducer;

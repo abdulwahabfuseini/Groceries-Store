@@ -12,7 +12,7 @@ import { ServicesData } from "@/assets/Data";
 
 const Services = () => {
   return (
-    <div className="relative ">
+    <div className="relative py-6">
       <Swiper
         spaceBetween={10}
         loop={true}
@@ -21,23 +21,23 @@ const Services = () => {
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         breakpoints={{
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.35,
           },
           400: {
-            slidesPerView: 1.5,
+            slidesPerView: 1.7,
           },
           600: {
-            slidesPerView: 2.5,
-          },
-          768: {
             slidesPerView: 2.8,
           },
+          768: {
+            slidesPerView: 2.6,
+          },
           1024: {
-            slidesPerView: 3.8,
+            slidesPerView: 4,
           },
         }}
       >
-        <div className="">
+        <div>
           {ServicesData.map((item, index) => {
             return (
               <SwiperSlide key={index} className="my-6">

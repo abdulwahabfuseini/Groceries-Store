@@ -1,6 +1,6 @@
 
 import Background from "@/components/aboutUs/Background";
-import Services from "@/components/aboutUs/Services";
+import Services from "@/components/overview/Services";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/header/Navbar";
 

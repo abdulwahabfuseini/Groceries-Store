@@ -5,7 +5,7 @@ import React from "react";
 const GetStarted = () => {
   return (
     <div className="bg-white">
-      <div className="grid w-full h-screen max-w-lg px-4 m-auto place-items-center place-content-center">
+      <div className="grid w-full h-screen max-w-md px-4 m-auto place-items-center place-content-center">
         <Image
           src="/images/delivery1.png"
           width="220"

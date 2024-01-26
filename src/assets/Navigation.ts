@@ -59,7 +59,7 @@ export const FootNav = [
         path: "/shoppingCart"
       },
       {
-        display: "Wishlist",
+        display: "My Favorite",
         path: "/myFavorite"
       },
       {

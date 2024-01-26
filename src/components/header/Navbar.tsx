@@ -7,16 +7,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaHeartCircleCheck } from "react-icons/fa6";
 import { useSelector } from "react-redux";
-import { StateProps } from "@/contexts/Types";
+import { selectCartProducts } from "@/Store/cartSlice";
 import { GrBasket } from "react-icons/gr";
 import MobileNav from "./MobileNav";
 import { useSession } from "next-auth/react";
+import { selectFavoriteItems } from "@/Store/FavoritesSlice";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const { data: session } = useSession();
-  const productData = useSelector((state: StateProps) => state.cart);
-  const favoriteData = useSelector((state: StateProps) => state.cart);
+  const cartProducts = useSelector(selectCartProducts)
+  const favoriteProducts = useSelector(selectFavoriteItems)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
     <div
       className={`${
         sticky
-          ? "h-16 w-full top-0 left-0 fixed shadow-lg transition-all ease-in-out bg-white z-50 py-3"
+          ? "h-16 w-full top-0 left-0 fixed shadow-lg shadow-green-500/20 transition-all ease-in-out bg-white z-50 py-3"
           : "h-20 w-full bg-gray-100 py-5"
       } bg-white px-4 `}
     >
@@ -49,14 +50,14 @@ const Navbar = () => {
           <div className="flex items-end gap-5">
             <Link href="/myFavorite">
               <button>
-                <Badge count={favoriteData?.length}>
+                <Badge count={favoriteProducts.length}>
                   <FaHeartCircleCheck className="h-6 w-7" />
                 </Badge>
               </button>
             </Link>
             <Link href="/shoppingCart">
               <button>
-                <Badge count={productData?.length}>
+                <Badge count={cartProducts.items?.length}>
                   <GrBasket className="h-6 w-7" />
                 </Badge>
               </button>
@@ -77,7 +78,7 @@ const Navbar = () => {
           </div>
         ) : (
           <Link href="/signin">
-            <button className=" bg-green-600 rounded-md text-white font-semibold px-2 py-1.5 hover:bg-blue-600 hover:trasnsition-all hover:ease-in hover:scale-95  text-lg">Sign In</button>
+            <button className=" bg-green-600 rounded-md text-white font-semibold px-2 py-1 hover:bg-blue-600 hover:trasnsition-all hover:ease-in hover:scale-95  text-lg">Sign In</button>
           </Link>
         )}
       </nav>

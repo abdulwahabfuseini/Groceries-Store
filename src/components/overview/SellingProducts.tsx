@@ -26,11 +26,11 @@ const SellingProducts = () => {
           </p>
         </div>
         <div className=" hidden sm:flex items-center justify-center gap-6 py-4">
-          <button ref={(node) => setPrevtEl(node)}>
+          <button ref={(node) => setPrevtEl(node)} className="bg-green-600">
             <FaChevronLeft className="w-8 h-8 p-2 text-lg font-bold text-white rounded-full sm:w-10 sm:h-10 pattern" />
           </button>
          
-          <button  ref={(node) => setNextEl(node)}>
+          <button  ref={(node) => setNextEl(node)} className="bg-green-600">
             <FaChevronRight className="w-8 h-8 p-2 text-lg font-bold text-white rounded-full sm:w-10 sm:h-10 pattern " />
           </button>
         </div>

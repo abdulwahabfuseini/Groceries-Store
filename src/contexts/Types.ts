@@ -1,12 +1,10 @@
 export interface ProductType {
   id: number;
   name: string;
-  // desc: string;
   image: string;
   price: number;
   totalPrice: number;
   quantity: number;
-  // totalQuantity: number
 }
 
 // export type CartProps = {
@@ -16,33 +14,36 @@ export interface ProductType {
 //   removeFromCart: (id: number) => void;
 // };
 
-export interface CartState {
-  items: ProductType[];
-  totalQuantity?: number
-}
+// export interface CartState {
+//   length: number;
+//   // map(arg0: (CartProduct: any) => import("react").JSX.Element): import("react").ReactNode;
+//   items: ProductType[];
+//   totalQuantity?: number;
+// }
 
 // export interface ItemProps {
 //   item: ProductType;
 // }
 
-export interface StateProps {
-  cart: {
-    map(arg0: (item: ProductType) => void): unknown;
-    length: number;
-    some: any;
-    productData: ProductType[];
-    orderData: {
-      order: ProductType[];
-    };
-    favoriteData: ProductType[];
-  };
-}
+// export interface StateProps {
+//   cart: {
+//     map(arg0: (item: ProductType) => void): unknown;
+//     length: number;
+//     some: any;
+//     productData: ProductType[];
+//     orderData: {
+//       order: ProductType[];
+//     };
+//     favoriteData: ProductType[];
+//   };
+// }
 
 export type CardProps = {
-  id?: number;
+  id: number;
   name: string;
   image: string;
   price: number;
+  quantity?: number
   discount?: number;
   desc?: string;
   rating?: number;
@@ -71,4 +72,13 @@ export type BannerProps = {
 export type ButtonProps = {
   text: string;
   url: string;
+};
+
+export type ShoppingProps = {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity?: number;
+  totalPrice?: number;
 };

@@ -1,15 +1,12 @@
-import { PrismaClient } from "@prisma/client";
 import { AuthOptions } from "next-auth";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import bcrypt from "bcryptjs";
-
-const prisma = new PrismaClient();
+import User from "@/models/User";
+import { connectMongoDB } from "@/libs/mongodb";
 
 export const authOptions: AuthOptions = {
-  adapter: PrismaAdapter(prisma),
   providers: [
     CredentialsProvider({
       name: "credential",
@@ -30,11 +27,22 @@ export const authOptions: AuthOptions = {
           throw new Error("Please enter email and password");
         }
 
-        const user = await prisma.user.findUnique({
-          where: {
-            email: credentials.email,
-          },
+        await connectMongoDB();
+
+        const user = await User.findOne({
+          // where: {
+          email: credentials.email,
+          // },
         });
+
+        if (!user) {
+          await User.create({
+            email: credentials.email,
+            hashedPassword: credentials.password
+              .replace(" ", " ")
+              .toLowerCase(),
+          });
+        }
 
         if (!user || !user.hashedPassword) {
           throw new Error("No User Found With This Email");
