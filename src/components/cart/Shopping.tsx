@@ -77,13 +77,13 @@ const Shopping = () => {
   return (
     <>
       {!session?.user ? (
-        <div className="py-14 sm:py-20">
+        <div className="py-12 sm:py-20">
           <Link href="/category">
-            <button className=" p-2 font-semibold text-center bg-slate-100 sm:bg-white rounded-full text">
+            <button className=" p-2 font-semibold text-center bg-white rounded-full text">
               <TbChevronLeft className="w-8 h-8" />
             </button>
           </Link>
-          <div className="flex flex-col px-2 py-6 w-fu-ll sm:px-6 lg:px-3 gap-x-10 sm:mx-auto sm:max-w-7xl  gap-y-6 lg:flex-row">
+          <div className="flex flex-col  py-6 w-fu-ll sm:px-6 lg:px-3 gap-x-10 sm:mx-auto sm:max-w-7xl  gap-y-6 lg:flex-row">
             <div className="w-full">
               {cartProducts.items.length === 0 && (
                 <div className="space-y-8 text-center">

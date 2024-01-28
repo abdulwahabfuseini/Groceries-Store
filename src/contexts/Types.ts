@@ -7,36 +7,11 @@ export interface ProductType {
   quantity: number;
 }
 
-// export type CartProps = {
-//   getItemQuantity: (id: number) => void;
-//   increaseCartQty: (id: number) => void;
-//   decreaseCartQty: (id: number) => void;
-//   removeFromCart: (id: number) => void;
-// };
-
-// export interface CartState {
-//   length: number;
-//   // map(arg0: (CartProduct: any) => import("react").JSX.Element): import("react").ReactNode;
-//   items: ProductType[];
-//   totalQuantity?: number;
-// }
-
-// export interface ItemProps {
-//   item: ProductType;
-// }
-
-// export interface StateProps {
-//   cart: {
-//     map(arg0: (item: ProductType) => void): unknown;
-//     length: number;
-//     some: any;
-//     productData: ProductType[];
-//     orderData: {
-//       order: ProductType[];
-//     };
-//     favoriteData: ProductType[];
-//   };
-// }
+export interface IUser {
+  _id?: string;
+  email: string;
+  usename: string;
+}
 
 export type CardProps = {
   id: number;
@@ -82,3 +57,8 @@ export type ShoppingProps = {
   quantity?: number;
   totalPrice?: number;
 };
+
+export type CategoryTittleProps = {
+   category: string,
+   text: string
+}

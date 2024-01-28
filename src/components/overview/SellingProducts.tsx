@@ -7,8 +7,8 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductsCard from "./ProductsCard";
-import { TopProducts } from "@/assets/Data";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { TopProducts } from "@/assets/GroceriesData";
 
 const SellingProducts = () => {
   const [nextEl, setNextEl] = useState<HTMLButtonElement | null>(null);
@@ -29,8 +29,8 @@ const SellingProducts = () => {
           <button ref={(node) => setPrevtEl(node)} className="bg-green-600">
             <FaChevronLeft className="w-8 h-8 p-2 text-lg font-bold text-white rounded-full sm:w-10 sm:h-10 pattern" />
           </button>
-         
-          <button  ref={(node) => setNextEl(node)} className="bg-green-600">
+
+          <button ref={(node) => setNextEl(node)} className="bg-green-600">
             <FaChevronRight className="w-8 h-8 p-2 text-lg font-bold text-white rounded-full sm:w-10 sm:h-10 pattern " />
           </button>
         </div>
@@ -65,6 +65,7 @@ const SellingProducts = () => {
             return (
               <SwiperSlide key={index} className="my-6">
                 <ProductsCard
+                  id={selling.id}
                   name={selling.name}
                   image={selling.image}
                   price={selling.price}

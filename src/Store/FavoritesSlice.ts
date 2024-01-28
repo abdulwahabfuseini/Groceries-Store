@@ -6,6 +6,7 @@ interface ProductType {
   name: string;
   image: string;
   price: number;
+  quantity: number
 }
 
 interface FavoritesState {
@@ -21,7 +22,19 @@ const FavoritesSlice = createSlice({
   initialState,
   reducers: {
     addToFavorite: (state, action: PayloadAction<ProductType>) => {
-      state.items.push(action.payload);
+      const newItem = action.payload;
+      const existingItem = state.items.find(item => item.id === newItem.id);
+
+      if (existingItem) {
+        existingItem.quantity
+      } else {
+        state.items.push({
+          ...newItem,
+          quantity: 1,
+        });
+      }
+
+      // state.items.push(action.payload);
       saveFavoritesToLocalStorage(state.items);
     },
     deleteFavorite: (state, action: PayloadAction<number>) => {
@@ -37,6 +50,7 @@ const FavoritesSlice = createSlice({
 
 function loadFavoritesFromLocalStorage(): ProductType[] {
   if (typeof window === 'undefined') {
+
     return [];
   }
 

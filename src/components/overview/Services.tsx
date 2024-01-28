@@ -21,16 +21,16 @@ const Services = () => {
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         breakpoints={{
           0: {
-            slidesPerView: 1.35,
+            slidesPerView: 1.5,
           },
           400: {
-            slidesPerView: 1.7,
+            slidesPerView: 1.9,
           },
           600: {
             slidesPerView: 2.8,
           },
           768: {
-            slidesPerView: 2.6,
+            slidesPerView: 2.9,
           },
           1024: {
             slidesPerView: 4,

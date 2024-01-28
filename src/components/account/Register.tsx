@@ -141,7 +141,7 @@ const Register = () => {
             }
           />
         </Form.Item>
-        {/* <Form.Item
+         <Form.Item
           label="Confirm Password"
           name="ConfirmPassword"
           className=" font-semibold text-base"
@@ -168,7 +168,7 @@ const Register = () => {
             placeholder="Confirm Password"
             className="h-11 cursor-pointer w-full border-2 text-base"
           />
-        </Form.Item> */}
+        </Form.Item> 
         <Button
           disabled={loading}
           htmlType="submit"

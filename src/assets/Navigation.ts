@@ -24,28 +24,28 @@ export const MobileNavigation = [
   },
   {
     id: 2,
-    display: "About",
+    display: "Know About Us",
     path: "/about",
   },
   {
     id: 3,
-    display: "Support",
-    path: "/support",
+    display: "Shopping Cart",
+    path: "/shoppingCart",
   },
   {
     id: 4,
+    display: "Send us a Message",
+    path: "/support",
+  },
+  {
+    id: 5,
     display: "My Profile",
     path: "/dashboard/profile",
   },
   {
-    id: 5,
-    display: "My Order",
-    path: "/myOrder",
-  },
-  {
     id: 6,
-    display: "Contact Us",
-    path: "/myOrder",
+    display: "My Favorite",
+    path: "/myFavorite",
   },
 ];
 

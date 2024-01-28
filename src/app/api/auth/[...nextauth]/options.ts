@@ -4,9 +4,13 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import bcrypt from "bcryptjs";
 import User from "@/models/User";
+import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
 import { connectMongoDB } from "@/libs/mongodb";
+import { IUser } from "@/contexts/Types";
+import clientPromise from "@/libs/dbconnect";
 
 export const authOptions: AuthOptions = {
+  adapter: MongoDBAdapter(clientPromise),
   providers: [
     CredentialsProvider({
       name: "credential",
@@ -23,38 +27,42 @@ export const authOptions: AuthOptions = {
         },
       },
       async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) {
-          throw new Error("Please enter email and password");
-        }
 
-        await connectMongoDB();
+        // ==== Connect To MongoDb ==== 
 
-        const user = await User.findOne({
-          // where: {
-          email: credentials.email,
-          // },
+        await connectMongoDB().catch((err) => {
+          throw new Error(err);
         });
 
+        // ==== Check if input fields are not Empty ==== 
+
+        if (!credentials?.email || !credentials?.password) {
+          throw new Error("Please Enter Email and Password")
+        }
+
+        // ===== Check user with Email ==== 
+
+        const user = await User.findOne({
+          email: credentials?.email,
+        }).select("+password");
+
+        // ==== Email Not Found ==== 
+
         if (!user) {
-          await User.create({
-            email: credentials.email,
-            hashedPassword: credentials.password
-              .replace(" ", " ")
-              .toLowerCase(),
-          });
+          throw new Error("No User Found with this Email");
         }
 
-        if (!user || !user.hashedPassword) {
-          throw new Error("No User Found With This Email");
-        }
+        // ===== Check Password with DB Password ===== 
 
-        const PasswordMatch = await bcrypt.compare(
-          credentials.password,
+        const isPasswordCorrect = await bcrypt.compare(
+          credentials!.password,
           user.hashedPassword
         );
 
-        if (!PasswordMatch) {
-          throw new Error("Incorrect Password");
+        // ===== InCorrect Password ==== 
+
+        if (!isPasswordCorrect) {
+          throw new Error("Invalid Password");
         }
 
         return user;
@@ -70,11 +78,23 @@ export const authOptions: AuthOptions = {
     }),
   ],
   secret: process.env.SECRET,
+  debug: process.env.NODE_ENV === "development",
+  pages: {
+    signIn: "/signin",
+  },
   session: {
     strategy: "jwt",
   },
-  debug: process.env.NODE_ENV == "development",
-  pages: {
-    signIn: "/signin",
+  callbacks: {
+    jwt: async ({ token, user }) => {
+      user && (token.user = user);
+      return token;
+    },
+    session: async ({ session, token }) => {
+      const user = token.user as IUser;
+      session.user = user;
+
+      return session;
+    },
   },
 };

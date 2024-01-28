@@ -22,7 +22,7 @@ const Hero = () => {
           loop={true}
           speed={8000}
           modules={[Autoplay]}
-          autoplay={{ delay: 9000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
           className="h-[310px] sm:h-[400px]"
         >
           {HeroData.map((item) => (
@@ -43,7 +43,7 @@ const Hero = () => {
           loop={true}
           speed={8000}
           modules={[Autoplay]}
-          autoplay={{ delay: 9000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
           className="w-full h-[340px] sm:h-[400px]"
         >
           {HeroData.map((item) => (

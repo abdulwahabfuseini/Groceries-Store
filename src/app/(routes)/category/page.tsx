@@ -9,7 +9,7 @@ import Discount from "@/components/overview/Discount";
 import SellingProducts from "@/components/overview/SellingProducts";
 
 export const metadata = {
-  title: "Gloceries App | Fresh and Organic Gloceries",
+  title: "Groceries Store | Fresh and Organic Gloceries",
   description: "Buy Fresh and Organic Gloceries from us",
 };
 

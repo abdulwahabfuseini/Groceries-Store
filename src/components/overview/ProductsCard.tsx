@@ -1,13 +1,15 @@
 "use client";
 
-import { CardProps, StateProps } from "@/contexts/Types";
+import { CardProps } from "@/contexts/Types";
 import Image from "next/image";
-import { FaRegHeart, FaHeart, FaPlus } from "react-icons/fa";
-import { useDispatch, useSelector } from "react-redux";
-import { addToFavorite } from "@/redux/CartSlice";
+import { FaPlus } from "react-icons/fa";
+import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { Heart } from "lucide-react";
+import { Tooltip } from "antd";
 import { Rate, Typography } from "antd";
+import { CartActions } from "@/Store/cartSlice";
+import { FavoriteActions } from "@/Store/FavoritesSlice";
 
 const ProductsCard = ({
   id,
@@ -19,28 +21,43 @@ const ProductsCard = ({
 }: CardProps) => {
   const dispatch = useDispatch();
 
-  //   const favoriteData = useSelector((state: StateProps) => state.cart);
+  const AddToCart = () => {
+    dispatch(
+      CartActions.addToCart({
+        id,
+        name,
+        image,
+        price,
+        totalPrice: 0,
+        quantity: 0,
+        totalQuantity: 0,
+      })
+    );
+    toast.success(`${name} added to cart`);
+  };
 
-  //   const isFavorite = (productId: any) => {
-  //     return favoriteData?.some(
-  //       (favoriteItem: { name: any }) => favoriteItem.name === productId
-  //     );
-  //   };
+  const AddToFavorite = () => {
+    dispatch(
+      FavoriteActions.addToFavorite({
+        id,
+        name,
+        image,
+        price,
+        quantity: 0,
+      })
+    );
+    toast.success(`${name} added to Favorite`);
+  };
 
   return (
     <div className="bg-white rounded-lg relative">
-      <Heart
-        // fill={isFavorite(name) ? "red" : "white"}
-        // onClick={() => {
-        //   dispatch(addToFavorite({ id, name, image, price }));
-        //   if (isFavorite(name)) {
-        //     toast.error(`${name} removed from favorites!`);
-        //   } else {
-        //     toast.success(`${name} added to favorites!`);
-        //   }
-        // }}
-        className="absolute top-0 right-0  text-green-500 bg-green-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
-      />
+      <Tooltip color="green" title="Add to favorite">
+        <Heart
+          onClick={AddToFavorite}
+          className="absolute top-0 right-0  text-green-500 bg-green-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-white hover:bg-green-500 cursor-pointer duration-200"
+        />
+      </Tooltip>
+
       <div className="relative  h-36 sm:h-40 w-full">
         <Image
           src={`/images/${image}`}
@@ -61,8 +78,10 @@ const ProductsCard = ({
         </Typography.Paragraph>
 
         <Rate defaultValue={rating} allowHalf className="text-xs" />
-        <button>
-          <FaPlus className="absolute bottom-0 right-0  text-green-500 bg-green-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200" />
+        <button onClick={AddToCart}>
+          <Tooltip color="green" title="Add to Cart">
+            <FaPlus className="absolute bottom-0 right-0  text-green-500 bg-green-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-white hover:bg-green-500 cursor-pointer duration-200" />
+          </Tooltip>
         </button>
       </div>
     </div>

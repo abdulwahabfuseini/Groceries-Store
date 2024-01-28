@@ -1,52 +1,49 @@
+import { connectMongoDB } from "@/libs/mongodb";
+import User from "@/models/User";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
-import User from "@/models/User";
-import { connectMongoDB } from "@/libs/mongodb";
 
 export const POST = async (req: NextRequest): Promise<NextResponse> => {
   const body = await req.json();
   const { username, email, password } = body;
-  console.log("🚀 ~ POST ~ password:", password);
-  console.log("🚀 ~ POST ~ email:", email);
   console.log("🚀 ~ POST ~ username:", username);
-
-  await connectMongoDB();
-
+  console.log("🚀 ~ POST ~ email:", email);
+  console.log("🚀 ~ POST ~ password:", password);
   try {
+    await connectMongoDB();
+
+    // Validate the input (you can use a validation library like Joi)
     if (!username || !email || !password) {
-      throw new Error("Missing Fields");
+      return NextResponse.json({ message: "Missing fields" }, { status: 405 });
     }
 
-    const userExist = await User.findOne({
-      email,
-    });
-
-    if (userExist) {
-      throw new Error("Email already exists! Please use another email");
+    // Check if Email is already registered
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return NextResponse.json(
+        { message: "Email already exists" },
+        { status: 400 }
+      );
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const user = await User.create({
-      username,
-      email,
-      emailVerified: new Date(),
-      hashedPassword,
-    });
+    // Create a new user
+    const newUser = new User({ username, email, password: hashedPassword });
+    await newUser.save();
 
     return NextResponse.json(
-      { message: "User Created Successfully" },
-      {
-        status: 201,
-        headers: {
-          "content-Type": "application/json",
-        },
-      }
+      { message: "User created successfully", data: newUser },
+      { status: 201, headers: {
+        "content-Type": "application/json"
+      } }
     );
   } catch (error) {
+    console.error("Error:", error);
     return NextResponse.json(
-      { message: "Server Error, Failed to create user" },
+      { message: "Server error! Failed To create user" },
       { status: 500 }
     );
   }
+  return NextResponse.json({ message: "Method Not Allowed" }, { status: 405 });
 };

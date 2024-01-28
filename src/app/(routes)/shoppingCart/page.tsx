@@ -9,7 +9,7 @@ import Signin from "../signin/page";
 
 const ShoppingCart = () => {
   return (
-    <div className="w-full px-4 mx-auto  max-w-7xl">
+    <div className="w-full px-3 sm:px-5 mx-auto  max-w-7xl">
       <Shopping />
     </div>
   );

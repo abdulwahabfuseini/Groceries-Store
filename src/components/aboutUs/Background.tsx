@@ -31,12 +31,13 @@ const Background = () => {
           ))}
         </div>
       </div>
-      <div className="w-full sm:col-span-1 relative lg:col-span-3">
+      <div className=" sm:col-span-1 lg:col-span-3 flex items-center justify-center">
         <Image
-          src="/images/home1.webp"
+          src="/images/Grocery.png"
           alt="organic"
-          fill
-          className="object-contain w-full h-full"
+          width={450}
+          height={450}
+          className="object-contain"
           draggable={false}
         />
       </div>

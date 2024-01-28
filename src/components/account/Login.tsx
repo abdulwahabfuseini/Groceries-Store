@@ -23,7 +23,7 @@ const Login = () => {
 
   useEffect(() => {
     if (session?.status == "authenticated") {
-      router.push("/");
+      router.push("/category");
     }
   });
 

@@ -7,7 +7,7 @@ export const metadata = {
 
 const Fruits = () => {
   return (
-    <div className="w-full px-4 py-10 mx-auto lg:py-10 max-w-7xl">
+    <div className="w-full px-3 sm:px-5 py-10 mx-auto max-w-7xl">
       <FreshFruit />
     </div>
   );

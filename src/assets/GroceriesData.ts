@@ -8,7 +8,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -16,7 +16,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 3,
         name: "Banana",
         price: 10,
         image: "banana.webp",
@@ -24,7 +24,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 4,
         name: "Peach",
         price: 10,
         image: "peach.jpg",
@@ -32,7 +32,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -48,7 +48,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -56,7 +56,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 6,
         name: "Cherry",
         price: 10,
         image: "cherry.jpg",
@@ -74,7 +74,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -82,7 +82,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -90,7 +90,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -98,7 +98,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 3,
         name: "Banana",
         price: 10,
         image: "banana.webp",
@@ -106,7 +106,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 4,
         name: "Peach",
         price: 10,
         image: "peach.jpg",
@@ -114,7 +114,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -122,7 +122,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 6,
         name: "Cherry",
         price: 10,
         image: "cherry.jpg",
@@ -140,7 +140,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -148,7 +148,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -156,7 +156,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -164,7 +164,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -172,7 +172,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 6,
         name: "Cherry",
         price: 10,
         image: "cherry.jpg",
@@ -180,7 +180,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 4,
         name: "Peach",
         price: 10,
         image: "peach.jpg",
@@ -206,7 +206,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -214,7 +214,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -222,7 +222,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -230,7 +230,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -238,7 +238,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 6,
         name: "Cherry",
         price: 10,
         image: "cherry.jpg",
@@ -246,7 +246,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 2,
         name: "Apple",
         price: 10,
         image: "apple.jpg",
@@ -272,23 +272,23 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
+        id: 13,
+        name: "Orange",
         price: 10,
-        image: "pineapple2.jpg",
+        image: "orange.webp",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
-        name: "PawPaw",
+        id: 21,
+        name: "Tangerines",
         price: 10,
-        image: "pawpaw.jpg",
+        image: "tangerines.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 9,
         name: "Pear",
         price: 10,
         image: "pear.jpg",
@@ -296,7 +296,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -304,15 +304,15 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
-        name: "Cherry",
+        id: 17,
+        name: "Kiwi",
         price: 10,
-        image: "cherry.jpg",
+        image: "kiwi.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 4,
         name: "Peach",
         price: 10,
         image: "peach.jpg",
@@ -338,23 +338,23 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
+        id: 12,
+        name: "Grapes",
         price: 10,
-        image: "pineapple2.jpg",
+        image: "grapes.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
-        name: "PawPaw",
+        id: 10,
+        name: "Black Berry",
         price: 10,
-        image: "pawpaw.jpg",
+        image: "Blackberry.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -370,7 +370,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -378,15 +378,15 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
-        name: "Mango",
+        id: 18,
+        name: "Coconut",
         price: 10,
-        image: "mango.jpg",
+        image: "coconut3.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -404,15 +404,15 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
+        id: 12,
+        name: "Guava",
         price: 10,
-        image: "pineapple2.jpg",
+        image: "guava.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -420,7 +420,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -436,7 +436,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 13,
         name: "Orange",
         price: 10,
         image: "orange.webp",
@@ -444,7 +444,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -452,10 +452,10 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
-        name: "Watermelon",
+        id: 16,
+        name: "Jack Fruit",
         price: 10,
-        image: "watermelon.webp",
+        image: "jackfruit.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -470,7 +470,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -478,7 +478,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 12,
         name: "Grapes",
         price: 10,
         image: "grapes.jpg",
@@ -486,7 +486,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -502,7 +502,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -510,7 +510,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -518,7 +518,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -536,15 +536,15 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
+        id: 20,
+        name: "Sugar Apple",
         price: 10,
-        image: "pineapple2.jpg",
+        image: "sugarapple.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -552,7 +552,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -568,7 +568,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -576,7 +576,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -584,7 +584,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -602,23 +602,23 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
+        id: 12,
+        name: "Grapes",
         price: 10,
-        image: "pineapple2.jpg",
+        image: "grapes.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
-        name: "PawPaw",
+        id: 6,
+        name: "Cherry",
         price: 10,
-        image: "pawpaw.jpg",
+        image: "cherry.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -634,7 +634,15 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 18,
+        name: "Coconut",
+        price: 10,
+        image: "coconut3.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -642,15 +650,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
-        name: "Mango",
-        price: 10,
-        image: "mango.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -668,7 +668,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 10,
         name: "Blackberry",
         price: 10,
         image: "Blackberry.png",
@@ -676,7 +676,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -684,7 +684,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -700,7 +700,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -708,7 +708,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -716,7 +716,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -734,23 +734,23 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
+        id: 6,
+        name: "Cherry",
         price: 10,
-        image: "pineapple2.jpg",
+        image: "cherry.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
-        name: "PawPaw",
+        id: 10,
+        name: "Black Berry",
         price: 10,
-        image: "pawpaw.jpg",
+        image: "Blackberry.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -766,7 +766,15 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 15,
+        name: "Avocado",
+        price: 10,
+        image: "pear.webp",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -774,15 +782,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
-        name: "Mango",
-        price: 10,
-        image: "mango.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -800,26 +800,42 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
-        price: 10,
-        image: "pineapple2.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        name: "PawPaw",
-        price: 10,
-        image: "pawpaw.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
-        image: "lemon2.jpg",
+        image: "lemon.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 21,
+        name: "Tangerines",
+        price: 10,
+        image: "tangerines.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 9,
+        name: "Pear",
+        price: 10,
+        image: "pear.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 1,
+        name: "Mango",
+        price: 10,
+        image: "mango.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 17,
+        name: "Kiwi",
+        price: 10,
+        image: "kiwi.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -832,26 +848,10 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 6,
-        name: "Mango",
-        price: 10,
-        image: "mango.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 7,
-        name: "Watermelon",
-        price: 10,
-        image: "watermelon.webp",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -866,15 +866,15 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
-        price: 10,
-        image: "pineapple2.jpg",
+        id: 11,
+        name: "Sugar Apple",
+        price: 20,
+        image: "sugarapple.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -882,10 +882,10 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
-        name: "Lemon",
+        id: 5,
+        name: "Coconut",
         price: 10,
-        image: "lemon2.jpg",
+        image: "coconut3.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -898,7 +898,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -906,7 +906,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -914,9 +914,9 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 2,
         name: "Apple",
-        price: 10,
+        price: 210,
         image: "Apple.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
@@ -932,15 +932,15 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Pineapple",
+        id: 9,
+        name: "Pear",
         price: 10,
         image: "pineapple2.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -948,7 +948,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -964,7 +964,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -972,7 +972,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -980,7 +980,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -991,14 +991,14 @@ export const FruitData = [
   },
   {
     id: 16,
-    name: "JackFruit",
+    name: "Jack Fruit",
     price: 10,
     image: "jackfruit.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -1006,7 +1006,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -1014,7 +1014,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -1030,7 +1030,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -1038,7 +1038,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -1046,7 +1046,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -1064,7 +1064,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -1072,7 +1072,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -1080,7 +1080,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -1096,7 +1096,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -1104,7 +1104,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -1112,7 +1112,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -1130,15 +1130,15 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Coconut",
+        id: 16,
+        name: "Jack Fruit",
         price: 10,
-        image: "coconut2.jpg",
+        image: "jackfruit.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -1146,7 +1146,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -1162,7 +1162,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -1170,7 +1170,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -1178,7 +1178,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -1188,7 +1188,7 @@ export const FruitData = [
     ],
   },
   {
-    id: 19,
+    id: 12,
     name: "Guava",
     price: 10,
     image: "guava.jpg",
@@ -1196,7 +1196,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 20,
         name: "Sugar Apple",
         price: 10,
         image: "sugarapple.jpg",
@@ -1204,7 +1204,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -1212,10 +1212,10 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
-        name: "Lemon",
+        id: 1,
+        name: "Apple",
         price: 10,
-        image: "lemon2.jpg",
+        image: "apple.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -1228,7 +1228,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -1236,7 +1236,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -1244,7 +1244,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -1262,7 +1262,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 2,
         name: "Apple",
         price: 10,
         image: "apple.jpg",
@@ -1270,7 +1270,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -1278,7 +1278,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -1294,7 +1294,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -1302,7 +1302,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -1310,7 +1310,7 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -1328,15 +1328,7 @@ export const FruitData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Lemon",
-        price: 10,
-        image: "lemon2.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
+        id: 13,
         name: "Orange",
         price: 10,
         image: "orange.webp",
@@ -1344,10 +1336,34 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 3,
-        name: "Lemon",
+        id: 21,
+        name: "Tangerines",
+        price: 13,
+        image: "tangerines.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 9,
+        name: "Pear",
         price: 10,
-        image: "lemon2.jpg",
+        image: "pear.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 1,
+        name: "Mango",
+        price: 10,
+        image: "mango.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 17,
+        name: "Kiwi",
+        price: 10,
+        image: "kiwi.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -1360,26 +1376,10 @@ export const FruitData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 6,
-        name: "Mango",
-        price: 10,
-        image: "mango.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 7,
-        name: "Watermelon",
-        price: 10,
-        image: "watermelon.webp",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -1389,7 +1389,7 @@ export const FruitData = [
 
 export const VegetablesData = [
   {
-    id: 1,
+    id: 22,
     name: "Cabbage",
     price: 10,
     image: "cabbage.jpg",
@@ -1397,31 +1397,7 @@ export const VegetablesData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Lettuce Leafs",
-        price: 10,
-        image: "lettuce2.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        name: "Onions",
-        price: 10,
-        image: "onions.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 3,
-        name: "Carrot",
-        price: 10,
-        image: "carrot.webp",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 4,
+        id: 23,
         name: "Cauliflower",
         price: 10,
         image: "cauliflower.jpeg",
@@ -1429,7 +1405,31 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 36,
+        name: "Lettuce Leafs",
+        price: 10,
+        image: "lettuce2.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 25,
+        name: "Carrot",
+        price: 10,
+        image: "carrot.webp",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 33,
+        name: "Broccoli",
+        price: 10,
+        image: "broccoli.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 34,
         name: "EggPlant",
         price: 10,
         image: "eggplant.jpg",
@@ -1437,7 +1437,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -1445,7 +1445,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1455,7 +1455,7 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 2,
+    id: 23,
     name: "Cauliflower",
     price: 10,
     image: "cauliflower.jpeg",
@@ -1463,7 +1463,7 @@ export const VegetablesData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 36,
         name: "Lettuce Leafs",
         price: 10,
         image: "lettuce2.jpg",
@@ -1471,7 +1471,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -1479,7 +1479,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 25,
         name: "Carrot",
         price: 10,
         image: "carrot.webp",
@@ -1495,7 +1495,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 34,
         name: "EggPlant",
         price: 10,
         image: "eggplant.jpg",
@@ -1503,7 +1503,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -1511,7 +1511,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1521,39 +1521,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 3,
+    id: 24,
     name: "Tomatoes",
     price: 10,
     image: "tomatoes.jpeg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
-        name: "Lettuce Leafs",
-        price: 10,
-        image: "lettuce2.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        name: "Onions",
-        price: 10,
-        image: "onions.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 3,
-        name: "Carrot",
-        price: 10,
-        image: "carrot.webp",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 4,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -1561,7 +1537,31 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 27,
+        name: "Onions",
+        price: 10,
+        image: "onions.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 25,
+        name: "Carrot",
+        price: 10,
+        image: "carrot.webp",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 29,
+        name: "Green Pepper",
+        price: 10,
+        image: "greenpepper.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 31,
         name: "Garlic",
         price: 10,
         image: "garlic.jpg",
@@ -1569,15 +1569,15 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
-        name: "Green Pepper",
+        id: 35,
+        name: "Cluster Eggs",
         price: 10,
-        image: "greenpepper.jpg",
+        image: "clustereggplant.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1587,7 +1587,7 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 4,
+    id: 25,
     name: "Carrot",
     price: 10,
     image: "carrot.webp",
@@ -1603,7 +1603,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -1611,7 +1611,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 26,
         name: "Vegetable Beans",
         price: 10,
         image: "vegetablebeans.webp",
@@ -1619,7 +1619,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -1627,7 +1627,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 31,
         name: "Garlic",
         price: 10,
         image: "garlic.jpg",
@@ -1635,7 +1635,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -1643,7 +1643,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1653,15 +1653,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 5,
+    id: 26,
     name: "Vegetables Beans",
     price: 10,
     image: "vegetablebeans.webp",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -1669,7 +1669,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 24,
         name: "Tomatoes",
         price: 10,
         image: "tomatoes.jpeg",
@@ -1693,7 +1693,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 31,
         name: "Garlic",
         price: 10,
         image: "garlic.jpg",
@@ -1701,7 +1701,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -1709,7 +1709,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1719,12 +1719,12 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 6,
+    id: 27,
     name: "Onions",
     price: 10,
     image: "onions.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
         id: 1,
@@ -1735,7 +1735,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 24,
         name: "Tomatoes",
         price: 10,
         image: "tomatoes.jpeg",
@@ -1743,7 +1743,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 36,
         name: "Lettuce Leafs",
         price: 10,
         image: "lettuce2.jpg",
@@ -1751,7 +1751,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -1759,7 +1759,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 31,
         name: "Garlic",
         price: 10,
         image: "garlic.jpg",
@@ -1767,7 +1767,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -1775,7 +1775,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1785,23 +1785,23 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 7,
+    id: 28,
     name: "Pepper",
     price: 10,
     image: "pepper.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
-        name: "Onions",
+        id: 29,
+        name: "Green Pepper",
         price: 10,
-        image: "onions.jpg",
+        image: "greenpepper.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 24,
         name: "Tomatoes",
         price: 10,
         image: "tomatoes.jpeg",
@@ -1809,23 +1809,24 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
-        name: "Lettuce Leafs",
+        id: 27,
+        name: "Onions",
         price: 10,
-        image: "lettuce2.jpg",
+        image: "onions.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Cabbage",
+        id: 25,
+        name: "Carrot",
         price: 10,
-        image: "cabbage.jpg",
+        image: "carrot.webp",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
+
       {
-        id: 5,
+        id: 31,
         name: "Garlic",
         price: 10,
         image: "garlic.jpg",
@@ -1833,15 +1834,15 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
-        name: "Green Pepper",
+        id: 35,
+        name: "Cluster Eggs",
         price: 10,
-        image: "greenpepper.jpg",
+        image: "clustereggplant.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1851,39 +1852,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 8,
+    id: 29,
     name: "Green Pepper",
     price: 10,
     image: "greenpepper.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
-        name: "Onions",
-        price: 10,
-        image: "onions.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        name: "Tomatoes",
-        price: 10,
-        image: "tomatoes.jpeg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 3,
-        name: "Lettuce Leafs",
-        price: 10,
-        image: "lettuce2.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 4,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -1891,7 +1868,31 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 24,
+        name: "Tomatoes",
+        price: 10,
+        image: "tomatoes.jpeg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 27,
+        name: "Onions",
+        price: 10,
+        image: "onions.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 25,
+        name: "Carrot",
+        price: 10,
+        image: "carrot.webp",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 31,
         name: "Garlic",
         price: 10,
         image: "garlic.jpg",
@@ -1899,15 +1900,15 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
-        name: "Carrots",
+        id: 35,
+        name: "Cluster Eggs",
         price: 10,
-        image: "carrot2.jpg",
+        image: "clustereggplant.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -1917,15 +1918,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 9,
+    id: 30,
     name: "Cocumber",
     price: 10,
     image: "cocumber.jpeg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -1933,7 +1934,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 24,
         name: "Tomatoes",
         price: 10,
         image: "tomatoes.jpeg",
@@ -1941,7 +1942,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 36,
         name: "Lettuce Leafs",
         price: 10,
         image: "lettuce2.jpg",
@@ -1949,7 +1950,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -1957,7 +1958,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 31,
         name: "Garlic",
         price: 10,
         image: "garlic.jpg",
@@ -1965,7 +1966,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -1973,7 +1974,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 23,
         name: "Cauliflower",
         price: 10,
         image: "cauliflower.jpeg",
@@ -1983,15 +1984,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 10,
+    id: 31,
     name: "Garlic",
     price: 10,
     image: "garlic.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -2031,7 +2032,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -2039,7 +2040,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -2049,15 +2050,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 11,
+    id: 32,
     name: "Fresh Sayur",
     price: 10,
     image: "freshsayur.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -2065,7 +2066,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 28,
         name: "Tomatoes",
         price: 10,
         image: "tomatoes.jpeg",
@@ -2073,7 +2074,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 36,
         name: "Lettuce Leafs",
         price: 10,
         image: "lettuce2.jpg",
@@ -2081,7 +2082,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 22,
         name: "Cabbage",
         price: 10,
         image: "cabbage.jpg",
@@ -2089,7 +2090,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -2097,7 +2098,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -2105,7 +2106,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -2115,39 +2116,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 12,
+    id: 33,
     name: "Broccoli",
     price: 10,
     image: "broccoli.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
-        name: "Onions",
-        price: 10,
-        image: "onions.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        name: "Tomatoes",
-        price: 10,
-        image: "tomatoes.jpeg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 3,
-        name: "Lettuce Leafs",
-        price: 10,
-        image: "lettuce2.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 4,
+        id: 22,
         name: "Cabbage",
         price: 10,
         image: "cabbage.jpg",
@@ -2155,7 +2132,31 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 24,
+        name: "Tomatoes",
+        price: 10,
+        image: "tomatoes.jpeg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 36,
+        name: "Lettuce Leafs",
+        price: 10,
+        image: "lettuce2.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 27,
+        name: "Onions",
+        price: 10,
+        image: "onions.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -2163,7 +2164,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -2171,7 +2172,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -2181,15 +2182,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 13,
+    id: 34,
     name: "Egg Plant",
     price: 10,
     image: "eggplant.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
+        id: 22,
         name: "Cabbage",
         price: 10,
         image: "cabbage.jpg",
@@ -2197,7 +2198,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -2205,7 +2206,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -2213,7 +2214,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -2221,7 +2222,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 24,
         name: "Tomatoes",
         price: 10,
         image: "tomatoes.jpeg",
@@ -2229,7 +2230,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 36,
         name: "Lettuce Leafs",
         price: 10,
         image: "lettuce2.jpg",
@@ -2237,7 +2238,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -2247,15 +2248,15 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 14,
+    id: 35,
     name: "Cluster Eggs",
     price: 10,
     image: "clustereggplant.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
+        id: 26,
         name: "Vegetables Beans",
         price: 10,
         image: "vegetablebeans.webp",
@@ -2263,7 +2264,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 28,
         name: "Pepper",
         price: 10,
         image: "pepper.png",
@@ -2271,7 +2272,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -2279,7 +2280,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 27,
         name: "Onions",
         price: 10,
         image: "onions.jpg",
@@ -2287,7 +2288,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 24,
         name: "Tomatoes",
         price: 10,
         image: "tomatoes.jpeg",
@@ -2295,7 +2296,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 36,
         name: "Lettuce Leafs",
         price: 10,
         image: "lettuce2.jpg",
@@ -2303,7 +2304,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -2313,7 +2314,7 @@ export const VegetablesData = [
     ],
   },
   {
-    id: 15,
+    id: 36,
     name: "Lettuce Leafs",
     price: 10,
     image: "lettuce2.jpg",
@@ -2321,7 +2322,7 @@ export const VegetablesData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 22,
         name: "Cabbage",
         price: 10,
         image: "cabbage.jpg",
@@ -2329,7 +2330,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 23,
         name: "Cauliflower",
         price: 10,
         image: "cauliflower.jpeg",
@@ -2337,7 +2338,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 33,
         name: "Broccoli",
         price: 10,
         image: "broccoli.jpg",
@@ -2345,7 +2346,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 32,
         name: "Fresh Sayur",
         price: 10,
         image: "freshsayur.jpg",
@@ -2353,7 +2354,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 34,
         name: "EggPlant",
         price: 10,
         image: "eggplant.jpg",
@@ -2361,7 +2362,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 29,
         name: "Green Pepper",
         price: 10,
         image: "greenpepper.jpg",
@@ -2369,7 +2370,7 @@ export const VegetablesData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 30,
         name: "Cocumber",
         price: 10,
         image: "cocumber.jpeg",
@@ -2382,7 +2383,7 @@ export const VegetablesData = [
 
 export const MeatsData = [
   {
-    id: 1,
+    id: 37,
     name: "Beef",
     price: 10,
     image: "beef.jpeg",
@@ -2390,7 +2391,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -2398,7 +2399,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -2406,7 +2407,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2414,7 +2415,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -2422,7 +2423,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2430,7 +2431,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2438,7 +2439,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2448,7 +2449,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 2,
+    id: 38,
     name: "Chicken",
     price: 10,
     image: "chicken.jpeg",
@@ -2456,7 +2457,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2464,7 +2465,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 42,
         name: "Chicken Part",
         price: 10,
         image: "chickenpart.jpg",
@@ -2472,7 +2473,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 53,
         name: "Gizzard",
         price: 10,
         image: "gizzard.jpg",
@@ -2481,7 +2482,7 @@ export const MeatsData = [
       },
 
       {
-        id: 4,
+        id: 49,
         name: "Chicken Liver",
         price: 10,
         image: "chickenliver.jpg",
@@ -2489,7 +2490,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2497,7 +2498,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2505,7 +2506,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2515,7 +2516,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 3,
+    id: 39,
     name: "Steak",
     price: 10,
     image: "steak.jpg",
@@ -2523,7 +2524,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -2531,7 +2532,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -2539,7 +2540,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2547,7 +2548,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -2555,7 +2556,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2563,7 +2564,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2571,7 +2572,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2581,7 +2582,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 4,
+    id: 40,
     name: "Raw Pork",
     price: 10,
     image: "rawpork.jpg",
@@ -2589,7 +2590,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 37,
         name: "Beef",
         price: 10,
         image: "beef.jpeg",
@@ -2597,7 +2598,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -2605,7 +2606,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2613,7 +2614,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -2621,7 +2622,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2629,7 +2630,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2637,7 +2638,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2647,7 +2648,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 5,
+    id: 41,
     name: "Strip Roast",
     price: 10,
     image: "striproast.jpg",
@@ -2655,7 +2656,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -2663,7 +2664,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -2671,7 +2672,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2679,7 +2680,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -2687,7 +2688,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2695,7 +2696,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2703,7 +2704,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2713,7 +2714,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 6,
+    id: 42,
     name: "Chicken Parts",
     price: 10,
     image: "chickenpart.jpg",
@@ -2721,7 +2722,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2729,7 +2730,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 38,
         name: "Chicken",
         price: 10,
         image: "chicken.jpeg",
@@ -2737,7 +2738,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 53,
         name: "Gizzard",
         price: 10,
         image: "gizzard.jpg",
@@ -2746,7 +2747,7 @@ export const MeatsData = [
       },
 
       {
-        id: 4,
+        id: 49,
         name: "Chicken Liver",
         price: 10,
         image: "chickenliver.jpg",
@@ -2754,7 +2755,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2762,7 +2763,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2770,7 +2771,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2780,7 +2781,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 7,
+    id: 43,
     name: "Gourment",
     price: 10,
     image: "gourmet.jpg",
@@ -2788,7 +2789,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -2796,7 +2797,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2804,7 +2805,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2812,7 +2813,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2820,7 +2821,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -2828,7 +2829,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -2836,7 +2837,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2846,7 +2847,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 8,
+    id: 44,
     name: "Ribeye Roll",
     price: 10,
     image: "ribeyeroll.jpg",
@@ -2854,7 +2855,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -2862,7 +2863,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -2870,7 +2871,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2878,7 +2879,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -2886,7 +2887,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2894,7 +2895,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2902,7 +2903,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2912,7 +2913,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 9,
+    id: 45,
     name: "Sirloin",
     price: 10,
     image: "sirloin.jpg",
@@ -2920,15 +2921,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Raw Pork",
-        price: 10,
-        image: "rawpork.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -2936,7 +2929,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -2944,7 +2937,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -2952,7 +2945,15 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 40,
+        name: "Raw Pork",
+        price: 10,
+        image: "rawpork.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -2960,7 +2961,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -2968,7 +2969,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -2978,7 +2979,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 10,
+    id: 46,
     name: "Chicken Wings",
     price: 10,
     image: "chickenwings.jpg",
@@ -2986,7 +2987,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 38,
         name: "Ckicken",
         price: 10,
         image: "chicken.jpeg",
@@ -2994,7 +2995,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 42,
         name: "Chicken Parts",
         price: 10,
         image: "chickenpart.jpg",
@@ -3002,7 +3003,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 53,
         name: "Gizzard",
         price: 10,
         image: "gizzard.jpg",
@@ -3011,7 +3012,7 @@ export const MeatsData = [
       },
 
       {
-        id: 4,
+        id: 49,
         name: "Chicken Liver",
         price: 10,
         image: "chickenliver.jpg",
@@ -3019,7 +3020,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -3027,7 +3028,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -3035,7 +3036,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -3045,7 +3046,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 11,
+    id: 47,
     name: "Rib Steak",
     price: 10,
     image: "ribskeak.jpg",
@@ -3053,15 +3054,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
-        name: "Raw Pork",
-        price: 10,
-        image: "rawpork.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
+        id: 45,
         name: "Sirlion",
         price: 10,
         image: "sirloin.jpg",
@@ -3069,73 +3062,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
-        name: "Ckicken Wings",
-        price: 10,
-        image: "chickenwings.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 4,
-        name: "Chuck Tender",
-        price: 10,
-        image: "chucktender.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 5,
-        name: "Ribeye Roll",
-        price: 10,
-        image: "ribeyeroll.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 6,
-        name: "Brisket",
-        price: 10,
-        image: "brisket.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 7,
-        name: "Strip Roast",
-        price: 10,
-        image: "striproast.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-    ],
-  },
-  {
-    id: 12,
-    name: "Chuckarm Roast",
-    price: 10,
-    image: "chuckarmroast.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
-    related: [
-      {
-        id: 1,
-        name: "Brisket",
-        price: 10,
-        image: "brisket.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        name: "Strip Roast",
-        price: 10,
-        image: "striproast.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 3,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -3143,15 +3070,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Rib Steak",
-        price: 10,
-        image: "ribskeak.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 5,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -3159,7 +3078,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -3167,7 +3086,89 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 44,
+        name: "Ribeye Roll",
+        price: 10,
+        image: "ribeyeroll.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 51,
+        name: "Brisket",
+        price: 10,
+        image: "brisket.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 41,
+        name: "Strip Roast",
+        price: 10,
+        image: "striproast.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+    ],
+  },
+  {
+    id: 48,
+    name: "Chuckarm Roast",
+    price: 10,
+    image: "chuckarmroast.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+    rating: 4.5,
+    related: [
+      {
+        id: 51,
+        name: "Brisket",
+        price: 10,
+        image: "brisket.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 41,
+        name: "Strip Roast",
+        price: 10,
+        image: "striproast.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 40,
+        name: "Raw Pork",
+        price: 10,
+        image: "rawpork.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 47,
+        name: "Rib Steak",
+        price: 10,
+        image: "ribskeak.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 46,
+        name: "Ckicken Wings",
+        price: 10,
+        image: "chickenwings.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 50,
+        name: "Chuck Tender",
+        price: 10,
+        image: "chucktender.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -3177,7 +3178,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 13,
+    id: 49,
     name: "Chicken Liver",
     price: 10,
     image: "chickenliver.jpg",
@@ -3185,7 +3186,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -3201,7 +3202,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 53,
         name: "Gizzard",
         price: 10,
         image: "gizzard.jpg",
@@ -3210,15 +3211,15 @@ export const MeatsData = [
       },
 
       {
-        id: 4,
-        name: "Chicken Liver",
+        id: 42,
+        name: "Chicken Parts",
         price: 10,
-        image: "chickenliver.jpg",
+        image: "chickenpart.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -3226,7 +3227,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -3234,7 +3235,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -3244,7 +3245,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 14,
+    id: 50,
     name: "Chuck Neck",
     price: 10,
     image: "chuckneck.jpg",
@@ -3252,7 +3253,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -3260,7 +3261,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -3268,7 +3269,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -3276,7 +3277,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -3284,7 +3285,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -3292,7 +3293,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -3300,7 +3301,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -3310,7 +3311,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 15,
+    id: 51,
     name: "Brisket",
     price: 10,
     image: "brisket.jpg",
@@ -3318,7 +3319,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 50,
         name: "Chuck Neck",
         price: 10,
         image: "chuckneck.jpg",
@@ -3326,7 +3327,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -3334,7 +3335,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -3342,7 +3343,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -3350,7 +3351,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -3358,7 +3359,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 50,
         name: "Chuck Tender",
         price: 10,
         image: "chucktender.jpg",
@@ -3366,7 +3367,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -3376,7 +3377,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 2,
+    id: 50,
     name: "Chuck Tender",
     price: 10,
     image: "chucktender.jpg",
@@ -3384,7 +3385,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -3392,7 +3393,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
@@ -3400,7 +3401,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 40,
         name: "Raw Pork",
         price: 10,
         image: "rawpork.jpg",
@@ -3408,7 +3409,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 47,
         name: "Rib Steak",
         price: 10,
         image: "ribskeak.jpg",
@@ -3416,7 +3417,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -3424,7 +3425,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 43,
         name: "Gourmet",
         price: 10,
         image: "gourmet.jpg",
@@ -3432,7 +3433,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -3442,7 +3443,7 @@ export const MeatsData = [
     ],
   },
   {
-    id: 16,
+    id: 53,
     name: "Gizzard",
     price: 10,
     image: "gizzard.jpg",
@@ -3450,7 +3451,7 @@ export const MeatsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 46,
         name: "Ckicken Wings",
         price: 10,
         image: "chickenwings.jpg",
@@ -3458,7 +3459,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 38,
         name: "Chicken",
         price: 10,
         image: "chicken.jpeg",
@@ -3466,16 +3467,15 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 42,
         name: "Chicken Parts",
         price: 10,
         image: "chickenpart.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
-
       {
-        id: 4,
+        id: 49,
         name: "Chicken Liver",
         price: 10,
         image: "chickenliver.jpg",
@@ -3483,7 +3483,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 44,
         name: "Ribeye Roll",
         price: 10,
         image: "ribeyeroll.jpg",
@@ -3491,7 +3491,7 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 51,
         name: "Brisket",
         price: 10,
         image: "brisket.jpg",
@@ -3499,76 +3499,10 @@ export const MeatsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 41,
         name: "Strip Roast",
         price: 10,
         image: "striproast.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-    ],
-  },
-  {
-    id: 17,
-    name: "Steak",
-    price: 10,
-    image: "steak.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
-    related: [
-      {
-        id: 1,
-        name: "Chuck Neck",
-        price: 10,
-        image: "chuckneck.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 2,
-        name: "Strip Roast",
-        price: 10,
-        image: "striproast.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 3,
-        name: "Raw Pork",
-        price: 10,
-        image: "rawpork.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 4,
-        name: "Rib Steak",
-        price: 10,
-        image: "ribskeak.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 5,
-        name: "Ckicken Wings",
-        price: 10,
-        image: "chickenwings.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 6,
-        name: "Chuck Tender",
-        price: 10,
-        image: "chucktender.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 7,
-        name: "Ribeye Roll",
-        price: 10,
-        image: "ribeyeroll.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -3576,10 +3510,9 @@ export const MeatsData = [
   },
 ];
 
-
 export const BakeryData = [
   {
-    id: 1,
+    id: 54,
     name: "Bread",
     price: 10,
     image: "bread.jpg",
@@ -3587,7 +3520,7 @@ export const BakeryData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 58,
         name: "Sliced Bread",
         price: 10,
         image: "slicedbread.jpg",
@@ -3595,7 +3528,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 54,
         name: "Style Bread",
         price: 10,
         image: "stylebread.jpg",
@@ -3603,7 +3536,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 60,
         name: "Oblong",
         price: 10,
         image: "oblong.jpg",
@@ -3611,7 +3544,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 61,
         name: "Crostata",
         price: 10,
         image: "crostata.jpg",
@@ -3619,7 +3552,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 57,
         name: "Batticuori",
         price: 10,
         image: "batticuori.jpg",
@@ -3645,7 +3578,7 @@ export const BakeryData = [
     ],
   },
   {
-    id: 2,
+    id: 55,
     name: "Butter Cookies",
     price: 10,
     image: "buttercookies.png",
@@ -3653,7 +3586,7 @@ export const BakeryData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 61,
         name: "Crostata",
         price: 10,
         image: "crostata.jpg",
@@ -3661,7 +3594,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 57,
         name: "Batticuori",
         price: 10,
         image: "batticuori.jpg",
@@ -3669,7 +3602,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 54,
         name: "Bread",
         price: 10,
         image: "bread.jpg",
@@ -3677,7 +3610,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 58,
         name: "Sliced Bread",
         price: 10,
         image: "slicedbread.jpg",
@@ -3685,7 +3618,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 56,
         name: "Style Bread",
         price: 10,
         image: "stylebread.jpg",
@@ -3693,7 +3626,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 60,
         name: "Oblong",
         price: 10,
         image: "oblong.jpg",
@@ -3701,7 +3634,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 59,
         name: "Chocolate",
         price: 10,
         image: "chocolatecookies.jpg",
@@ -3711,7 +3644,73 @@ export const BakeryData = [
     ],
   },
   {
-    id: 3,
+    id: 56,
+    name: "Style Bread",
+    price: 10,
+    image: "stylebread.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.mango.jpg",
+    rating: 4.5,
+    related: [
+      {
+        id: 58,
+        name: "Sliced Bread",
+        price: 10,
+        image: "slicedbread.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 54,
+        name: "Bread",
+        price: 10,
+        image: "bread.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 60,
+        name: "Oblong",
+        price: 10,
+        image: "oblong.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 61,
+        name: "Crostata",
+        price: 10,
+        image: "crostata.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 57,
+        name: "Batticuori",
+        price: 10,
+        image: "batticuori.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 55,
+        name: "Butter Cookies",
+        price: 10,
+        image: "buttercookies.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 59,
+        name: "Chocolate",
+        price: 10,
+        image: "chocolatecookies.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+    ],
+  },
+  {
+    id: 57,
     name: "Batticuori",
     price: 10,
     image: "batticuori.jpg",
@@ -3719,7 +3718,7 @@ export const BakeryData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 61,
         name: "Crostata",
         price: 10,
         image: "crostata.jpg",
@@ -3735,7 +3734,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 54,
         name: "Bread",
         price: 10,
         image: "bread.jpg",
@@ -3743,7 +3742,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 58,
         name: "Sliced Bread",
         price: 10,
         image: "slicedbread.jpg",
@@ -3751,7 +3750,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 56,
         name: "Style Bread",
         price: 10,
         image: "stylebread.jpg",
@@ -3759,7 +3758,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 60,
         name: "Oblong",
         price: 10,
         image: "oblong.jpg",
@@ -3767,7 +3766,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 59,
         name: "Chocolate",
         price: 10,
         image: "chocolatecookies.jpg",
@@ -3777,7 +3776,7 @@ export const BakeryData = [
     ],
   },
   {
-    id: 4,
+    id: 58,
     name: "Sliced Bread",
     price: 10,
     image: "slicedbread.jpg",
@@ -3785,7 +3784,7 @@ export const BakeryData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 54,
         name: "Bread",
         price: 10,
         image: "bread.jpg",
@@ -3793,7 +3792,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 56,
         name: "Style Bread",
         price: 10,
         image: "stylebread.jpg",
@@ -3801,7 +3800,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 60,
         name: "Oblong",
         price: 10,
         image: "oblong.jpg",
@@ -3809,7 +3808,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 61,
         name: "Crostata",
         price: 10,
         image: "crostata.jpg",
@@ -3817,7 +3816,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 57,
         name: "Batticuori",
         price: 10,
         image: "batticuori.jpg",
@@ -3825,7 +3824,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 55,
         name: "Butter Cookies",
         price: 10,
         image: "buttercookies.png",
@@ -3833,7 +3832,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 59,
         name: "Chocolate",
         price: 10,
         image: "chocolatecookies.jpg",
@@ -3843,7 +3842,7 @@ export const BakeryData = [
     ],
   },
   {
-    id: 5,
+    id: 59,
     name: "Chocolate",
     price: 10,
     image: "chocolatecookies.jpg",
@@ -3851,7 +3850,7 @@ export const BakeryData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 61,
         name: "Crostata",
         price: 10,
         image: "crostata.jpg",
@@ -3859,7 +3858,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 57,
         name: "Batticuori",
         price: 10,
         image: "batticuori.jpg",
@@ -3867,7 +3866,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 55,
         name: "Butter Cookies",
         price: 10,
         image: "buttercookies.png",
@@ -3875,7 +3874,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 54,
         name: "Bread",
         price: 10,
         image: "bread.jpg",
@@ -3883,7 +3882,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 58,
         name: "Sliced Bread",
         price: 10,
         image: "slicedbread.jpg",
@@ -3891,7 +3890,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 66,
         name: "Style Bread",
         price: 10,
         image: "stylebread.jpg",
@@ -3899,7 +3898,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 60,
         name: "Oblong",
         price: 10,
         image: "oblong.jpg",
@@ -3909,7 +3908,7 @@ export const BakeryData = [
     ],
   },
   {
-    id: 6,
+    id: 60,
     name: "Oblong",
     price: 10,
     image: "oblong.jpg",
@@ -3917,7 +3916,7 @@ export const BakeryData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 54,
         name: "Bread",
         price: 10,
         image: "bread.jpg",
@@ -3925,7 +3924,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 56,
         name: "Style Bread",
         price: 10,
         image: "stylebread.jpg",
@@ -3933,7 +3932,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 58,
         name: "Sliced Bread",
         price: 10,
         image: "slicedbread.jpg",
@@ -3941,7 +3940,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 61,
         name: "Crostata",
         price: 10,
         image: "crostata.jpg",
@@ -3949,7 +3948,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 57,
         name: "Batticuori",
         price: 10,
         image: "batticuori.jpg",
@@ -3957,7 +3956,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 55,
         name: "Butter Cookies",
         price: 10,
         image: "buttercookies.png",
@@ -3965,7 +3964,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 59,
         name: "Chocolate",
         price: 10,
         image: "chocolatecookies.jpg",
@@ -3975,7 +3974,7 @@ export const BakeryData = [
     ],
   },
   {
-    id: 7,
+    id: 61,
     name: "Crostata",
     price: 10,
     image: "crostata.jpg",
@@ -3983,7 +3982,7 @@ export const BakeryData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 59,
         name: "Chocolate",
         price: 10,
         image: "chocolatecookies.jpg",
@@ -3991,7 +3990,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 57,
         name: "Batticuori",
         price: 10,
         image: "batticuori.jpg",
@@ -3999,7 +3998,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 55,
         name: "Butter Cookies",
         price: 10,
         image: "buttercookies.png",
@@ -4007,7 +4006,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 4,
+        id: 54,
         name: "Bread",
         price: 10,
         image: "bread.jpg",
@@ -4015,7 +4014,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 58,
         name: "Sliced Bread",
         price: 10,
         image: "slicedbread.jpg",
@@ -4023,7 +4022,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 56,
         name: "Style Bread",
         price: 10,
         image: "stylebread.jpg",
@@ -4031,7 +4030,7 @@ export const BakeryData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 60,
         name: "Oblong",
         price: 10,
         image: "oblong.jpg",
@@ -4052,7 +4051,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4060,7 +4059,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4068,7 +4067,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4084,7 +4083,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4092,7 +4091,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4100,7 +4099,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4118,7 +4117,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4126,7 +4125,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4134,7 +4133,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4150,7 +4149,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4158,7 +4157,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4166,7 +4165,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4184,7 +4183,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4192,7 +4191,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4200,7 +4199,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4216,7 +4215,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4224,7 +4223,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4232,7 +4231,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4250,7 +4249,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4258,7 +4257,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4266,7 +4265,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4282,7 +4281,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4290,7 +4289,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4298,7 +4297,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4316,7 +4315,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4324,7 +4323,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4332,7 +4331,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4348,7 +4347,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4356,7 +4355,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4364,7 +4363,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4382,7 +4381,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4390,7 +4389,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4398,7 +4397,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4414,7 +4413,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4422,7 +4421,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4430,7 +4429,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4448,7 +4447,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4456,7 +4455,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4464,7 +4463,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4480,7 +4479,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4488,7 +4487,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4496,7 +4495,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4514,7 +4513,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4522,7 +4521,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4530,7 +4529,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4546,7 +4545,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4554,7 +4553,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4562,7 +4561,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4580,7 +4579,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4588,7 +4587,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4596,7 +4595,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4612,7 +4611,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4620,7 +4619,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4628,7 +4627,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4646,7 +4645,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4654,7 +4653,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4662,7 +4661,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4678,7 +4677,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4686,7 +4685,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4694,7 +4693,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4712,7 +4711,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4720,7 +4719,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4728,7 +4727,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4744,7 +4743,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4752,7 +4751,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4760,7 +4759,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4778,7 +4777,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4786,7 +4785,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4794,7 +4793,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4810,7 +4809,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4818,7 +4817,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4826,7 +4825,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4844,7 +4843,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4852,7 +4851,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4860,7 +4859,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4876,7 +4875,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4884,7 +4883,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4892,7 +4891,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4910,7 +4909,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4918,7 +4917,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4926,7 +4925,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -4942,7 +4941,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -4950,7 +4949,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -4958,7 +4957,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -4976,7 +4975,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -4984,7 +4983,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -4992,7 +4991,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -5008,7 +5007,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -5016,7 +5015,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -5024,7 +5023,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -5042,7 +5041,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -5050,7 +5049,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -5058,7 +5057,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -5074,7 +5073,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -5082,7 +5081,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -5090,7 +5089,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -5108,7 +5107,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -5116,7 +5115,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -5124,7 +5123,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -5140,7 +5139,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -5148,7 +5147,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -5156,7 +5155,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -5174,7 +5173,7 @@ export const DrinksData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 11,
         name: "Pineapple",
         price: 10,
         image: "pineapple2.jpg",
@@ -5182,7 +5181,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 8,
         name: "PawPaw",
         price: 10,
         image: "pawpaw.jpg",
@@ -5190,7 +5189,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 5,
         name: "Lemon",
         price: 10,
         image: "lemon2.jpg",
@@ -5206,7 +5205,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 7,
         name: "Strawberry",
         price: 10,
         image: "strawberry.jpeg",
@@ -5214,7 +5213,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 1,
         name: "Mango",
         price: 10,
         image: "mango.jpg",
@@ -5222,7 +5221,7 @@ export const DrinksData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 14,
         name: "Watermelon",
         price: 10,
         image: "watermelon.webp",
@@ -5235,15 +5234,15 @@ export const DrinksData = [
 
 export const IcecreamsData = [
   {
-    id: 1,
-    name: "Icecream Ball",
+    id: 62,
+    name: "IceCream Ball",
     price: 10,
     image: "icecreamball.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.mango.jpg",
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 64,
         name: "Scoops",
         price: 10,
         image: "scoops.png",
@@ -5251,7 +5250,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 69,
         name: "Peanut Butter",
         price: 10,
         image: "peanut.jpg",
@@ -5259,7 +5258,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5267,15 +5266,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
-        price: 10,
-        image: "icecream.webp",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5283,7 +5274,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5291,7 +5282,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5301,7 +5292,7 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 2,
+    id: 63,
     name: "Chocolate Sauce",
     price: 10,
     image: "chocolatesauce.jpg",
@@ -5309,7 +5300,7 @@ export const IcecreamsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 72,
         name: "Vanilla",
         price: 10,
         image: "vanilla.jpg",
@@ -5317,7 +5308,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 69,
         name: "Peanut Butter",
         price: 10,
         image: "peanut.jpg",
@@ -5325,7 +5316,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5333,15 +5324,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 64,
+        name: "Scoops",
         price: 10,
-        image: "icecream.webp",
+        image: "scoops.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5349,7 +5340,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5357,8 +5348,8 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
-        name: "Icecream Ball",
+        id: 62,
+        name: "",
         price: 10,
         image: "chocolatesauce.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -5367,15 +5358,15 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 3,
+    id: 64,
     name: "Scoops",
     price: 10,
     image: "scoops.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 3.5,
     related: [
       {
-        id: 1,
+        id: 66,
         name: "Blue Bell",
         price: 10,
         image: "bluebell.jpg",
@@ -5383,7 +5374,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 69,
         name: "Peanut Butter",
         price: 10,
         image: "peanut.jpg",
@@ -5391,7 +5382,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5399,15 +5390,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 64,
+        name: "Scoops",
         price: 10,
-        image: "icecream.webp",
+        image: "scoops.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5415,7 +5406,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5423,7 +5414,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5433,7 +5424,7 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 4,
+    id: 65,
     name: "Scoop Wafer",
     price: 10,
     image: "scoopwafer.png",
@@ -5441,7 +5432,7 @@ export const IcecreamsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 64,
         name: "Scoops",
         price: 10,
         image: "scoops.png",
@@ -5449,7 +5440,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 69,
         name: "Peanut Butter",
         price: 10,
         image: "peanut.jpg",
@@ -5457,7 +5448,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 66,
         name: "Blue Bell",
         price: 10,
         image: "bluebell.jpg",
@@ -5465,15 +5456,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 72,
+        name: "Vanilla",
         price: 10,
-        image: "icecream.webp",
+        image: "vecteezy.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5481,7 +5472,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5489,7 +5480,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5499,7 +5490,7 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 5,
+    id: 66,
     name: "Blue Bell",
     price: 10,
     image: "bluebell.jpg",
@@ -5507,7 +5498,7 @@ export const IcecreamsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 64,
         name: "Scoops",
         price: 10,
         image: "scoops.png",
@@ -5515,7 +5506,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 69,
         name: "Peanut Butter",
         price: 10,
         image: "peanut.jpg",
@@ -5523,7 +5514,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5531,15 +5522,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 72,
+        name: "Vanilla",
         price: 10,
-        image: "icecream.webp",
+        image: "vecteezy.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5547,7 +5538,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5555,7 +5546,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5565,7 +5556,7 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 6,
+    id: 67,
     name: "Lemon Bar",
     price: 10,
     image: "lemonbar.png",
@@ -5573,7 +5564,7 @@ export const IcecreamsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 64,
         name: "Scoops",
         price: 10,
         image: "scoops.png",
@@ -5581,7 +5572,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 69,
         name: "Peanut Butter",
         price: 10,
         image: "peanut.jpg",
@@ -5589,7 +5580,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5597,15 +5588,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 64,
+        name: "Scoops",
         price: 10,
-        image: "icecream.webp",
+        image: "scoops.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5613,7 +5604,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 70,
         name: "Stawberry",
         price: 10,
         image: "strawberry.jpg",
@@ -5621,7 +5612,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5631,7 +5622,7 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 7,
+    id: 68,
     name: "Milkiest",
     price: 10,
     image: "milkiest.jpg",
@@ -5639,7 +5630,7 @@ export const IcecreamsData = [
     rating: 4.5,
     related: [
       {
-        id: 1,
+        id: 64,
         name: "Scoops",
         price: 10,
         image: "scoops.png",
@@ -5647,7 +5638,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 69,
         name: "Peanut Butter",
         price: 10,
         image: "peanut.jpg",
@@ -5655,7 +5646,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5663,49 +5654,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
-        price: 10,
-        image: "icecream.webp",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 5,
-        name: "Blue Bell",
-        price: 10,
-        image: "bluebell.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 6,
-        name: "Lemon Bar",
-        price: 10,
-        image: "lemonbar.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 7,
-        name: "Chocolate Sauce",
-        price: 10,
-        image: "chocolatesauce.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: "Peanut Butter",
-    price: 10,
-    image: "peanut.jpg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
-    related: [
-      {
-        id: 1,
+        id: 64,
         name: "Scoops",
         price: 10,
         image: "scoops.png",
@@ -5713,39 +5662,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
-        name: "Vanilla",
+        id: 66,
+        name: "Blue Bell",
         price: 10,
-        image: "vanilla.jpg",
+        image: "bluebell.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 3,
-        name: "Scoop Wafer",
-        price: 10,
-        image: "scoopwafer.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 4,
-        name: "Ice Cream",
-        price: 10,
-        image: "icecream.webp",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 5,
-        name: "Milkiest",
-        price: 10,
-        image: "milkiest.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-        rating: 4.5,
-      },
-      {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5753,7 +5678,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5763,15 +5688,81 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 9,
+    id: 69,
+    name: "Peanut Butter",
+    price: 10,
+    image: "peanut.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+    rating: 4.5,
+    related: [
+      {
+        id: 64,
+        name: "Scoops",
+        price: 10,
+        image: "scoops.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 72,
+        name: "Vanilla",
+        price: 10,
+        image: "vanilla.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 65,
+        name: "Scoop Wafer",
+        price: 10,
+        image: "scoopwafer.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 64,
+        name: "Scoops",
+        price: 10,
+        image: "scoops.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 68,
+        name: "Milkiest",
+        price: 10,
+        image: "milkiest.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 67,
+        name: "Lemon Bar",
+        price: 10,
+        image: "lemonbar.png",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+      {
+        id: 63,
+        name: "Chocolate Sauce",
+        price: 10,
+        image: "chocolatesauce.jpg",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
+        rating: 4.5,
+      },
+    ],
+  },
+  {
+    id: 70,
     name: "Strawberry",
     price: 10,
     image: "strawberry.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 65.5,
     related: [
       {
-        id: 1,
+        id: 73,
         name: "Banana",
         price: 10,
         image: "banana.jpg",
@@ -5779,15 +5770,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 72,
         name: "Vanilla",
-        price: 10,
+        price: 72,
         image: "Vanilla.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5795,15 +5786,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 64,
+        name: "Scoops",
         price: 10,
-        image: "icecream.webp",
+        image: "scoops.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5811,7 +5802,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5819,7 +5810,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5829,15 +5820,15 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 10,
+    id: 71,
     name: "Cereal Milk",
     price: 10,
     image: "cerealmilk.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 65.5,
     related: [
       {
-        id: 1,
+        id: 73,
         name: "Banana",
         price: 10,
         image: "banana.jpg",
@@ -5845,15 +5836,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 72,
         name: "Vanilla",
-        price: 10,
+        price: 72,
         image: "Vanilla.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5861,15 +5852,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 64,
+        name: "Scoops",
         price: 10,
-        image: "icecream.webp",
+        image: "scoops.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5877,7 +5868,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5885,7 +5876,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5895,15 +5886,15 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 11,
+    id: 72,
     name: "Vanilla",
     price: 10,
     image: "vanilla.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 65.5,
     related: [
       {
-        id: 1,
+        id: 73,
         name: "Banana",
         price: 10,
         image: "banana.jpg",
@@ -5919,7 +5910,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5927,15 +5918,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 64,
+        name: "Scoops",
         price: 10,
-        image: "icecream.webp",
+        image: "scoops.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -5943,7 +5934,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -5951,7 +5942,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -5961,15 +5952,15 @@ export const IcecreamsData = [
     ],
   },
   {
-    id: 12,
+    id: 73,
     name: "Banana",
     price: 10,
     image: "banana.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
-    rating: 4.5,
+    rating: 65.5,
     related: [
       {
-        id: 1,
+        id: 72,
         name: "Vanilla",
         price: 10,
         image: "vanilla.jpg",
@@ -5977,7 +5968,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 2,
+        id: 71,
         name: "Cereal Milk",
         price: 10,
         image: "cerealmilk.png",
@@ -5985,7 +5976,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 3,
+        id: 65,
         name: "Scoop Wafer",
         price: 10,
         image: "scoopwafer.png",
@@ -5993,15 +5984,15 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 4,
-        name: "Ice Cream",
+        id: 64,
+        name: "Scoops",
         price: 10,
-        image: "icecream.webp",
+        image: "scoops.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
       {
-        id: 5,
+        id: 68,
         name: "Milkiest",
         price: 10,
         image: "milkiest.jpg",
@@ -6009,7 +6000,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 6,
+        id: 67,
         name: "Lemon Bar",
         price: 10,
         image: "lemonbar.png",
@@ -6017,7 +6008,7 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 7,
+        id: 63,
         name: "Chocolate Sauce",
         price: 10,
         image: "chocolatesauce.jpg",
@@ -6025,5 +6016,170 @@ export const IcecreamsData = [
         rating: 4.5,
       },
     ],
+  },
+];
+
+
+
+export const TopProducts = [
+  {
+    id: 4,
+    name: "Peach",
+    price: 20,
+    discount: 4,
+    image: "peach.jpg",
+    rating: 4,
+  },
+  {
+    id: 7,
+    name: "Strawberry",
+    price: 20,
+    discount: 3.5,
+    image: "Strawberry.jpeg",
+    rating: 3.5,
+  },
+  {
+    id: 22,
+    name: "Cabbage",
+    price: 20,
+    discount: 4.5,
+    image: "cabbage.jpg",
+    rating: 2.5,
+  },
+  {
+    id: 2,
+    name: "Apple",
+    price: 20,
+    discount: 5,
+    image: "apple.jpg",
+    rating: 4.5,
+  },
+  {
+    id: 42,
+    name: "Chicken Part",
+    price: 20,
+    discount: 4.8,
+    image: "chickenpart.jpg",
+    rating: 5,
+  },
+  {
+    id: 39,
+    name: "Steak",
+    price: 20,
+    discount: 4,
+    image: "Steak.jpg",
+    rating: 3.5,
+  },
+  {
+    id: 40,
+    name: "Raw Pork",
+    price: 20,
+    discount: 3.6,
+    image: "rawpork.jpg",
+    rating: 4.5,
+  },
+  {
+    id: 12,
+    name: "Grapes",
+    price: 20,
+    discount: 7,
+    image: "grapes.jpg",
+    rating: 2.5,
+  },
+  {
+    id: 24,
+    name: "Tomatoes",
+    price: 20,
+    discount: 5.5,
+    image: "tomatoes.jpeg",
+    rating: 3,
+  },
+  {
+    id: 11,
+    name: "Pineapple",
+    price: 20,
+    discount: 4,
+    image: "pineapple2.jpg",
+    rating: 3.5,
+  },
+  {
+    id: 35,
+    name: "Cluster Eggs",
+    price: 20,
+    discount: 4.8,
+    image: "clustereggplant.jpg",
+    rating: 5,
+  },
+  {
+    id: 37,
+    name: "Beef",
+    price: 20,
+    discount: 5,
+    image: "beef.jpeg",
+    rating: 4.5,
+  },
+  {
+    id: 3,
+    name: "Banana",
+    price: 20,
+    discount: 4.9,
+    image: "banana.webp",
+    rating: 3.5,
+  },
+  {
+    id: 31,
+    name: "Garlic",
+    price: 20,
+    discount: 4.6,
+    image: "garlic.jpg",
+    rating: 3.5,
+  },
+  {
+    id: 45,
+    name: "Sirloin",
+    price: 20,
+    discount: 3.5,
+    image: "sirloin.jpg",
+    rating: 3,
+  },
+  {
+    id: 1,
+    name: "Mango",
+    price: 20,
+    discount: 6,
+    image: "mango.jpg",
+    rating: 4.5,
+  },
+  {
+    id: 27,
+    name: "Onions",
+    price: 20,
+    discount: 4,
+    image: "onions.jpg",
+    rating: 3.5,
+  },
+  {
+    id: 19,
+    name: "Guava",
+    price: 20,
+    discount: 4.5,
+    image: "guava.jpg",
+    rating: 4.5,
+  },
+  {
+    id: 43,
+    name: "Gourmet",
+    price: 20,
+    discount: 4,
+    image: "gourmet.jpg",
+    rating: 3.5,
+  },
+  {
+    id: 20,
+    name: "Sugar Apple",
+    price: 20,
+    discount: 4.9,
+    image: "sugarapple.jpg",
+    rating: 5,
   },
 ];
