@@ -5,15 +5,15 @@ import bcrypt from "bcryptjs";
 
 export const POST = async (req: NextRequest): Promise<NextResponse> => {
   const body = await req.json();
-  const { username, email, password } = body;
-  console.log("🚀 ~ POST ~ username:", username);
+  const { name, email, password } = body;
+  console.log("🚀 ~ POST ~ name:", name);
   console.log("🚀 ~ POST ~ email:", email);
   console.log("🚀 ~ POST ~ password:", password);
   try {
     await connectMongoDB();
 
     // Validate the input (you can use a validation library like Joi)
-    if (!username || !email || !password) {
+    if (!name || !email || !password) {
       return NextResponse.json({ message: "Missing fields" }, { status: 405 });
     }
 
@@ -21,7 +21,7 @@ export const POST = async (req: NextRequest): Promise<NextResponse> => {
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return NextResponse.json(
-        { message: "Email already exists" },
+        { message: "Email already exists!, Please use another email" },
         { status: 400 }
       );
     }
@@ -29,7 +29,7 @@ export const POST = async (req: NextRequest): Promise<NextResponse> => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     // Create a new user
-    const newUser = new User({ username, email, password: hashedPassword });
+    const newUser = new User({ name, email, password: hashedPassword });
     await newUser.save();
 
     return NextResponse.json(
@@ -45,5 +45,4 @@ export const POST = async (req: NextRequest): Promise<NextResponse> => {
       { status: 500 }
     );
   }
-  return NextResponse.json({ message: "Method Not Allowed" }, { status: 405 });
 };

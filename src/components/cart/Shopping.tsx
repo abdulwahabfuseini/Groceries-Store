@@ -15,7 +15,6 @@ import Signin from "@/app/(routes)/signin/page";
 import CartItems from "@/components/cart/CartItems";
 import { CartActions, selectCartProducts } from "@/Store/cartSlice";
 
-
 const Shopping = () => {
   const cartProducts = useSelector(selectCartProducts);
   const dispatch = useDispatch();
@@ -37,32 +36,42 @@ const Shopping = () => {
 
   const GrandTotal = totalAmount + DeliveryPrice;
 
-
   //   Stripe Payment
   const stripePromise = loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
   );
 
   const handleCheckout = async () => {
-    const stripe = await stripePromise;
-    const response = await fetch("http://localhost:3000/api/checkout", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        items: cartProducts,
-        email: session?.user?.email,
-      }),
-    });
-    const data = await response.json();
-
-    if (response.ok) {
-      // await dispatch(saveOrder({ order: productData, id: data.id }));
-      stripe?.redirectToCheckout({ sessionId: data.id });
-      // dispatch(resetCart());
-    } else {
-      throw new Error("Failed to create Stripe Payment");
+    try {
+      const stripe = await stripePromise;
+  
+      if (!stripe) {
+        throw new Error("Stripe is not initialized");
+      }
+  
+      const response = await fetch("http://localhost:3000/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          items: cartProducts,
+          email: session?.user?.email,
+        }),
+      });
+  
+      if (!response.ok) {
+        throw new Error("Failed to create Stripe Payment");
+      }
+  
+      const data = await response.json();
+      
+      // Assuming `stripePromise` is a Promise that resolves to a valid Stripe object
+      stripe.redirectToCheckout({ sessionId: data.id });
+    } catch (error) {
+      console.error("Error during checkout:");
+      // Handle the error in your UI
     }
   };
+  
 
   const ClearCart = () => {
     dispatch(CartActions.clearCart());
@@ -74,9 +83,10 @@ const Shopping = () => {
     message.error("Click on No");
   };
 
+
   return (
     <>
-      {!session?.user ? (
+      {session?.user ? (
         <div className="py-12 sm:py-20">
           <Link href="/category">
             <button className=" p-2 font-semibold text-center bg-white rounded-full text">
@@ -128,8 +138,8 @@ const Shopping = () => {
                 }`}
               >
                 <Popconfirm
-                  title="Clear Cart"
-                  description="Are you sure want to clear cart?"
+                  title="Clear Your Cart"
+                  description="Are you sure want to clear your cart?"
                   icon={
                     <QuestionCircleOutlined
                       style={{
@@ -139,12 +149,14 @@ const Shopping = () => {
                   }
                   onConfirm={ClearCart}
                   onCancel={cancel}
-                  okText="Yes"
+                  okText="Ok"
                   cancelText="No"
                 >
                   <Button
                     danger
-                    className="h-12 mb-2 text-lg border-2 rounded-lg bg-slate-900"
+                    type="primary"
+                    style={{background: "red"}}
+                    className="h-12 mb-2 text-lg border-2 rounded-lg bg-red-600"
                   >
                     Clear Cart
                   </Button>

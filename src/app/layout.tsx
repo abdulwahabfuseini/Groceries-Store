@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
@@ -22,12 +22,12 @@ export default function RootLayout({
       <Head>
         <meta name="viewport" content="width=device-width, user-scalable=no" />
       </Head>
-      <body className={`${inter.className} bg-gray-100 overflow-x-hidden w-full h-full`}>
+      <body
+        className={`${inter.className} bg-gray-100 overflow-x-hidden w-full h-full`}
+      >
         <Providers>
           <ToastContext />
-          <Loading>
-            {children}
-            </Loading>
+          <Loading>{children}</Loading>
         </Providers>
       </body>
     </html>

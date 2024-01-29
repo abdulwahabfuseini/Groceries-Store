@@ -96,6 +96,7 @@ const Login = () => {
           <Input.Password
             prefix={<CiLock />}
             type="password"
+            name="password"
             placeholder="Enter Password"
             className="h-11 cursor-pointer w-full border-2 text-base"
             value={userDetails.password}

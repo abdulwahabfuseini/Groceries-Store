@@ -17,10 +17,10 @@ const Register = () => {
   const router = useRouter();
   const [form] = Form.useForm();
   const [userDetails, setUserDetails] = useState({
-    username: "",
+    name: "",
     email: "",
     password: "",
-    // confirmPassword: "",
+    confirmPassword: "",
   });
 
   const handleRegister = async () => {
@@ -35,13 +35,14 @@ const Register = () => {
         body: JSON.stringify(userDetails),
       });
 
+      
       if (!response.ok) {
         setErrors("Email already exist! Please Use another email");
         toast.error("Email already exist! Please Use another email");
       }
 
       if (response.ok) {
-        toast.success("Logged in successfully");
+        toast.success("User Created successfully");
         router.push("/signin");
       }
     } catch (error) {
@@ -64,7 +65,7 @@ const Register = () => {
 
         <span className="text-red-600 text-lg">{errors}</span>
         <Form.Item
-          name="username"
+          name="name"
           label="Username"
           className=" font-semibold text-base"
           rules={[
@@ -81,12 +82,12 @@ const Register = () => {
         >
           <Input
             prefix={<HiOutlineUser />}
-            type="username"
+            type="text"
             placeholder="Enter Username"
             className="h-11 cursor-pointer w-full border-2 text-base"
-            value={userDetails.username}
+            value={userDetails.name}
             onChange={(e) =>
-              setUserDetails({ ...userDetails, username: e.target.value })
+              setUserDetails({ ...userDetails, name: e.target.value })
             }
           />
         </Form.Item>

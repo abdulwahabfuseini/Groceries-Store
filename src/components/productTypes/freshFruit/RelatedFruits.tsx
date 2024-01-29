@@ -11,7 +11,7 @@ const RelatedFruits = ({ name, image }: RelateProps) => {
           <Image
             src={`/images/${image}`}
             fill
-            alt="fruits"
+            alt={name}
             className="lg:hover:scale-105 object-contain"
           />
         </div>

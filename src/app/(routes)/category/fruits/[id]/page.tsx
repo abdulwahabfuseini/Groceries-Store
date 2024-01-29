@@ -19,7 +19,14 @@ const SingleFruit = ({ params }: any) => {
   );
   const dispatch = useDispatch();
 
-  const { id, image, price, rating, desc } = fruit;
+  const { id, image, price, desc, rating } = fruit as {
+    id: number;
+    name: string;
+    price: number;
+    image: string;
+    desc: string;
+    rating: number;
+  };
 
   const AddToFavorite = () => {
     dispatch(
@@ -62,7 +69,7 @@ const SingleFruit = ({ params }: any) => {
           <Image
             src={`/images/${image}`}
             fill
-            alt="fruits"
+            alt={name}
             className="object-contain sm:border rounded-sm lg:hover:scale-105"
           />
         </div>

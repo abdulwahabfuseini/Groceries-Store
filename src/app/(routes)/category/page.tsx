@@ -18,7 +18,7 @@ const Category = () => {
     <>
       <Navbar />
       <Hero />
-      <div className="w-full px-2 mx-auto max-w-7xl sm:px-3">
+      <div className="w-full px-2 mx-auto max-w-7xl sm:px-5">
         <Services />
         <Categories />
       </div>

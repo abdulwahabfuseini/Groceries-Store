@@ -17,30 +17,32 @@ const ContactForm = () => {
 
   const [loading, setLoading] = useState(false);
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setContact({ ...contact, [name]: value });
-  // };
-
+  // type values = {
+  //   name: contact.fullName,
+  //   email: contact.email,
+  //   number: contact.phoneNumber,
+  //   message: contact.message,
+  // }
+  console.log("🚀 ~ ContactForm ~ contact:", contact)
   const handleSubmit = () => {
     setLoading(true);
     emailjs
       .send(
-        "service_hc4os5t",
-        "template_mnp1bqq",
+        "service_706bsqj",
+        "template_zvm5fvl",
         {
           fullName: contact.fullName,
           email: contact.email,
           phoneNumber: contact.phoneNumber,
           message: contact.message,
         },
-        "9vSC2INYrwofrkKDo"
+        "Wie13M6o7qkI5NIa2"
       )
       .then(
         () => {
           setLoading(false);
           toast.success(
-            "Thanks for contacting ManDem Accessories, we will get black to you as soon as possible. Stay Bless!!!"
+            "Thanks for contacting Groceries Store, We will get black to you as soon as possible. Stay Bless!!!"
           );
           setContact({
             fullName: "",
@@ -50,7 +52,7 @@ const ContactForm = () => {
           });
           form.resetFields();
         },
-        (error) => {
+        (_error) => {
           setLoading(false);
           toast.error("oops!!! Something went wrong! Please check your internet connection");
         }

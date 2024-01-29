@@ -62,7 +62,7 @@ const VegetableCard = ({ id, name, image, price }: CardProps) => {
               className="absolute top-0 right-0  text-green-500 bg-green-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-white hover:bg-green-500 cursor-pointer duration-200"
             />
           </Tooltip>
-          <Link href={`/category/fruits/${name}`}>
+          <Link href={`/category/vegetables/${name}`}>
             <div className="relative h-36 sm:h-44 w-full">
               <Image
                 src={`/images/${image}`}

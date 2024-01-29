@@ -7,12 +7,16 @@ const Background = () => {
     <div className="grid grid-auto-fit lg:grid-cols-5 mx-auto max-w-7xl gap-3">
       <div className="w-full sm:col-span-1 lg:col-span-2">
         <h1 className="text-3xl font-semibold">Why Choose Us</h1>
-        <h4 className="text-xl sm:text-2xl py-3 capitalize font-medium">We provide the best groceries</h4>
+        <h4 className="text-xl sm:text-2xl py-3 capitalize font-medium">
+          We provide the best groceries
+        </h4>
         <p className="text-lg">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          iusto doloribus a? Mollitia architecto dolores perspiciatis.
+          Groceries Stores typically provide a comprehensive range of products,
+          including fresh fruits, organic Vegetables, fresh meat, frozen dessert,
+          Bakeries, Beverages and other household items. This variety allows
+          customers to find everything they need in one place.
         </p>
-        <div className="grid gap-y-4 py-5">
+        <div className="grid gap-y-3 py-5">
           {Choose.map((item) => (
             <button
               key={item.id}
@@ -20,9 +24,9 @@ const Background = () => {
             >
               <Image
                 src={`/SVG/${item.image}`}
-                alt="organic"
-                width={50}
-                height={50}
+                alt={item.text}
+                width={45}
+                height={45}
                 className="object-contain"
                 draggable={false}
               />

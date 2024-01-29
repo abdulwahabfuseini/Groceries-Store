@@ -18,7 +18,7 @@ const MyFavorite = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto py-10 lg:py-20 px-3 sm:px-5">
+    <div className="max-w-7xl mx-auto py-10 lg:py-12 px-3 sm:px-5">
       <Link href="/category">
         <button className=" p-2 font-semibold  text-center mb-7 bg-white rounded-full text">
           <TbChevronLeft className="w-8 h-8" />

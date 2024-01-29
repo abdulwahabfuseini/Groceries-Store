@@ -2,50 +2,50 @@ export const ServicesData = [
   {
     id: 1,
     title: "Organic Products",
-    image: "fresh.png",
-    desc: "Explore a world of organic treasure at our grocery store",
+    image: "organic.png",
+    desc: "Ensuring that all our fruits and vegetables are fresh and free from pesticides.",
   },
   {
     id: 2,
     title: "Get Fresh Products",
     image: "fresh.png",
-    desc: "Find a range of best online organic and fresh product",
+    desc: "Our fresh produce is sourced directly from local farmers, ensuring the highest quality for our customers.",
   },
   {
     id: 3,
     title: "Fast Delivery",
-    image: "free.png",
-    desc: "Your Grocery items deliver to your doorstep quicker than ever",
+    image: "fast.png",
+    desc: "Our products are delivered within a short period of time, so you can enjoy your fresh produce as soon as possible!",
   },
   {
     id: 4,
     title: "Safe Payment",
     image: "card.png",
-    desc: "We are using secure payment methods",
+    desc: "With Groceries Store, You can rest assured knowing that your personal information is protected.",
   },
   {
     id: 5,
     title: "24/7 Service",
     image: "hours.png",
-    desc: "Round the clock convience, shop anytime",
+    desc: "Need something urgently? Our 24/7 service enables you to place orders instantly. #Shop anytime",
   },
   {
     id: 6,
     title: "Cash on delivery",
     image: "cash.png",
-    desc: "Round the clock convience, shop anytime",
+    desc: "We offer cash-on-delivery options for all purchases, ensuring that you can pay securely when you receive your order.",
   },
   {
     id: 7,
-    title: "Cash on delivery",
-    image: "cash.png",
-    desc: "Round the clock convience, shop anytime",
+    title: "Discount",
+    image: "discount.png",
+    desc: " We offer a wide range of discounts for our customers, including special offers and promotional prices.",
   },
   {
     id: 8,
-    title: "Cash on delivery",
-    image: "cash.png",
-    desc: "Round the clock convience, shop anytime",
+    title: "Online Shopping",
+    image: "ecommerce.png",
+    desc: "Our online shopping platform allows customers to shop from the comfort of their own homes,",
   },
 ];
 
@@ -54,7 +54,7 @@ export const HeroData = [
     id: 1,
     title: "Fresh & Organic Groceries",
     subTitle: "For Healthy Life",
-    desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
+    desc: "Groceries store is dedicated to fresh and produce, offering a variety of fruits, vegetables, and herbs. We prioritize the quality and freshness of these items.",
     button: "Shop Now",
     cover: "gro.png",
     link: "/category/vegetables",
@@ -63,7 +63,7 @@ export const HeroData = [
     id: 2,
     title: "Stay @ Home & Order",
     subTitle: "For Your Best Groceries",
-    desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
+    desc: " Place your order effortlessly through our user-friendly online platform or app. Select your items, add them to your cart, and proceed to checkout.",
     button: "Order Now",
     cover: "order.png",
     link: "/category/fruits",
@@ -72,20 +72,11 @@ export const HeroData = [
     id: 3,
     title: "Door 2 Door Delivery",
     subTitle: "Fastest Delivery & Easy Pickup",
-    desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
+    desc: "Prioritizing your safety, our delivery service is contactless. Your groceries will be left at your doorstep, ensuring a secure and hygienic transaction.",
     button: "Shop Now",
     cover: "delivery.png",
     link: "/support",
   },
-  // {
-  //   id: 1,
-  //   title: "",
-  //   subTitle: "",
-  //   desc: "Having a well-planned grocery lists gets you in and out of the store quickly and help you",
-  //   button: "Shop Now",
-  //   cover: "",
-  //   color: "",
-  // },
 ];
 
 
@@ -111,7 +102,7 @@ export const ContactData = [
   {
     title: "Leave us a message",
     header: "Get In Touch",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fuga vel nesciunt eos  Id fuga vel nesciunt eos",
+    desc: " Our dedicated customer support team is ready to assist you with any inquiries or concerns you may have regarding your order or the delivery process.",
     connects: [
       {
         icon: "gmail.png",
@@ -132,3 +123,91 @@ export const ContactData = [
     ],
   },
 ];
+
+
+export const Customer = [ 
+  {
+    id: 1,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 2,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 3,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 4,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 5,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 6,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 7,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 8,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 9,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 10,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 11,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+  {
+    id: 1,
+    name: "",
+    email: "",
+    image: "",
+    message: ""
+  },
+]

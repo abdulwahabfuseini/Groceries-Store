@@ -42,7 +42,7 @@ const Creams = () => {
             </Link>
           </div>
       </div>
-      <CategoryTittle category="Ice Creams" text="Fresh & chilled from store" />
+      <CategoryTittle category="Ice Creams" text="frozen dessert" />
       <div className="grid w-full grid-cols-2 gap-2 py-8 sm:grid-auto-fit-xs">
         {IcecreamsData.map((cream) => (
           <CreamCard

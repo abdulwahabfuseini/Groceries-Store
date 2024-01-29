@@ -9,9 +9,9 @@ const RelatedBakeries = ({ name, image }: RelateProps) => {
       <Link href={`/category/bakeries/${name}`}>
         <div className="relative  h-36 sm:h-44 w-full">
           <Image
-            src={`/images/bakery/${image}`}
+            src={`/images/${image}`}
             fill
-            alt="bakeries"
+            alt={name}
             className="lg:hover:scale-105 object-contain"
           />
         </div>

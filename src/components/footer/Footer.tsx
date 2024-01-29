@@ -1,7 +1,6 @@
-
 "use client";
 
-import { FootNav } from "@/assets/Navigation";
+import { FootNav, Media } from "@/assets/Navigation";
 import { message, Form, Input, Button } from "antd";
 import Image from "next/image";
 import Link from "next/link";
@@ -66,35 +65,51 @@ const Footer = () => {
             </div>
           </div>
           <div className="px-3 sm:px-0">
-            <h1 className="text-lg font-semibold pb-3">Follow Us</h1>d
+            <h1 className="text-lg font-semibold pb-3">Follow Us</h1>
+            <div className="w-full gap-2 flex">
+              {Media.map((socialMedia) => (
+                <div key={socialMedia.id}>
+                  <a href={socialMedia?.link} target="blank">
+                    <Image
+                      width={40}
+                      height={40}
+                      className="object-contain bg-gray-100 sm:bg-gray-50 p-1 rounded-full hover:scale-110"
+                      src={`/SVG/${socialMedia.icon}`}
+                      alt="media"
+                      draggable="false"
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="px-3 sm:px-0">
             <h1 className="text-lg font-semibold pb-3">Download Our App</h1>
             <div className=" ">
-              {/* <Image
-              src="/SVG/download1.png"
-              width={220}
-              height={220}
-              alt="playStore"
-              className="object-contain border-2"
-            />
-            <Image
-              src="/SVG/download2.jpg"
-              width={220}
-              height={220}
-              alt="playStore"
-              className="object-contain border-2"
-            /> */}
               <div className="flex gap-2 items-center flex-wrap w-full">
                 <button className="flex gap-2 bg-black  sm:bg-white sm:text-black rounded-md text-white px-2 pr-3.5 py-1 items-center">
-                  <FaAppStore className="w-9 h-9" />
+                  <Image
+                    src="/SVG/google.png"
+                    alt="apple"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                    draggable={false}
+                  />
                   <p className="text-xs grid place-items-start font-semibold">
                     GET IT ON
                     <span className="text-lg">Google Play</span>
                   </p>
                 </button>
                 <button className="flex gap-2 bg-black sm:bg-white sm:text-black rounded-md text-white px-2 py-1 items-center">
-                  <FaAppStore className="w-9 h-9" />
+                  <Image
+                    src="/SVG/apple.png"
+                    alt="apple"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                    draggable={false}
+                  />
                   <p className="text-sm grid place-items-start font-semibold">
                     Download on the
                     <span className="text-lg">App Store</span>
@@ -134,7 +149,7 @@ const Footer = () => {
               <Button
                 type="primary"
                 htmlType="submit"
-                className="font-semibold bg-red-600 h-11"
+                className="font-semibold bg-green-600 h-11"
               >
                 SUBSCRIBE
               </Button>
@@ -142,7 +157,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="py-4">
-          <h6 className="sm:bg-white bg-black w-full h-1"></h6>
+          <h6 className="sm:bg-white bg-green-200  w-full h-1"></h6>
           <div className="py-4 text-center">
             <p className="text-lg pb-2">
               Copyright &copy; 2024 All Rights Reserved

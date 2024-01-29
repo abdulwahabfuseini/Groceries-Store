@@ -13,9 +13,11 @@ import MobileNav from "./MobileNav";
 import { signOut, useSession } from "next-auth/react";
 import { selectFavoriteItems } from "@/Store/FavoritesSlice";
 import { useRouter } from "next/navigation";
+import Profile from "./Profile";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
+  const [openProfile, setOpenProfile] = useState(false);
   const { data: session } = useSession();
   const cartProducts = useSelector(selectCartProducts);
   const favoriteProducts = useSelector(selectFavoriteItems);
@@ -48,52 +50,55 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        {!session?.user ? (
-          <div className="flex items-end gap-4 sm:gap-5">
-            <Link href="/myFavorite">
-              <button>
-                <Badge count={favoriteProducts.length}>
-                  <FaHeartCircleCheck className="h-6 w-7" />
-                </Badge>
-              </button>
-            </Link>
-            <Link href="/shoppingCart">
-              <button>
-                <Badge count={cartProducts.items?.length}>
-                  <GrBasket className="h-6 w-7" />
-                </Badge>
-              </button>
-            </Link>
-            <button
-              onClick={() => {
-                signOut();
-                router.push("/");
-              }}
-              className=" cursor-pointer hidden lg:block bg-green-600 rounded-md text-white font-semibold px-2 py-1 hover:bg-blue-600 hover:trasnsition-all hover:ease-in hover:scale-95 "
-            >
-              Sign Out
-            </button>
-            {/* <Link href="/dashboard/profile" className="flex items-center gap-2">
-            <button className="relative w-10 h-10 rounded-full lg:w-11 lg:h-11">
-              <Image
-                src="/images/delivery1.jpg"
-                fill
-                alt="profile"
-                className="w-full h-full rounded-full"
-                
-              />
-            </button>
-            <span className="hidden text-xs font-medium lg:block">Hi, {session?user.name}</span>
-          </Link> */}
-            <MobileNav />
-          </div>
-        ) : (
-          <Link href="/signin">
-            <button className=" bg-green-600 rounded-md text-white font-semibold px-2 py-1 hover:bg-blue-600 hover:trasnsition-all hover:ease-in hover:scale-95  text-lg">
-              Sign In
+        <div className="flex items-end gap-4 sm:gap-5">
+          <Link href="/myFavorite">
+            <button>
+              <Badge count={favoriteProducts.length}>
+                <FaHeartCircleCheck className="h-6 w-7" />
+              </Badge>
             </button>
           </Link>
-        )}
+          <Link href="/shoppingCart">
+            <button>
+              <Badge count={cartProducts.items?.length}>
+                <GrBasket className="h-6 w-7" />
+              </Badge>
+            </button>
+          </Link>
+          <div className="hidden lg:block">
+            {session?.user ? (
+              <button
+                onClick={() => setOpenProfile((prev) => !prev)}
+                className="rounded-full lg:w-11 lg:h-11 border flex items-center justify-center"
+              >
+                <Image
+                  src="/SVG/chefsvg.png"
+                  width={30}
+                  height={30}
+                  alt="profile"
+                  className=" object-contain "
+                />
+
+                <div
+                  className={`${
+                    openProfile ? "right-12" : "-right-96"
+                  } fixed top-20 grid w-64 text-background transition-all z-50 duration-500 bg-white shadow-lg shadow-green-500/20`}
+                >
+                  <Profile />
+                </div>
+              </button>
+            ) : (
+              <Link href="/signin">
+                <button className=" bg-green-600 rounded-md text-white font-semibold px-2 py-1 hover:bg-blue-600 hover:trasnsition-all hover:ease-in hover:scale-95  text-lg">
+                  Sign In
+                </button>
+              </Link>
+            )}
+          </div>
+          {/* {session?.user?.name}, */}
+
+          <MobileNav />
+        </div>
       </nav>
     </div>
   );

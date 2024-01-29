@@ -84,7 +84,7 @@
   background: currentColor;
   position: absolute;
   top: 16px;
-  right: -7px;
+  right: -9px;
   box-sizing: border-box;
   animation: animspinloader 1s linear infinite;
 }

@@ -22,7 +22,8 @@ const Discount = () => {
             <span className=" font-semibold">Fresh & Organic Foods</span>
           </h1>
           <p className="py-3 text-lg">
-            Start your daily shopping with some Organic foods
+            Don&apos;t miss out on our weekly deals! Discover incredible
+            discounts on a variety of groceries every week
           </p>
           <Continue text="Order Now" url="/category/Vegetables" />
         </div>

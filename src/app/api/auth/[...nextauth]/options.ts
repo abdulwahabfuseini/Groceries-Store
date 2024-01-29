@@ -55,14 +55,14 @@ export const authOptions: AuthOptions = {
         // ===== Check Password with DB Password ===== 
 
         const isPasswordCorrect = await bcrypt.compare(
-          credentials!.password,
-          user.hashedPassword
+          credentials.password,
+          user.password
         );
 
         // ===== InCorrect Password ==== 
 
         if (!isPasswordCorrect) {
-          throw new Error("Invalid Password");
+          throw new Error("Incorrect Password");
         }
 
         return user;
@@ -81,6 +81,7 @@ export const authOptions: AuthOptions = {
   debug: process.env.NODE_ENV === "development",
   pages: {
     signIn: "/signin",
+    signOut: "/"
   },
   session: {
     strategy: "jwt",

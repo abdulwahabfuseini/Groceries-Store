@@ -13,7 +13,7 @@ import Button from "../Button";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-full px-3 sm:px-4  bg-green-50 overflow-hidden">
+    <div className="relative w-full h-full px-3 sm:px-4  bg-green-50 overflow-hidden py-2">
       <div className="grid grid-auto-fit mx-auto max-w-7xl place-content-center  place-items-center justify-center">
         <Swiper
           direction="vertical"
@@ -22,7 +22,7 @@ const Hero = () => {
           loop={true}
           speed={8000}
           modules={[Autoplay]}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 7800, disableOnInteraction: false }}
           className="h-[310px] sm:h-[400px]"
         >
           {HeroData.map((item) => (
@@ -43,7 +43,7 @@ const Hero = () => {
           loop={true}
           speed={8000}
           modules={[Autoplay]}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 7800, disableOnInteraction: false }}
           className="w-full h-[340px] sm:h-[400px]"
         >
           {HeroData.map((item) => (

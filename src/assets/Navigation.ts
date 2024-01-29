@@ -6,12 +6,12 @@ export const Navigation = [
   },
   {
     id: 2,
-    display: "About",
+    display: "About-Us",
     path: "/about",
   },
   {
     id: 3,
-    display: "Support",
+    display: "Contact-Us",
     path: "/support",
   }
 ];
@@ -102,30 +102,28 @@ export const FootNav = [
       },
     ]
   },
-  // {
-  //   id: 3,
-  //   title: "Quick Links",
-  //   link: [
-  //     {
-  //       display: "About",
-  //       path: "/about"
-  //     },
-  //     {
-  //       display: "Contact",
-  //       path: "/support"
-  //     },
-  //     {
-  //       display: "Cart",
-  //       path: "/shoppingCart"
-  //     },
-  //     {
-  //       display: "Terms & Conditions",
-  //       path: "/terms"
-  //     },
-  //     {
-  //       display: "Privacy Policy",
-  //       path: "/policy"
-  //     },
-  //   ]
-  // },
 ]
+
+
+export const Media = [
+  {
+    id: 1,
+    icon: "facebookf.png",
+    link: "https://web.facebook.com/groceries-store",
+  },
+  {
+    id: 2,
+    icon: "insta.png",
+    link: "https://www.instagram.com/groceries-store",
+  },
+  {
+    id: 3,
+    icon: "twittersvg.png",
+    link: "https://www.tiktok.com/@groceries_store",
+  },
+  {
+      id: 4,
+      icon: "whatsapp.png",
+      link: "https://wa.me/277984606",
+    },
+];
