@@ -67,6 +67,5 @@ export type TestimonialProps = {
    id: number,
    name: string
    email: string
-   image: string
    message: string
 }

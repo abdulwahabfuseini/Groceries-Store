@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import { TbChevronLeft } from "react-icons/tb";
@@ -9,7 +8,6 @@ import { Button, Popconfirm, message } from "antd";
 import { QuestionCircleOutlined } from "@ant-design/icons";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { loadStripe } from "@stripe/stripe-js";
 import { useSession } from "next-auth/react";
 import Signin from "@/app/(routes)/signin/page";
 import CartItems from "@/components/cart/CartItems";
@@ -36,43 +34,6 @@ const Shopping = () => {
 
   const GrandTotal = totalAmount + DeliveryPrice;
 
-  //   Stripe Payment
-  const stripePromise = loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
-  );
-
-  const handleCheckout = async () => {
-    try {
-      const stripe = await stripePromise;
-  
-      if (!stripe) {
-        throw new Error("Stripe is not initialized");
-      }
-  
-      const response = await fetch("http://localhost:3000/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          items: cartProducts,
-          email: session?.user?.email,
-        }),
-      });
-  
-      if (!response.ok) {
-        throw new Error("Failed to create Stripe Payment");
-      }
-  
-      const data = await response.json();
-      
-      // Assuming `stripePromise` is a Promise that resolves to a valid Stripe object
-      stripe.redirectToCheckout({ sessionId: data.id });
-    } catch (error) {
-      console.error("Error during checkout:");
-      // Handle the error in your UI
-    }
-  };
-  
-
   const ClearCart = () => {
     dispatch(CartActions.clearCart());
     toast.success("Cart successful cleared");
@@ -80,7 +41,7 @@ const Shopping = () => {
 
   const cancel = () => {
     // console.log(e);
-    message.error("Click on No");
+    message.error("You Clicked on No");
   };
 
 
@@ -191,7 +152,7 @@ const Shopping = () => {
                     <p>GH₵: {GrandTotal}</p>
                   </div>
                   <Button
-                    onClick={handleCheckout}
+                    onClick={() => router.push("/delivery")}
                     type="primary"
                     className="w-full h-10 text-lg text-white bg-green-600"
                   >
@@ -199,7 +160,7 @@ const Shopping = () => {
                   </Button>
                   <button
                     onClick={() => router.push("/category")}
-                    className="flex items-center justify-center w-full gap-1 py-2 text-base text-yellow-500 cursor-pointer"
+                    className="flex items-center font-semibold justify-center w-full gap-1 py-2 text-base text-yellow-500 cursor-pointer"
                   >
                     or <h3>Continue Shopping</h3>{" "}
                   </button>

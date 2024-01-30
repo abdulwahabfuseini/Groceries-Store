@@ -13,7 +13,7 @@ import Button from "../Button";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-full px-3 sm:px-4  bg-green-50 overflow-hidden py-2">
+    <div className="relative w-full h-full px-3 sm:px-4  bg-green-50 overflow-hidden">
       <div className="grid grid-auto-fit mx-auto max-w-7xl place-content-center  place-items-center justify-center">
         <Swiper
           direction="vertical"
@@ -23,16 +23,16 @@ const Hero = () => {
           speed={8000}
           modules={[Autoplay]}
           autoplay={{ delay: 7800, disableOnInteraction: false }}
-          className="h-[310px] sm:h-[400px]"
+          className="h-[350px] sm:h-[390px]"
         >
           {HeroData.map((item) => (
             <SwiperSlide
               key={item.id}
-              className="flex items-center py-10 sm:py-20"
+              className="flex items-center py-10 sm:py-12 lg:py-14 h-full"
             >
               <h1 className="text-xl sm:text-2xl uppercase font-semibold">{item?.title}</h1>
               <h4 className="text-xl sm:text-2xl py-2 font-medium">{item?.subTitle}</h4>
-              <p className="text-lg w-full sm:w-5/6">{item?.desc}</p>
+              <p className="text-lg w-full lg:w-5/6">{item?.desc}</p>
               <Button text={item?.button} url={item?.link}  />
             </SwiperSlide>
           ))}
@@ -44,10 +44,10 @@ const Hero = () => {
           speed={8000}
           modules={[Autoplay]}
           autoplay={{ delay: 7800, disableOnInteraction: false }}
-          className="w-full h-[340px] sm:h-[400px]"
+          className="w-full h-[350px] sm:h-[390px] py-3"
         >
           {HeroData.map((item) => (
-            <SwiperSlide key={item.id} className="py-3 relative">
+            <SwiperSlide key={item.id} className="py-5 relative">
               <Image
                 src={`/images/${item?.cover}`}
                 // width={500}

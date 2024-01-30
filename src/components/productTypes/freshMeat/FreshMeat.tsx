@@ -26,18 +26,14 @@ const FreshMeat = () => {
         </Link>
         <div className="flex items-end gap-7">
           <Link href="/myFavorite">
-            <button>
-              <Badge count={favoriteProducts.length}>
-                <FaHeartCircleCheck className="h-8 w-8" />
-              </Badge>
-            </button>
+          <Badge count={favoriteProducts.length} color="green">
+              <FaHeartCircleCheck className="h-8 w-8" />
+            </Badge>
           </Link>
           <Link href="/shoppingCart">
-            <button>
-              <Badge count={cartProducts.items?.length}>
-                <GrBasket className="h-8 w-8" />
-              </Badge>
-            </button>
+            <Badge count={cartProducts.items?.length}>
+              <GrBasket className="h-8 w-8" />
+            </Badge>
           </Link>
         </div>
       </div>

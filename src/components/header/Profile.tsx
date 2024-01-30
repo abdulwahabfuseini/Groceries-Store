@@ -2,10 +2,12 @@
 
 import { signOut, useSession } from "next-auth/react";
 import React from "react";
-import { CgUser } from "react-icons/cg";
+import { CgUser, CgLogOut } from "react-icons/cg";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FaHeartCircleCheck } from "react-icons/fa6";
+import { GrBasket } from "react-icons/gr";
 
 const Profile = () => {
   const { data: session } = useSession();
@@ -31,13 +33,13 @@ const Profile = () => {
         <div className="grid gap-2 pt-4">
           <Link href="/shoppingCart">
             <button className="flex items-center gap-2">
-              <CgUser />
+            <GrBasket className="h-5 w-5" />
               <h1 className="text-lg">Shopping Cart</h1>
             </button>
           </Link>
           <Link href="/myFavorite">
             <button className="flex items-center gap-3">
-              <CgUser />
+            <FaHeartCircleCheck className="h-5 w-5" />
               <h1 className="text-lg">My Favorite</h1>
             </button>
           </Link>
@@ -45,7 +47,7 @@ const Profile = () => {
             signOut()
             router.push("/")
           }} className="flex items-center gap-3">
-            <CgUser />
+            <CgLogOut className="h-6 w-6" />
             <h1 className="text-lg">Logout</h1>
           </button>
         </div>

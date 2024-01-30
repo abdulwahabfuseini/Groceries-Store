@@ -10,9 +10,8 @@ import { useSelector } from "react-redux";
 import { selectCartProducts } from "@/Store/cartSlice";
 import { GrBasket } from "react-icons/gr";
 import MobileNav from "./MobileNav";
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { selectFavoriteItems } from "@/Store/FavoritesSlice";
-import { useRouter } from "next/navigation";
 import Profile from "./Profile";
 
 const Navbar = () => {
@@ -21,7 +20,6 @@ const Navbar = () => {
   const { data: session } = useSession();
   const cartProducts = useSelector(selectCartProducts);
   const favoriteProducts = useSelector(selectFavoriteItems);
-  const router = useRouter();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -32,7 +30,7 @@ const Navbar = () => {
     <div
       className={`${
         sticky
-          ? "h-16 w-full top-0 left-0 fixed shadow-lg shadow-green-500/20 transition-all ease-in-out bg-white z-50 py-4"
+          ? "h-16 w-full top-0 left-0 fixed shadow-lg shadow-green-500/20 transition-all ease-in-out bg-white z-50 py-4 lg:py-3"
           : "h-20 w-full bg-gray-100 py-6"
       } bg-white px-3 sm:px-5 `}
     >
@@ -45,25 +43,21 @@ const Navbar = () => {
         </Link>
         <ul className="items-center hidden gap-6 lg:flex">
           {Navigation.map((navItem) => (
-            <li key={navItem.id} className="text-lg font-medium">
+            <li key={navItem.id} className="text-lg font-semibold">
               <Link href={navItem.path}>{navItem.display}</Link>
             </li>
           ))}
         </ul>
         <div className="flex items-end gap-4 sm:gap-5">
           <Link href="/myFavorite">
-            <button>
-              <Badge count={favoriteProducts.length}>
-                <FaHeartCircleCheck className="h-6 w-7" />
-              </Badge>
-            </button>
+            <Badge count={favoriteProducts.length} color="green">
+              <FaHeartCircleCheck className="h-6 w-7" />
+            </Badge>
           </Link>
           <Link href="/shoppingCart">
-            <button>
-              <Badge count={cartProducts.items?.length}>
-                <GrBasket className="h-6 w-7" />
-              </Badge>
-            </button>
+            <Badge count={cartProducts.items?.length}>
+              <GrBasket className="h-6 w-7" />
+            </Badge>
           </Link>
           <div className="hidden lg:block">
             {session?.user ? (

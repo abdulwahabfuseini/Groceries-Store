@@ -87,10 +87,10 @@ const Footer = () => {
             <h1 className="text-lg font-semibold pb-3">Download Our App</h1>
             <div className=" ">
               <div className="flex gap-2 items-center flex-wrap w-full">
-                <button className="flex gap-2 bg-black  sm:bg-white sm:text-black rounded-md text-white px-2 pr-3.5 py-1 items-center">
+                <button className="flex gap-2 bg-black  sm:bg-white sm:text-black rounded-md text-white px-2 pr-5 py-1 items-center">
                   <Image
                     src="/SVG/google.png"
-                    alt="apple"
+                    alt="google"
                     width={30}
                     height={30}
                     className="object-contain"
@@ -103,11 +103,19 @@ const Footer = () => {
                 </button>
                 <button className="flex gap-2 bg-black sm:bg-white sm:text-black rounded-md text-white px-2 py-1 items-center">
                   <Image
+                    src="/SVG/apple2.png"
+                    alt="apple"
+                    width={30}
+                    height={30}
+                    className="object-contain sm:hidden"
+                    draggable={false}
+                  />
+                  <Image
                     src="/SVG/apple.png"
                     alt="apple"
                     width={30}
                     height={30}
-                    className="object-contain"
+                    className="object-contain hidden sm:block"
                     draggable={false}
                   />
                   <p className="text-sm grid place-items-start font-semibold">

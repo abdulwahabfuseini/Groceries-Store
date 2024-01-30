@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nanum+Gothic+Coding&family=PT+Serif&family=Playfair+Display&family=Slabo+27px&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,21 +9,20 @@
   h4,
   h5,
   h6 {
-    font-family: "Frank Ruhl Libre", serif;
+    font-family: "Slabo 27px", serif;
   }
 
   header,
   p,
+  span,
+  button,
   li {
-    font-family: "Mohave", sans-serif;
+    font-family: "PT Serif", serif;
   }
 
   h1,
-  h3,
-  a,
-  button,
-  span {
-    font-family: "Saira Condensed", sans-serif;
+  h3 {
+    font-family: "Playfair Display", serif;
   }
 }
 
@@ -31,7 +32,7 @@
   }
 }
 
- /* ==== Card Loading ====  */
+/* ==== Card Loading ====  */
 .cardloader {
   /* width: 200px; */
   height: 200px;
@@ -68,7 +69,6 @@
     background-position: 185px 0, center 0, center 115px, center 142px;
   }
 }
-
 
 /* ==== Loading Spinner ====  */
 .spinloader {
@@ -168,4 +168,3 @@
     margin-top: 0;
   }
 }
-

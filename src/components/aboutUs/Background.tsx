@@ -6,8 +6,8 @@ const Background = () => {
   return (
     <div className="grid grid-auto-fit lg:grid-cols-5 mx-auto max-w-7xl gap-3">
       <div className="w-full sm:col-span-1 lg:col-span-2">
-        <h1 className="text-3xl font-semibold">Why Choose Us</h1>
-        <h4 className="text-xl sm:text-2xl py-3 capitalize font-medium">
+        <h1 className="text-3xl font-semibold text-green-600">Why Choose Us</h1>
+        <h4 className="text-xl sm:text-2xl py-3 capitalize font-semibold">
           We provide the best groceries
         </h4>
         <p className="text-lg">
@@ -30,20 +30,14 @@ const Background = () => {
                 className="object-contain"
                 draggable={false}
               />
+              
               <h1 className="sm:text-lg font-semibold truncate">{item.text}</h1>
             </button>
           ))}
         </div>
       </div>
-      <div className=" sm:col-span-1 lg:col-span-3 flex items-center justify-center">
-        <Image
-          src="/images/Grocery.png"
-          alt="organic"
-          width={450}
-          height={450}
-          className="object-contain"
-          draggable={false}
-        />
+      <div className="sm:col-span-1 lg:col-span-3 sm:px-6 lg:px-10">
+        <video src="/about.mp4" muted autoPlay className="h-full w-full" />
       </div>
     </div>
   );

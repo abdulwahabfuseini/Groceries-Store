@@ -1,10 +1,13 @@
 import { ProductType } from "@/contexts/Types";
+import { connectMongoDB } from "@/libs/mongodb";
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
 export const POST = async (request: NextRequest) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
   try {
+    await connectMongoDB()
+    
     const reqBody = await request.json();
     const { items, email } = await reqBody;
 
@@ -15,7 +18,6 @@ export const POST = async (request: NextRequest) => {
         unit_amount: item.price * 100,
         product_data: {
           name: item.name,
-          // description: item.description,
           images: [item.image],
         },
       },
@@ -31,6 +33,7 @@ export const POST = async (request: NextRequest) => {
         email,
       },
     });
+
     return NextResponse.json({
       message: "Connection is Active",
       success: true,

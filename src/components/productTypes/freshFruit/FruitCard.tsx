@@ -11,10 +11,15 @@ import { Tooltip } from "antd";
 import { FaPlus } from "react-icons/fa";
 import { CartActions } from "@/Store/cartSlice";
 import { FavoriteActions } from "@/Store/FavoritesSlice";
+import { useSelector } from "react-redux";
+import { selectFavoriteItems } from "@/Store/FavoritesSlice";
 
 const FruitCard = ({ id, name, image, price }: CardProps) => {
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(true);
+  const favoriteProducts = useSelector(selectFavoriteItems);
+
+  const isFavorite = favoriteProducts.some((favorite) => favorite.id === id);
 
   const AddToCart = () => {
     dispatch(
@@ -37,17 +42,22 @@ const FruitCard = ({ id, name, image, price }: CardProps) => {
     }, 350);
   }, [isLoading]);
 
-  const AddToFavorite = () => {
-    dispatch(
-      FavoriteActions.addToFavorite({
-        id,
-        name,
-        image,
-        price,
-        quantity: 0,
-      })
-    );
-    toast.success(`${name} added to Favorite`);
+  const handleToggleFavorite = () => {
+    if (isFavorite) {
+      dispatch(FavoriteActions.deleteFavorite(id));
+      toast.success(`${name} removed from Favorites`);
+    } else {
+      dispatch(
+        FavoriteActions.addToFavorite({
+          id,
+          name,
+          image,
+          price,
+          quantity: 0,
+        })
+      );
+      toast.success(`${name} added to Favorites`);
+    }
   };
 
   return (
@@ -58,7 +68,8 @@ const FruitCard = ({ id, name, image, price }: CardProps) => {
         <div className="bg-white rounded-lg relative">
           <Tooltip color="yellow" title="Add to favorite">
             <Heart
-              onClick={AddToFavorite}
+            fill={isFavorite ? "yellow" : "white"}
+              onClick={handleToggleFavorite}
               className="absolute top-0 right-0  text-yellow-400 bg-yellow-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
             />
           </Tooltip>

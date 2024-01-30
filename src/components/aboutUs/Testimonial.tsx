@@ -37,11 +37,11 @@ const Testimonial = () => {
       </div>
       <Swiper
         navigation={{ nextEl, prevEl }}
-        spaceBetween={8}
+        spaceBetween={15}
         loop={true}
         speed={1000}
         modules={[Autoplay, Navigation]}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 8000, disableOnInteraction: false }}
         breakpoints={{
           0: {
             slidesPerView: 1.2,
@@ -50,7 +50,7 @@ const Testimonial = () => {
             slidesPerView: 1.4,
           },
           600: {
-            slidesPerView: 1.5,
+            slidesPerView: 2.2,
           },
           768: {
             slidesPerView: 2.6,
@@ -68,7 +68,6 @@ const Testimonial = () => {
                   id={client.id}
                   name={client.name}
                   email={client.email}
-                  image={client.image}
                   message={client.message}
                 />
               </SwiperSlide>
