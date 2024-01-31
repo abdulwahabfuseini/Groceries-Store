@@ -347,7 +347,7 @@ export const FruitData = [
       },
       {
         id: 10,
-        name: "Black Berry",
+        name: "Blackberry",
         price: 10,
         image: "Blackberry.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -743,7 +743,7 @@ export const FruitData = [
       },
       {
         id: 10,
-        name: "Black Berry",
+        name: "Blackberry",
         price: 10,
         image: "Blackberry.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -1556,7 +1556,7 @@ export const VegetablesData = [
         id: 29,
         name: "Green Pepper",
         price: 10,
-        image: "greenpepper.png",
+        image: "greenpepper.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -1796,7 +1796,7 @@ export const VegetablesData = [
         id: 29,
         name: "Green Pepper",
         price: 10,
-        image: "greenpepper.png",
+        image: "greenpepper.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
@@ -2408,7 +2408,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2458,7 +2458,7 @@ export const MeatsData = [
     related: [
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2466,7 +2466,7 @@ export const MeatsData = [
       },
       {
         id: 42,
-        name: "Chicken Part",
+        name: "Chicken Parts",
         price: 10,
         image: "chickenpart.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2541,7 +2541,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2607,7 +2607,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2673,7 +2673,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2723,7 +2723,7 @@ export const MeatsData = [
     related: [
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2745,7 +2745,6 @@ export const MeatsData = [
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },
-
       {
         id: 49,
         name: "Chicken Liver",
@@ -2782,7 +2781,7 @@ export const MeatsData = [
   },
   {
     id: 43,
-    name: "Gourment",
+    name: "Gourmet",
     price: 10,
     image: "gourmet.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2838,7 +2837,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2872,7 +2871,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2930,7 +2929,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -2988,7 +2987,7 @@ export const MeatsData = [
     related: [
       {
         id: 38,
-        name: "Ckicken",
+        name: "Chicken",
         price: 10,
         image: "chicken.jpeg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -3071,7 +3070,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -3153,7 +3152,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -3187,7 +3186,7 @@ export const MeatsData = [
     related: [
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -3286,7 +3285,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -3352,7 +3351,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -3418,7 +3417,7 @@ export const MeatsData = [
       },
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -3452,7 +3451,7 @@ export const MeatsData = [
     related: [
       {
         id: 46,
-        name: "Ckicken Wings",
+        name: "Chicken Wings",
         price: 10,
         image: "chickenwings.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
@@ -6056,7 +6055,7 @@ export const TopProducts = [
   },
   {
     id: 42,
-    name: "Chicken Part",
+    name: "Chicken Parts",
     price: 20,
     discount: 4.8,
     image: "chickenpart.jpg",

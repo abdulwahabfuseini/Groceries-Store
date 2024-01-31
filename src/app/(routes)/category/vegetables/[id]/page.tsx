@@ -1,4 +1,3 @@
-
 "use client";
 
 import { VegetablesData } from "@/assets/GroceriesData";
@@ -11,7 +10,9 @@ import { TbChevronLeft } from "react-icons/tb";
 import { useDispatch } from "react-redux";
 import { CartActions } from "@/Store/cartSlice";
 import { FavoriteActions } from "@/Store/FavoritesSlice";
-import { FaHeart } from "react-icons/fa";
+import { Heart } from "lucide-react";
+import { useSelector } from "react-redux";
+import { selectFavoriteItems } from "@/Store/FavoritesSlice";
 
 const Vegetable = ({ params }: any) => {
   const name = decodeURIComponent(params.id).replace(/-/g, " ");
@@ -29,17 +30,26 @@ const Vegetable = ({ params }: any) => {
     rating: number;
   };
 
-  const AddToFavorite = () => {
-    dispatch(
-      FavoriteActions.addToFavorite({
-        id,
-        image,
-        price,
-        name,
-        quantity: 0,
-      })
-    ),
-      toast.success(`${name} added to Favorite`);
+  const favoriteProducts = useSelector(selectFavoriteItems);
+
+  const isFavorite = favoriteProducts.some((favorite) => favorite.id === id);
+
+  const handleToggleFavorite = () => {
+    if (isFavorite) {
+      dispatch(FavoriteActions.deleteFavorite(id));
+      toast.success(`${name} removed from Favorites`);
+    } else {
+      dispatch(
+        FavoriteActions.addToFavorite({
+          id,
+          name,
+          image,
+          price,
+          quantity: 0,
+        })
+      );
+      toast.success(`${name} added to Favorites`);
+    }
   };
 
   const AddToCart = () => {
@@ -60,7 +70,10 @@ const Vegetable = ({ params }: any) => {
   return (
     <div className="w-full pt-6 mx-auto max-w-7xl sm:pt-10 sm:px-4 bg-white sm:bg-gray-100">
       <Link href="/category/vegetables">
-        <button className=" p-2 font-semibold text-center mb-8 mx-3 bg-gray-200 sm:bg-white rounded-full">
+        <button
+          type="button"
+          className=" p-2 font-semibold text-center mb-8 mx-3 bg-gray-200 sm:bg-white rounded-full"
+        >
           <TbChevronLeft className="w-8 h-8" />
         </button>
       </Link>
@@ -77,30 +90,39 @@ const Vegetable = ({ params }: any) => {
         <div className="w-full sm:col-span-3 bg-gray-100 px-3 py-5 rounded-tl-3xl rounded-tr-3xl">
           <h1 className="pb-3 text-2xl font-semibold">{name}</h1>
           <Rate defaultValue={rating} allowHalf />
-          <p className="py-4 text-2xl font-semibold ">
-            Unit Price: GH₵: <span>{price.toLocaleString()}</span>
+          <p className="pt-2 text-2xl font-semibold ">
+            Unit Price: GH₵: <span>{price.toLocaleString()}.00</span>
           </p>
-          <p>{desc}</p>
-          <div className="flex font-semibold items-center gap-5 py-10">
+          <p className="py-4">{desc}</p>
+          <h6 className=" font-semibold text-lg">
+            Category:{" "}
+            <span className=" text-gray-400 font-normal">Organic Vegetables</span>
+          </h6>
+          <div className="flex font-semibold items-center gap-5 py-10 flex-wrap">
             <button
-              onClick={AddToFavorite}
-              className="flex items-center text-green-400 hover:text-red-400"
+              onClick={handleToggleFavorite}
+              className={`${
+                isFavorite
+                  ? "text-red-400 hover:text-green-400"
+                  : "text-green-400 hover:text-red-400"
+              } flex items-center  gap-1 `}
             >
-              <FaHeart className="p-1 w-7 h-7 cursor-pointer duration-200" />
-              <p>Add To Favorite</p>
+              <Heart fill={isFavorite ? "red" : "white"} />
+              <p>{isFavorite ? "Remove From Favorite" : "Add To Favorite"}</p>
             </button>
             <button
+              type="button"
               onClick={AddToCart}
               className="px-2 py-1.5 text-white bg-yellow-300 border rounded-lg text-lg hover:bg-blue-600"
             >
-              Add To Cart
+              <p>Add To Cart</p>
             </button>
           </div>
         </div>
       </div>
       <div className="py-2 pb-9 font-semibold sm:pt-14 bg-gray-100 px-3 sm:px-0">
         <header className="text-xl font-semibold sm:text-2xl">
-          Related Bakeries
+          Related Organic Vegetables
         </header>
         <div className="grid grid-cols-2 pt-8 sm:grid-auto-fit-xs gap-1.5 sm:gap-2">
           {vegetable?.related.map((relate) => (

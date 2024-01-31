@@ -93,7 +93,7 @@ export const Choose = [
   },
   {
     id: 3,
-    image: "free.png",
+    image: "fast.png",
     text: "Fast delivery across nationwide",
   },
 ];

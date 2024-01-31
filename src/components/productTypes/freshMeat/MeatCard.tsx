@@ -11,10 +11,15 @@ import { Tooltip } from "antd";
 import { FaPlus } from "react-icons/fa";
 import { CartActions } from "@/Store/cartSlice";
 import { FavoriteActions } from "@/Store/FavoritesSlice";
+import { useSelector } from "react-redux";
+import { selectFavoriteItems } from "@/Store/FavoritesSlice";
 
 const MeatCard = ({ id, name, image, price }: CardProps) => {
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(true);
+  const favoriteProducts = useSelector(selectFavoriteItems);
+
+  const isFavorite = favoriteProducts.some((favorite) => favorite.id === id);
 
   const AddToCart = () => {
     dispatch(
@@ -37,17 +42,22 @@ const MeatCard = ({ id, name, image, price }: CardProps) => {
     }, 350);
   }, [isLoading]);
 
-  const AddToFavorite = () => {
-    dispatch(
-      FavoriteActions.addToFavorite({
-        id,
-        name,
-        image,
-        price,
-        quantity: 0,
-      })
-    );
-    toast.success(`${name} added to Favorite`);
+  const handleToggleFavorite = () => {
+    if (isFavorite) {
+      dispatch(FavoriteActions.deleteFavorite(id));
+      toast.success(`${name} removed from Favorites`);
+    } else {
+      dispatch(
+        FavoriteActions.addToFavorite({
+          id,
+          name,
+          image,
+          price,
+          quantity: 0,
+        })
+      );
+      toast.success(`${name} added to Favorites`);
+    }
   };
 
   return (
@@ -56,14 +66,24 @@ const MeatCard = ({ id, name, image, price }: CardProps) => {
         <div className="cardloader w-full"></div>
       ) : (
         <div className="bg-white rounded-lg relative">
-          <Tooltip color="red" title="Add to favorite">
+          <Tooltip
+            color="red"
+            title={isFavorite ? "Remove From Favorite" : "Add To Favorite"}
+            className="hidden lg:block"
+          >
             <Heart
-              onClick={AddToFavorite}
-              className="absolute top-0 right-0 text-red-400 bg-red-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-white hover:bg-red-600 cursor-pointer duration-200"
+              fill={isFavorite ? "red" : "white"}
+              onClick={handleToggleFavorite}
+              className="absolute top-0 right-0  text-red-400 bg-red-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-red-400 hover:bg-red-100 cursor-pointer duration-200"
             />
           </Tooltip>
+          <Heart
+            fill={isFavorite ? "red" : "white"}
+            onClick={handleToggleFavorite}
+            className="absolute top-0 right-0 lg:hidden text-red-400 bg-red-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-red-400 hover:bg-red-100 cursor-pointer duration-200"
+          />
           <Link href={`/category/meats/${name}`}>
-            <div className="relative h-36 sm:h-44 w-full">
+            <div className="relative h-36 sm:h-40 w-full">
               <Image
                 src={`/images/${image}`}
                 fill
@@ -71,19 +91,23 @@ const MeatCard = ({ id, name, image, price }: CardProps) => {
                 className="lg:hover:scale-105 object-contain"
               />
             </div>
-            <div className="py-2 px-3">
+            <div className="pb-2 px-3">
               <h1 className="pt-2 font-semibold text-lg">{name}</h1>
               <p className="font-semibold">
                 GH₵: <span>{price.toLocaleString()}</span>
               </p>
             </div>
           </Link>
-          <Tooltip color="red" title="Add to Cart">
+          <Tooltip color="red" title="Add to Cart" className="hidden lg:block">
             <FaPlus
               onClick={AddToCart}
-              className="absolute bottom-0 right-0  text-red-400 bg-red-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-white hover:bg-red-600 cursor-pointer duration-200"
+              className="absolute bottom-0 right-0  text-red-400 bg-red-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-red-400 hover:bg-red-100 cursor-pointer duration-200"
             />
           </Tooltip>
+          <FaPlus
+            onClick={AddToCart}
+            className="absolute bottom-0 right-0 lg:hidden  text-red-400 bg-red-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-red-400 hover:bg-red-100 cursor-pointer duration-200"
+          />
         </div>
       )}
     </div>

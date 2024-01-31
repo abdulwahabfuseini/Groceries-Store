@@ -66,15 +66,24 @@ const FruitCard = ({ id, name, image, price }: CardProps) => {
         <div className="cardloader w-full"></div>
       ) : (
         <div className="bg-white rounded-lg relative">
-          <Tooltip color="yellow" title="Add to favorite">
+          <Tooltip
+            color="yellow"
+            title={isFavorite ? "Remove From Favorite" : "Add To Favorite"}
+            className="hidden lg:block"
+          >
             <Heart
-            fill={isFavorite ? "yellow" : "white"}
+              fill={isFavorite ? "red" : "white"}
               onClick={handleToggleFavorite}
               className="absolute top-0 right-0  text-yellow-400 bg-yellow-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
             />
           </Tooltip>
+          <Heart
+            fill={isFavorite ? "red" : "white"}
+            onClick={handleToggleFavorite}
+            className="absolute top-0 right-0 lg:hidden text-yellow-400 bg-yellow-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
+          />
           <Link href={`/category/fruits/${name}`}>
-            <div className="relative h-36 sm:h-44 w-full">
+            <div className="relative h-36 sm:h-40 w-full">
               <Image
                 src={`/images/${image}`}
                 fill
@@ -82,19 +91,27 @@ const FruitCard = ({ id, name, image, price }: CardProps) => {
                 className="lg:hover:scale-105 object-contain"
               />
             </div>
-            <div className="py-2 px-3">
+            <div className="pb-2 px-3">
               <h1 className="pt-2 font-semibold text-lg">{name}</h1>
               <p className="font-semibold">
                 GH₵: <span>{price.toLocaleString()}</span>
               </p>
             </div>
           </Link>
-          <Tooltip color="yellow" title="Add to Cart">
+          <Tooltip
+            color="yellow"
+            title="Add to Cart"
+            className="hidden lg:block"
+          >
+            <FaPlus
+              onClick={AddToCart}
+              className="absolute bottom-0 right-0  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
+            />
+          </Tooltip>
           <FaPlus
             onClick={AddToCart}
-            className="absolute bottom-0 right-0  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
+            className="absolute bottom-0 right-0 lg:hidden  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
           />
-          </Tooltip>
         </div>
       )}
     </div>

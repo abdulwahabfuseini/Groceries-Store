@@ -1,6 +1,5 @@
 "use client";
 
-import Design from "@/components/account/Design";
 import { useEffect, useState } from "react";
 
 const Loading = ({ children }: { children: React.ReactNode }) => {
@@ -16,9 +15,8 @@ const Loading = ({ children }: { children: React.ReactNode }) => {
     <div className="overflow-hidden">
       {isLoading ? (
         <div className="flex flex-col items-center justify-center w-full h-screen gap-14 relative ">
-          {/* <Design /> */}
           <span className="spin "></span>
-          <h1 className="text-xl spinloader font-semibold">Please Wait </h1>
+          <h1 className="text-xl spinloader font-semibold">Please Wait</h1>
         </div>
       ) : (
         <div>{children}</div>

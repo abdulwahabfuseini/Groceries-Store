@@ -1,3 +1,4 @@
+
 import Services from "@/components/overview/Services";
 import Navbar from "@/components/header/Navbar";
 import React from "react";
@@ -8,12 +9,14 @@ import Banner from "@/components/overview/Banner";
 import Discount from "@/components/overview/Discount";
 import SellingProducts from "@/components/overview/SellingProducts";
 
+
 export const metadata = {
   title: "Groceries Store | Fresh and Organic Gloceries",
   description: "Buy Fresh and Organic Gloceries from us",
 };
 
 const Category = () => {
+
   return (
     <>
       <Navbar />

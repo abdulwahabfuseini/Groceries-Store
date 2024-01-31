@@ -1,8 +1,8 @@
 "use client";
 
 import { signOut, useSession } from "next-auth/react";
-import React from "react";
-import { CgUser, CgLogOut } from "react-icons/cg";
+import React, { useEffect } from "react";
+import { CgLogOut } from "react-icons/cg";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -11,7 +11,7 @@ import { GrBasket } from "react-icons/gr";
 
 const Profile = () => {
   const { data: session } = useSession();
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <div className="py-3 px-4">
@@ -33,20 +33,24 @@ const Profile = () => {
         <div className="grid gap-2 pt-4">
           <Link href="/shoppingCart">
             <button className="flex items-center gap-2">
-            <GrBasket className="h-5 w-5" />
+              <GrBasket className="h-5 w-5" />
               <h1 className="text-lg">Shopping Cart</h1>
             </button>
           </Link>
           <Link href="/myFavorite">
             <button className="flex items-center gap-3">
-            <FaHeartCircleCheck className="h-5 w-5" />
+              <FaHeartCircleCheck className="h-5 w-5" />
               <h1 className="text-lg">My Favorite</h1>
             </button>
           </Link>
-          <button onClick={() => {
-            signOut()
-            router.push("/")
-          }} className="flex items-center gap-3">
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              signOut();
+              router.push("/");
+            }}
+            className="flex items-center gap-3"
+          >
             <CgLogOut className="h-6 w-6" />
             <h1 className="text-lg">Logout</h1>
           </button>

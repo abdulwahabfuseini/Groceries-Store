@@ -10,6 +10,8 @@ import { Tooltip } from "antd";
 import { Rate, Typography } from "antd";
 import { CartActions } from "@/Store/cartSlice";
 import { FavoriteActions } from "@/Store/FavoritesSlice";
+import { useSelector } from "react-redux";
+import { selectFavoriteItems } from "@/Store/FavoritesSlice";
 
 const ProductsCard = ({
   id,
@@ -20,6 +22,9 @@ const ProductsCard = ({
   rating,
 }: CardProps) => {
   const dispatch = useDispatch();
+
+  const favoriteProducts = useSelector(selectFavoriteItems);
+  const isFavorite = favoriteProducts.some((favorite) => favorite.id === id);
 
   const AddToCart = () => {
     dispatch(
@@ -36,27 +41,42 @@ const ProductsCard = ({
     toast.success(`${name} added to cart`);
   };
 
-  const AddToFavorite = () => {
-    dispatch(
-      FavoriteActions.addToFavorite({
-        id,
-        name,
-        image,
-        price,
-        quantity: 0,
-      })
-    );
-    toast.success(`${name} added to Favorite`);
+  const handleToggleFavorite = () => {
+    if (isFavorite) {
+      dispatch(FavoriteActions.deleteFavorite(id));
+      toast.success(`${name} removed from Favorites`);
+    } else {
+      dispatch(
+        FavoriteActions.addToFavorite({
+          id,
+          name,
+          image,
+          price,
+          quantity: 0,
+        })
+      );
+      toast.success(`${name} added to Favorites`);
+    }
   };
 
   return (
     <div className="bg-white rounded-lg relative">
-      <Tooltip color="green" title="Add to favorite">
+      <Tooltip
+        color="green"
+        title={isFavorite ? "Remove From Favorite" : "Add To Favorite"}
+        className="hidden lg:block"
+      >
         <Heart
-          onClick={AddToFavorite}
-          className="absolute top-0 right-0  text-green-500 bg-green-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-white hover:bg-green-500 cursor-pointer duration-200"
+          fill={isFavorite ? "red" : "white"}
+          onClick={handleToggleFavorite}
+          className="absolute top-0 right-0  text-green-400 bg-green-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-green-400 hover:bg-green-100 cursor-pointer duration-200"
         />
       </Tooltip>
+      <Heart
+        fill={isFavorite ? "red" : "white"}
+        onClick={handleToggleFavorite}
+        className="absolute top-0 right-0 lg:hidden text-green-400 bg-green-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-green-400 hover:bg-green-100 cursor-pointer duration-200"
+      />
 
       <div className="relative  h-36 sm:h-40 w-full">
         <Image
@@ -78,11 +98,16 @@ const ProductsCard = ({
         </Typography.Paragraph>
 
         <Rate defaultValue={rating} allowHalf className="text-xs" />
-        <button onClick={AddToCart}>
-          <Tooltip color="green" title="Add to Cart">
-            <FaPlus className="absolute bottom-0 right-0  text-green-500 bg-green-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-white hover:bg-green-500 cursor-pointer duration-200" />
+        <Tooltip color="green" title="Add to Cart" className="hidden lg:block">
+          <FaPlus
+            onClick={AddToCart}
+            className="absolute bottom-0 right-0  text-green-400 bg-green-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-green-400 hover:bg-green-100 cursor-pointer duration-200"
+          />
           </Tooltip>
-        </button>
+          <FaPlus
+            onClick={AddToCart}
+            className="absolute bottom-0 right-0 lg:hidden  text-green-400 bg-green-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-green-400 hover:bg-green-100 cursor-pointer duration-200"
+          />
       </div>
     </div>
   );

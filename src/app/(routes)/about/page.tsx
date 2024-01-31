@@ -4,6 +4,11 @@ import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/header/Navbar";
 import Testimonial from "@/components/aboutUs/Testimonial";
 
+export const metadata = {
+  title: "Groceries Store | About Us",
+  description: "Why Choose Us",
+};
+
 const About = () => {
   return (
     <>

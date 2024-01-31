@@ -276,10 +276,10 @@ const Delivery = () => {
                 disabled={loading}
                 htmlType="submit"
                 type="primary"
-                className=" disabled:cursor-not-allowed h-11 bg-green-600 text-lg hover:ring-2 text-white font-semibold px-4"
+                className=" disabled:cursor-not-allowed h-11 bg-green-600 text-lg hover:ring-2 text-white font-semibold px-6"
               >
                 {loading ? (
-                  <span className="spinloader">Submitting Details...</span>
+                  <span className="spinloader">Submitting Details</span>
                 ) : (
                   "Submit Details"
                 )}

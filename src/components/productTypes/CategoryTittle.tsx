@@ -5,7 +5,7 @@ const CategoryTittle = ({ category, text }: CategoryTittleProps) => {
   return (
     <div>
       <h1 className="text-xl font-semibold uppercase">{category}</h1>
-      <p className="text-lg font-medium pt-1 ">{text}</p>
+      <p className="text-lg font-medium pt-1 capitalize ">{text}</p>
     </div>
   );
 };

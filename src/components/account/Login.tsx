@@ -126,14 +126,28 @@ const Login = () => {
       <div className="grid gap-y-3">
         <button
           onClick={() => signIn("google")}
-          className="flex items-center justify-center w-full p-2 bg-blue-600 text-white text-lg font-semibold rounded-md"
+          className="flex items-center gap-2 justify-center w-full p-2 bg-blue-400 text-white text-lg font-semibold rounded-md"
         >
+          <Image
+            src="/SVG/googlesvg.png"
+            alt="google"
+            width={28}
+            height={28}
+            className="object-contain"
+          />
           <span>Signin with Google</span>
         </button>
         <button
           onClick={() => signIn("github")}
-          className="flex items-center justify-center w-full p-2 bg-gray-700 text-white text-lg font-semibold rounded-md"
+          className="flex items-center justify-center gap-2 w-full p-2 bg-gray-700 text-white text-lg font-semibold rounded-md"
         >
+          <Image
+            src="/SVG/github.png"
+            alt="github"
+            width={28}
+            height={28}
+            className="object-contain"
+          />
           <span>Signin with Github</span>
         </button>
       </div>
