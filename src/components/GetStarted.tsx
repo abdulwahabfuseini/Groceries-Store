@@ -11,10 +11,10 @@ const GetStarted = () => {
           height="220"
           alt="start"
         />
-        <h4 className="py-5 text-lg md:py-8 text-center">
+        <p className="py-5 text-lg md:py-8 text-center">
           Welcome to our Groceries Store! Stay at your comfortable home and order
           for fresh and organic products from us.{" "}
-        </h4>
+        </p>
         <Link href="/signin">
           <button className="px-4 py-2 hover:transition-all hover:ease-in text-xl font-semibold text-white bg-red-600 rounded-lg lg:hover:bg-blue-600">
             Get Started

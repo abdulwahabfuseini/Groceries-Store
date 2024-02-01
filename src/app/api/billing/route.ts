@@ -25,7 +25,7 @@ export const POST = async (req: NextRequest) => {
       !postalAddress || 
       !zipCode
     ) {
-      throw new Error("Missing Fields");
+      return NextResponse.json({ message: "Missing fields" }, { status: 405 });
     }
      
     

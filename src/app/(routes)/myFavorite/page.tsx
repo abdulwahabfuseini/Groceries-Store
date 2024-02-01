@@ -8,10 +8,13 @@ import { TbChevronLeft } from "react-icons/tb";
 import Link from "next/link";
 import toast from "react-hot-toast";
 import { useSession } from "next-auth/react";
+import { Button } from "antd";
+import { useRouter } from "next/navigation";
 
 const MyFavorite = () => {
   const FavoriteGroceries = useSelector(selectFavoriteItems);
   const dispatch = useDispatch();
+  const router = useRouter()
   const {data: session} = useSession()
 
   const clearFavorite = () => {
@@ -29,8 +32,14 @@ const MyFavorite = () => {
       <div>
         {FavoriteGroceries?.length === 0 ? (
           <div className="flex items-center justify-center flex-col py-12">
-            <h1 className="text-xl sm:text-3xl">{session?.user?.name}, Your Favorite Cart is Empty</h1>
-            
+            <h1 className="text-xl sm:text-2xl font-semibold">{session?.user?.name}, <span className="text-lg sm:text-xl font-medium">Your Favorite Cart is Empty</span></h1>
+            <Button
+                onClick={() => router.push("/category")}
+                type="primary"
+                className="h-12 text-lg my-8 bg-blue-600"
+              >
+                Start Shopping
+              </Button>
           </div>
         ) : (
           <>

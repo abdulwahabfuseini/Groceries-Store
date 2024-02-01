@@ -1,35 +1,22 @@
-
-import Services from "@/components/overview/Services";
-import Navbar from "@/components/header/Navbar";
-import React from "react";
-import Footer from "@/components/footer/Footer";
-import Hero from "@/components/overview/Hero";
-import Categories from "@/components/overview/Categories";
-import Banner from "@/components/overview/Banner";
-import Discount from "@/components/overview/Discount";
-import SellingProducts from "@/components/overview/SellingProducts";
-
+import { TbChevronLeft } from "react-icons/tb";
+import Link from "next/link";
+import Categories from "@/components/homeContent/Categories";
 
 export const metadata = {
-  title: "Groceries Store | Fresh and Organic Gloceries",
-  description: "Buy Fresh and Organic Gloceries from us",
+  title: "Groceries Store | Categories",
+  description: "Shop By Categories",
 };
 
 const Category = () => {
-
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <div className="w-full px-2 mx-auto max-w-7xl sm:px-5">
-        <Services />
-        <Categories />
-      </div>
-      <Banner />
-      <SellingProducts />
-      <Discount />
-      <Footer />
-    </>
+    <div className="w-full px-3 mx-auto max-w-7xl sm:px-5 grid place-content-center md:h-screen py-10">
+       <Link href="/overview">
+        <button className=" p-2 font-semibold  text-center bg-white rounded-full text">
+          <TbChevronLeft className="w-8 h-8" />
+        </button>
+      </Link>
+      <Categories />
+    </div>
   );
 };
 

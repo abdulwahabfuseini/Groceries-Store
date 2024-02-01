@@ -1,6 +1,11 @@
 export const Navigation = [
   {
     id: 1,
+    display: "Overview",
+    path: "/overview",
+  },
+  {
+    id: 1,
     display: "Categories",
     path: "/category",
   },
@@ -19,31 +24,36 @@ export const Navigation = [
 export const MobileNavigation = [
   {
     id: 1,
+    display: "Overview",
+    path: "/overview",
+  },
+  {
+    id: 2,
     display: "Categories",
     path: "/category",
   },
   {
-    id: 2,
+    id: 3,
     display: "Know About Us",
     path: "/about",
   },
   {
-    id: 3,
+    id: 4,
     display: "Shopping Cart",
     path: "/shoppingCart",
   },
   {
-    id: 4,
+    id: 5,
     display: "Send us a Message",
     path: "/support",
   },
   {
-    id: 5,
+    id: 6,
     display: "My Profile",
     path: "/dashboard/profile",
   },
   {
-    id: 6,
+    id: 7,
     display: "My Favorite",
     path: "/myFavorite",
   },

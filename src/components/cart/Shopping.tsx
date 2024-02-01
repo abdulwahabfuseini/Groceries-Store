@@ -45,7 +45,7 @@ const Shopping = () => {
 
   return (
     <div className="py-12 sm:py-20">
-      <Link href="/category">
+      <Link href="/overview">
         <button className=" p-2 font-semibold text-center bg-white rounded-full text">
           <TbChevronLeft className="w-8 h-8" />
         </button>
@@ -54,9 +54,9 @@ const Shopping = () => {
         <div className="w-full">
           {cartProducts.items.length === 0 && (
             <div className="space-y-8 text-center">
-              <h1 className="text-2xl font-semibold sm:text-3xl">
+              <h1 className="text-xl font-semibold sm:text-2xl">
                 {session?.user?.name},{" "}
-                <span className=" font-normal text-xl">
+                <span className=" font-normal text-lg sm:text-xl">
                   Your Shopping Cart is empty
                 </span>
               </h1>

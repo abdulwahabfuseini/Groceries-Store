@@ -37,7 +37,7 @@ const Navbar = () => {
         aria-label="navbar"
         className="flex items-center justify-between mx-auto max-w-7xl"
       >
-        <Link href="/category">
+        <Link href="/overview">
           <h1 className="text-xl sm:text-2xl font-semibold">Groceries Store</h1>
         </Link>
         <ul className="items-center hidden gap-6 lg:flex">
@@ -61,12 +61,12 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <button
               onClick={() => setOpenProfile((prev) => !prev)}
-              className="rounded-full lg:w-11 lg:h-11 border flex items-center justify-center"
+              className="rounded-full lg:w-10 lg:h-10 border border-green-400 flex items-center justify-center"
             >
               <Image
-                src="/SVG/chefsvg.png"
-                width={30}
-                height={30}
+                src="/SVG/man.png"
+                width={25}
+                height={25}
                 alt="profile"
                 className=" object-contain "
               />

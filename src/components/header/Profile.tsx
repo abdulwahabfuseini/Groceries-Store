@@ -10,8 +10,14 @@ import { FaHeartCircleCheck } from "react-icons/fa6";
 import { GrBasket } from "react-icons/gr";
 
 const Profile = () => {
-  const { data: session } = useSession();
+  const { status, data: session } = useSession();
   const router = useRouter();
+
+  useEffect(() => {
+    if (status == "unauthenticated") {
+      router.push("/");
+    }
+  });
 
   return (
     <div className="py-3 px-4">
@@ -19,7 +25,7 @@ const Profile = () => {
       <div>
         <div className="grid place-items-center place-content-center gap-2">
           <Image
-            src="/SVG/chefsvg.png"
+            src="/SVG/man.png"
             width={50}
             height={50}
             alt="profile"
@@ -44,11 +50,7 @@ const Profile = () => {
             </button>
           </Link>
           <button
-            onClick={(e) => {
-              e.preventDefault();
-              signOut();
-              router.push("/");
-            }}
+            onClick={() =>  signOut()}
             className="flex items-center gap-3"
           >
             <CgLogOut className="h-6 w-6" />

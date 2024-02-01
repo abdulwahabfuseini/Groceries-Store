@@ -25,7 +25,7 @@ const MobileNav = () => {
         } fixed top-0 grid w-full text-background transition-all z-50 duration-500 bg-white shadow-lg shadow-green-500/20 py-5 `}
       >
         <div className="flex items-center justify-between px-3 pb-5">
-          <Link href="/category">
+          <Link href="/overview">
             <h1 className="text-2xl font-semibold">Groceries Store</h1>
           </Link>
           <LiaTimesSolid

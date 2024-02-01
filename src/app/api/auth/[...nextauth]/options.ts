@@ -9,6 +9,7 @@ import { connectMongoDB } from "@/libs/mongodb";
 import { IUser } from "@/contexts/Types";
 import clientPromise from "@/libs/dbconnect";
 
+
 export const authOptions: AuthOptions = {
   adapter: MongoDBAdapter(clientPromise) as any,
   providers: [
@@ -69,15 +70,15 @@ export const authOptions: AuthOptions = {
       },
     }),
     GithubProvider({
-      clientId: process.env.GITHUB_ID!,
-      clientSecret: process.env.GITHUB_SECRET!,
+      clientId: process.env.GITHUB_CLIENT_ID!,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET!,
     }),
     GoogleProvider({
-      clientId: process.env.GOOGLE_ID!,
-      clientSecret: process.env.GOOGLE_SECRET!,
+      clientId: process.env.GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     }),
   ],
-  secret: process.env.SECRET,
+  secret: process.env.NEXTAUTH_SECRET,
   debug: process.env.NODE_ENV === "development",
   pages: {
     signIn: "/signin",

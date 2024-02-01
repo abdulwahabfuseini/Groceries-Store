@@ -1,5 +1,5 @@
 import Background from "@/components/aboutUs/Background";
-import Services from "@/components/overview/Services";
+import Services from "@/components/homeContent/Services";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/header/Navbar";
 import Testimonial from "@/components/aboutUs/Testimonial";

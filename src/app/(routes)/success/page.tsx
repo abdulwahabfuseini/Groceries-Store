@@ -4,7 +4,6 @@ import { CartActions } from "@/Store/cartSlice";
 import Button from "@/components/Button";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
@@ -30,7 +29,7 @@ const Success = () => {
         <h1 className="text-2xl font-semibold text-center">
           Your Order has been accepted by <br className=" hidden " /> Groceries Store
         </h1>
-        <p className="text-lg">
+        <p className="text-lg text-center">
           <span className="uppercase font-semibold">
             {session?.user?.name},
           </span>{" "}
@@ -38,7 +37,7 @@ const Success = () => {
           doorstep as soon as possible!
         </p>
         <div className="flex items-center gap-x-5">
-          <Button text="Back to home" url="/category" />
+          <Button text="Back to home" url="/overview" />
         </div>
       </div>
     </div>

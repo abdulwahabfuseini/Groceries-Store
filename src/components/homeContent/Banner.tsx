@@ -17,7 +17,7 @@ const Banner = () => {
             section, providing nutritional information, catering to specialty
             diets, and promoting local and sustainable sourcing. 
           </p>
-          <Continue text="Order Now" url="/category/Vegetables" />
+          <Continue text="Order Now" url="/category" />
         </div>
         <div className="order-2 sm:order-2">
           <Image

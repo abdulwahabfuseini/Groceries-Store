@@ -25,7 +25,7 @@ const Discount = () => {
             Don&apos;t miss out on our weekly deals! Discover incredible
             discounts on a variety of groceries every week
           </p>
-          <Continue text="Order Now" url="/category/Vegetables" />
+          <Continue text="Order Now" url="/category" />
         </div>
       </div>
       <div>

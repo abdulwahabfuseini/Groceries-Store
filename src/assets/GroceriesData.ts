@@ -5347,10 +5347,10 @@ export const IcecreamsData = [
         rating: 4.5,
       },
       {
-        id: 62,
-        name: "",
+        id: 66,
+        name: "Blue Bell",
         price: 10,
-        image: "chocolatesauce.jpg",
+        image: "bluebell.jpg",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },

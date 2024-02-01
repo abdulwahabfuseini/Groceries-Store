@@ -8,7 +8,6 @@ const BillingSchema = new Schema({
     },
     email: {
         required: [true, "Email is required"],
-        match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, "Invalid email address"],
         type: String,
         unique: true,  
         trim: true

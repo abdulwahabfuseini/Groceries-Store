@@ -57,7 +57,7 @@ export const HeroData = [
     desc: "Groceries store is dedicated to fresh and produce, offering a variety of fruits, vegetables, and herbs. We prioritize the quality and freshness of these items.",
     button: "Shop Now",
     cover: "gro.png",
-    link: "/category/vegetables",
+    link: "/category",
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ export const HeroData = [
     desc: " Place your order effortlessly through our user-friendly online platform or app. Select your items, add them to your cart, and proceed to checkout.",
     button: "Order Now",
     cover: "order.png",
-    link: "/category/fruits",
+    link: "/category",
   },
   {
     id: 3,

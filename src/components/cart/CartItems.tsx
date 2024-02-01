@@ -54,7 +54,7 @@ const CartItems = ({
           className="object-contain w-20 h-20 p-1 bg-white "
         />
         <div className="grid place-items-center gap-y-1">
-          <h1>{name}</h1>
+          <h1 className="text-lg font-semibold">{name}</h1>
           <div className="flex items-center gap-3 p-2 border-2 rounded-lg">
             <button onClick={InCartItem} className="cursor-pointer ">
               <FaPlus />
@@ -64,11 +64,10 @@ const CartItems = ({
               <FaMinus />
             </button>
           </div>
-          <h4 className="text-sm text-center">Unit Price: GH₵: {price}</h4>
+          <h4 className=" text-sm text-center">Unit Price: GH₵: {price}</h4>
         </div>
         <div className="grid place-items-center gap-y-2">
-          <FaTrash onClick={DltCartItem} className="w-5 h-5" />
-
+          <FaTrash onClick={DltCartItem} className="w-5 h-5 text-red-600 cursor-pointer" />
           <h4 className="text-sm text-center">GH₵: {totalPrice}</h4>
         </div>
       </div>

@@ -5,46 +5,49 @@ import { Button } from "antd";
 import { loadStripe } from "@stripe/stripe-js";
 import { useSession } from "next-auth/react";
 import { selectCartProducts } from "@/Store/cartSlice";
+import { useRouter } from "next/navigation";
 
 const Payment = () => {
-  const cartProducts = useSelector(selectCartProducts);
+  // const cartProducts = useSelector(selectCartProducts);
   const { data: session } = useSession();
+  const router = useRouter()
 
-  //   Stripe Payment
-  const stripePromise = loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
-  );
+  // //   Stripe Payment
+  // const stripePromise = loadStripe(
+  //   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
+  // );
 
-  const handleCheckout = async () => {
-    try {
-      const stripe = await stripePromise;
+  // const handleCheckout = async () => {
+  //   try {
+  //     const stripe = await stripePromise;
 
-      if (!stripe) {
-        throw new Error("Stripe is not initialized");
-      }
+  //     if (!stripe) {
+  //       throw new Error("Stripe is not initialized");
+  //     }
 
-      const response = await fetch("http://localhost:3000/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          items: cartProducts,
-          email: session?.user?.email,
-        }),
-      });
+  //     const response = await fetch("http://localhost:3000/api/checkout", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({
+  //         items: cartProducts,
+  //         email: session?.user?.email,
+  //       }),
+  //     });
 
-      if (!response.ok) {
-        throw new Error("Failed to create Stripe Payment");
-      }
+  //     if (!response.ok) {
+  //       throw new Error("Failed to create Stripe Payment");
+  //     }
 
-      const data = await response.json();
+  //     const data = await response.json();
 
-      // Assuming `stripePromise` is a Promise that resolves to a valid Stripe object
-      stripe.redirectToCheckout({ sessionId: data.id });
-    } catch (error) {
-      console.error("Error during checkout:");
-      // Handle the error in your UI
-    }
-  };
+  //     // Assuming `stripePromise` is a Promise that resolves to a valid Stripe object
+  //     stripe.redirectToCheckout({ sessionId: data.id });
+  //   } catch (error) {
+  //     console.error("Error during checkout:");
+  //     // Handle the error in your UI
+  //   }
+  // };
+
   return (
     <div className="p-4 bg-white">
       <h1 className="text-lg font-semibold">Click to Accept Payment</h1>
@@ -59,7 +62,7 @@ const Payment = () => {
       <Button
         type="primary"
         htmlType="submit"
-        onClick={handleCheckout}
+        onClick={() => router.push("/success")}
         className="h-11 text-lg text-white bg-green-600 hover:ring-2"
       >
         Accept Payment

@@ -2,10 +2,17 @@
 import Link from "next/link";
 import Design from "@/components/account/Design";
 import Login from "@/components/account/Login";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Groceries Store | Login",
+  description: "Welcom Back! Login to your Account",
+}
+ 
 
 // export const metadata = {
-//   title: "Groceries Store | Login",
-//   description: "Welcom Back! Login to your Account",
+  // title: "Groceries Store | Login",
+  // description: "Welcom Back! Login to your Account",
 // };
 
 const Signin = () => {

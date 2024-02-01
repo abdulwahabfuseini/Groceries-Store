@@ -41,14 +41,6 @@ const Delivery = () => {
     setLoading(false);
   };
 
-  // const next = () => {
-  //   setCurrent(current + 1);
-  // };
-
-  // const prev = () => {
-  //   setCurrent(current - 1);
-  // };
-
   const steps = [
     {
       title: "Billing Details",
@@ -247,19 +239,19 @@ const Delivery = () => {
                 </Form.Item>
                 <Form.Item
                   name="zipCode"
-                  label="ZipCode"
+                  label="Zip Code"
                   className=" font-semibold text-base"
                   rules={[
                     {
                       required: true,
-                      message: "Please Enter ZipCode",
+                      message: "Please Enter Zip Code",
                     },
                   ]}
                   hasFeedback
                 >
                   <Input
                     type="number"
-                    placeholder="Enter ZipCode"
+                    placeholder="Enter Zip Code"
                     className="h-11 cursor-pointer w-full border-2 text-base"
                     value={billingDetails.zipCode}
                     onChange={(e) =>
@@ -279,9 +271,9 @@ const Delivery = () => {
                 className=" disabled:cursor-not-allowed h-11 bg-green-600 text-lg hover:ring-2 text-white font-semibold px-6"
               >
                 {loading ? (
-                  <span className="spinloader">Submitting Details</span>
+                  <button className="spinloader w-full">Submitting Details</button>
                 ) : (
-                  "Submit Details"
+                  "Next"
                 )}
               </Button>
             </Form>
