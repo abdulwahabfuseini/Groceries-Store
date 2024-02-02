@@ -1,11 +1,12 @@
 
 import Shopping from "@/components/cart/Shopping";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Groceries Store | Shopping Cart",
+  description: "Your Shopping Cart",
+}
 
-
-// export const metadata = {
-//   title: "Groceries Store | Shopping Cart",
-//   description: "Your Shopping Cart",
-// };
 
 const ShoppingCart = () => {
   return (

@@ -1,5 +1,6 @@
 "use client";
 
+import { FavoriteActions } from "@/Store/FavoritesSlice";
 import { CartActions } from "@/Store/cartSlice";
 import Button from "@/components/Button";
 import { useSession } from "next-auth/react";
@@ -13,6 +14,7 @@ const Success = () => {
 
   useEffect(() => {
     dispatch(CartActions.clearCart());
+    dispatch(FavoriteActions.clearFavorites())
   });
 
   return (

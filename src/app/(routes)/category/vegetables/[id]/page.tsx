@@ -8,11 +8,12 @@ import Link from "next/link";
 import toast from "react-hot-toast";
 import { TbChevronLeft } from "react-icons/tb";
 import { useDispatch } from "react-redux";
-import { CartActions } from "@/Store/cartSlice";
+import { CartActions, selectCartProducts } from "@/Store/cartSlice";
 import { FavoriteActions } from "@/Store/FavoritesSlice";
 import { Heart } from "lucide-react";
 import { useSelector } from "react-redux";
 import { selectFavoriteItems } from "@/Store/FavoritesSlice";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 const Vegetable = ({ params }: any) => {
   const name = decodeURIComponent(params.id).replace(/-/g, " ");
@@ -34,6 +35,7 @@ const Vegetable = ({ params }: any) => {
 
   const isFavorite = favoriteProducts.some((favorite) => favorite.id === id);
 
+  // ==== Add and Remove from Favorite ====
   const handleToggleFavorite = () => {
     if (isFavorite) {
       dispatch(FavoriteActions.deleteFavorite(id));
@@ -52,6 +54,11 @@ const Vegetable = ({ params }: any) => {
     }
   };
 
+  const cartState = useSelector(selectCartProducts);
+  const quantity =
+    cartState.items.find((item) => item.id === id)?.quantity || 0;
+
+  // ==== addTocart ====
   const AddToCart = () => {
     dispatch(
       CartActions.addToCart({
@@ -60,11 +67,31 @@ const Vegetable = ({ params }: any) => {
         image,
         price,
         totalPrice: 0,
-        quantity: 0,
+        quantity,
         totalQuantity: 0,
       })
     );
     toast.success(`${name} added to cart`);
+  };
+
+  // ==== increase quantity ====
+  const handleIncreaseQuantity = () => {
+    dispatch(
+      CartActions.addToCart({
+        id,
+        name,
+        image,
+        price,
+        totalPrice: 0,
+        quantity: 1,
+        totalQuantity: 0,
+      })
+    );
+  };
+
+  // ==== descrease quantity ====
+  const handleDecreaseQuantity = () => {
+    dispatch(CartActions.removeFromCart(id));
   };
 
   return (
@@ -78,7 +105,7 @@ const Vegetable = ({ params }: any) => {
         </button>
       </Link>
 
-      <div className="grid w-full gap-10 sm:grid-cols-5">
+      <div className="grid w-full gap-4 lg:gap-10 sm:grid-cols-5">
         <div className="relative object-contain w-full sm:bg-white h-80 sm:h-96 sm:col-span-2">
           <Image
             src={`/images/${image}`}
@@ -89,35 +116,54 @@ const Vegetable = ({ params }: any) => {
         </div>
         <div className="w-full sm:col-span-3 bg-gray-100 px-3 py-5 rounded-tl-3xl rounded-tr-3xl">
           <h1 className="pb-3 text-2xl font-semibold">{name}</h1>
-          <Rate defaultValue={rating} allowHalf />
+          <Rate defaultValue={rating} allowHalf className="text-base" />
           <p className="pt-2 text-2xl font-semibold ">
             Unit Price: GH₵: <span>{price.toLocaleString()}.00</span>
           </p>
           <p className="py-4">{desc}</p>
           <h6 className=" font-semibold text-lg">
             Category:{" "}
-            <span className=" text-gray-400 font-normal">Organic Vegetables</span>
+            <span className=" text-gray-400 font-normal">
+              Organic Vegetable
+            </span>
           </h6>
-          <div className="flex font-semibold items-center gap-5 py-10 flex-wrap">
+
+          <div className="flex flex-wrap items-center gap-3 py-3">
+            <span className=" font-semibold text-lg">Qty:</span>
             <button
-              onClick={handleToggleFavorite}
-              className={`${
-                isFavorite
-                  ? "text-red-400 hover:text-green-400"
-                  : "text-green-400 hover:text-red-400"
-              } flex items-center  gap-1 `}
+              onClick={handleIncreaseQuantity}
+              className="px-4 py-3 border rounded-md hover:bg-black hover:text-white"
             >
-              <Heart fill={isFavorite ? "red" : "white"} />
-              <p>{isFavorite ? "Remove From Favorite" : "Add To Favorite"}</p>
+              <FaPlus className="w-5 h-5 font-semibold " />
+            </button>
+            <h5 className="px-6 py-3 text-lg font-semibold border rounded-md">
+              {quantity}
+            </h5>
+            <button
+              onClick={handleDecreaseQuantity}
+              className="px-4 py-3 border rounded-md hover:bg-black hover:text-white"
+            >
+              <FaMinus className="w-5 h-5 font-semibold " />
             </button>
             <button
               type="button"
               onClick={AddToCart}
-              className="px-2 py-1.5 text-white bg-yellow-300 border rounded-lg text-lg hover:bg-blue-600"
+              className="px-2 py-1.5 text-white bg-green-400 border rounded-lg text-lg hover:bg-blue-600"
             >
               <p>Add To Cart</p>
             </button>
           </div>
+          <button
+            onClick={handleToggleFavorite}
+            className={`${
+              isFavorite
+                ? "text-red-400 hover:text-green-400"
+                : "text-green-400 hover:text-red-400"
+            } flex items-center  gap-1 `}
+          >
+            <Heart fill={isFavorite ? "red" : "white"} />
+            <p>{isFavorite ? "Remove From Favorite" : "Add To Favorite"}</p>
+          </button>
         </div>
       </div>
       <div className="py-2 pb-9 font-semibold sm:pt-14 bg-gray-100 px-3 sm:px-0">

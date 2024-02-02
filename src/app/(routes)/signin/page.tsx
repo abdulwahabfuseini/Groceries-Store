@@ -10,11 +10,6 @@ export const metadata: Metadata = {
 }
  
 
-// export const metadata = {
-  // title: "Groceries Store | Login",
-  // description: "Welcom Back! Login to your Account",
-// };
-
 const Signin = () => {
 
   return (

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Design from "@/components/account/Design";
 import Register from "@/components/account/Register";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Groceries Store | Create Account",
+  description: "New Here! Create an Account",
+}
 
-// export const metadata = {
-//   title: "Groceries Store | Create Account",
-//   description: "New Here! Create an Account",
-// };
 
 const Signup = () => {
   return (

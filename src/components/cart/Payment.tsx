@@ -20,7 +20,7 @@ const Payment = () => {
   // const handleCheckout = async () => {
   //   try {
   //     const stripe = await stripePromise;
-
+  
   //     if (!stripe) {
   //       throw new Error("Stripe is not initialized");
   //     }

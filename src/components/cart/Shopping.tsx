@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import { TbChevronLeft } from "react-icons/tb";
 import { GiShoppingCart } from "react-icons/gi";
-import { Button, Popconfirm, message } from "antd";
+import { Button, Popconfirm } from "antd";
 import { QuestionCircleOutlined } from "@ant-design/icons";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -39,8 +39,7 @@ const Shopping = () => {
   };
 
   const cancel = () => {
-    // console.log(e);
-    message.error("You Clicked on No");
+    toast.error("You Clicked on No");
   };
 
   return (

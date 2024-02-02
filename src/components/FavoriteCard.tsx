@@ -39,7 +39,7 @@ const FavoriteCard = ({ id, name, image, price }: CardProps) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 350);
+    }, 390);
   }, [isLoading]);
 
   return (

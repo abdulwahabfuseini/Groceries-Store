@@ -250,7 +250,7 @@ const Delivery = () => {
                   hasFeedback
                 >
                   <Input
-                    type="number"
+                    type="text"
                     placeholder="Enter Zip Code"
                     className="h-11 cursor-pointer w-full border-2 text-base"
                     value={billingDetails.zipCode}

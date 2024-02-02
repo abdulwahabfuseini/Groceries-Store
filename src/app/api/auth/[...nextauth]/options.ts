@@ -4,16 +4,17 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import bcrypt from "bcryptjs";
 import User from "@/models/User";
-import { MongoDBAdapter } from "@auth/mongodb-adapter";
+// import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
 import { connectMongoDB } from "@/libs/mongodb";
 import { IUser } from "@/contexts/Types";
-import clientPromise from "@/libs/dbconnect";
+// import clientPromise from "@/libs/dbconnect";
 
 
 export const authOptions: AuthOptions = {
-  adapter: MongoDBAdapter(clientPromise) as any,
+  // adapter: MongoDBAdapter(clientPromise),
   providers: [
     CredentialsProvider({
+      id: "credentials",
       name: "credential",
       credentials: {
         email: {
@@ -81,7 +82,7 @@ export const authOptions: AuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
   debug: process.env.NODE_ENV === "development",
   pages: {
-    signIn: "/signin",
+    signIn: "/overview",
     signOut: "/"
   },
   session: {

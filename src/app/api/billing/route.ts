@@ -28,7 +28,6 @@ export const POST = async (req: NextRequest) => {
       return NextResponse.json({ message: "Missing fields" }, { status: 405 });
     }
      
-    
     // Create a new billing details
     const newBillingDetails = new BillingDetails({
       fullName,

@@ -1,12 +1,11 @@
-import { ProductType, ShoppingProps } from "@/contexts/Types";
+import { ProductType } from "@/contexts/Types";
 import React from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-
-import { message } from "antd";
 import Image from "next/image";
 import { CartActions } from "@/Store/cartSlice";
+import toast from "react-hot-toast";
 
 const CartItems = ({
   id,
@@ -39,7 +38,7 @@ const CartItems = ({
 
   const DltCartItem = () => {
     dispatch(CartActions.deleteFromCart(id));
-    message.success(`${name} Remove Form Cart`);
+    toast.success(`${name} Remove Form Cart`);
   };
 
   return (
