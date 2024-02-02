@@ -6034,7 +6034,7 @@ export const TopProducts = [
     name: "Strawberry",
     price: 20,
     discount: 3.5,
-    image: "Strawberry.jpeg",
+    image: "strawberry.png",
     rating: 3.5,
   },
   {
@@ -6066,7 +6066,7 @@ export const TopProducts = [
     name: "Steak",
     price: 20,
     discount: 4,
-    image: "Steak.jpg",
+    image: "steak.jpg",
     rating: 3.5,
   },
   {

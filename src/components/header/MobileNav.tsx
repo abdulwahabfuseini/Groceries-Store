@@ -45,25 +45,14 @@ const MobileNav = () => {
             ))}
           </ul>
         </nav>
-        <div className="p-6">
-          {session?.user ? (
-            <button
-              onClick={() => {
-                signOut();
-                router.push("/");
-              }}
-              className="py-2 px-4 bg-green-700 text-xl m-6 text-white rounded-lg"
-            >
-              Sign Out
-            </button>
-          ) : (
-            <Link href="/signin">
-              <button className=" bg-green-600 rounded-md text-white font-semibold px-4 py-2 hover:bg-blue-600 hover:trasnsition-all hover:ease-in hover:scale-95  text-lg">
-                Sign In
-              </button>
-            </Link>
-          )}
-        </div>
+       <div className="p-3">
+       <button
+            onClick={() => signOut()}
+            className="py-2 px-4 bg-green-700 text-xl  text-white rounded-lg"
+          >
+            Sign Out
+          </button>
+       </div>
       </div>
     </div>
   );

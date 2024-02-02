@@ -49,11 +49,6 @@ export const MobileNavigation = [
   },
   {
     id: 6,
-    display: "My Profile",
-    path: "/dashboard/profile",
-  },
-  {
-    id: 7,
     display: "My Favorite",
     path: "/myFavorite",
   },

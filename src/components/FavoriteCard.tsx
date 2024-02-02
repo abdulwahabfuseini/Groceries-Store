@@ -51,10 +51,13 @@ const FavoriteCard = ({ id, name, image, price }: CardProps) => {
           <Tooltip color="red" title="Remove From favorite">
             <FaTrash
               onClick={DeleteFromFavorite}
-              className="absolute top-1 right-1  text-red-600 p-1.5 w-7 h-7 z-40 cursor-pointer duration-200"
+              className="absolute top-1 right-1 hidden lg:block  text-red-600 p-1.5 w-7 h-7 z-40 cursor-pointer duration-200"
             />
           </Tooltip>
-          <Link href={`/category/fruits/${name}`}>
+          <FaTrash
+              onClick={DeleteFromFavorite}
+              className="absolute top-1 right-1  lg:hidden  text-red-600 p-1.5 w-7 h-7 z-40 cursor-pointer duration-200"
+            />
             <div className="relative h-36 sm:h-44 w-full">
               <Image
                 src={`/images/${image}`}
@@ -63,20 +66,23 @@ const FavoriteCard = ({ id, name, image, price }: CardProps) => {
                 className="lg:hover:scale-105 object-contain"
               />
             </div>
-          </Link>
+       
           <div className="py-2 px-3">
             <h4 className="pt-2 font-semibold text-lg">{name}</h4>
             <p className="font-semibold">
               GH₵: <span>{price.toLocaleString()}</span>
             </p>
-            <Link href={`/category/fruits/${name}`}>
+         
               <Tooltip color="yellow" title="Add to favorite">
                 <FaPlus
                   onClick={AddToCart}
-                  className="absolute bottom-0 right-0  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
+                  className="absolute bottom-0 right-0 hidden lg:block  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
                 />
               </Tooltip>
-            </Link>
+              <FaPlus
+                  onClick={AddToCart}
+                  className="absolute bottom-0 right-0 lg:hidden  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
+                />
           </div>
         </div>
       )}

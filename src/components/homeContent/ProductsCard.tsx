@@ -82,7 +82,7 @@ const ProductsCard = ({
         <Image
           src={`/images/${image}`}
           fill
-          alt="iceCreams"
+          alt={name}
           className="lg:hover:scale-105 object-contain"
         />
       </div>
