@@ -25,7 +25,7 @@ const CartItems = ({
         name,
         price,
         image,
-        totalPrice,
+        totalPrice: 0,
         quantity,
         totalQuantity: 0
       })
