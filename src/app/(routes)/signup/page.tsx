@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Signup = () => {
   return (
-    <div className="mx-auto max-w-5xl w-full grid sm:place-content-center sm:px-4 h-full md:h-screen sm:grid-cols-2 lg:grid-cols-5 sm:pt-14 pt-20 pb-10 sm:pb-12 bg-white sm:bg-slate-100">
+    <div className="mx-auto max-w-5xl w-full grid sm:place-content-center sm:px-4 h-full md:h-screen sm:grid-cols-2 lg:grid-cols-5 sm:pt-14 pt-20 pb-10 sm:pb-12 bg-white sm:bg-slate-100 overflow-x-hidden">
       <div className="sm:hidden z-40">
         <Design />
       </div>
