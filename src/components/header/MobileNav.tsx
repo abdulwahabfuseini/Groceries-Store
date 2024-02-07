@@ -33,7 +33,7 @@ const MobileNav = () => {
             onClick={() => setOpenMenu(false)}
           />
         </div>
-        <nav>
+        <nav aria-label="mobile-navbar">
           <ul>
             {MobileNavigation.map((navItem) => (
               <li

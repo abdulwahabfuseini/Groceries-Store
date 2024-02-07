@@ -4,11 +4,11 @@ import Continue from "../Button";
 
 const Banner = () => {
   return (
-    <div className="w-full h-full  bg-green-50 my-10 overflow-hidden">
+    <div className="w-full h-full  bg-green-100 my-10 overflow-hidden">
       <div className="mx-auto max-w-5xl px-3 sm:px-4 pt-6 grid grid-auto-fit gap-3 z-40 justify-center place-content-center place-items-center">
         <div className=" order-2 sm:order-1 ">
           <h1 className="text-lg sm:text-xl text-green-600 font-semibold">What We Serve</h1>
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold py-2">
+          <h3 className="text-xl sm:text-2xl font-semibold py-2">
             Healthy & Quality Groceries Products
           </h3>
           <p className="py-2 text-lg">

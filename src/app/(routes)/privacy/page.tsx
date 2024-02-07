@@ -13,8 +13,8 @@ const Privacy = () => {
       <div>
         <h1 className="text-2xl font-semibold sm:text-3xl"> Privacy Policy</h1>
         <p className="text-lg py-3">
-          At Groceries Store, accessible from
-          https://groceries-store-lovat.vercel.app/, one of our main priorities
+          At Groceries Store, accessible from {" "}
+          <span className=" underline text-green-600">https://groceries-store-lovat.vercel.app/</span>, one of our main priorities
           is the privacy of our visitors. This Privacy Policy document contains
           types of information that is collected and recorded by Groceries Store
           and how we use it. If you have additional questions or require more

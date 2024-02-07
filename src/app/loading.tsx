@@ -8,7 +8,7 @@ const Loading = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
   }, [isLoading]);
 
   return (

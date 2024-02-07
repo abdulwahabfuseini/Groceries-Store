@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import MobileFoot from "./MobileFoot";
-import { FaAppStore } from "react-icons/fa";
+
 
 const Footer = () => {
   const [form] = Form.useForm();
@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full h-full sm:h-[800px] lg:h-[550px] relative overflow-hidden">
+    <footer className="w-full h-full sm:h-[800px] lg:h-[550px] relative overflow-hidden">
       <Image
         src="/images/foot.jpeg"
         fill
@@ -174,7 +174,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -15,7 +15,7 @@ const Profile = () => {
 
   useEffect(() => {
     if (status == "unauthenticated") {
-      router.push("/");
+      router.push("/signin");
     }
   });
 

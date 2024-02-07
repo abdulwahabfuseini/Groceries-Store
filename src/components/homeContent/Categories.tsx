@@ -13,7 +13,7 @@ const CategoryData = [
   },
   {
     id: 2,
-    title: "Fresh & Oranic Vegtables",
+    title: "Fresh & Organic Vegetables",
     image: "gro3.png",
     link: "/category/vegetables",
     bg: "bg-green-200",
@@ -30,14 +30,14 @@ const CategoryData = [
     title: "Fresh Meats",
     image: "meat2.png",
     link: "/category/meats",
-    bg: "bg-pink-200",
+    bg: "bg-red-200",
   },
   {
     id: 5,
     title: "Ice Creams",
     image: "icecream.webp",
     link: "/category/iceCreams",
-    bg: "bg-red-200",
+    bg: "bg-pink-200",
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const Categories = () => {
                 <h1 className="text-xl sm:text-2xl font-semibold text-white">
                   {category?.title}
                 </h1>
-                 <button className="bg-white py-1 px-2 text-lg rounded-lg my-3">Show Now</button>
+                 <button className="bg-white py-1 px-2 text-lg hover:bg-black hover:text-white transition-all ease-in rounded-lg my-3">Show Now</button>
               </div>
               <div>
                 <Image

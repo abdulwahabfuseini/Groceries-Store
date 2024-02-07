@@ -50,13 +50,13 @@ const SellingProducts = () => {
             slidesPerView: 2.3,
           },
           600: {
-            slidesPerView: 4.5,
+            slidesPerView: 3.6,
           },
           768: {
-            slidesPerView: 4.6,
+            slidesPerView: 4.3,
           },
           1024: {
-            slidesPerView: 7.5,
+            slidesPerView: 6.5,
           },
         }}
       >

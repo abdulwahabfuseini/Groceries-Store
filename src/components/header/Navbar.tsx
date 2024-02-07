@@ -29,7 +29,7 @@ const Navbar = () => {
     <div
       className={`${
         sticky
-          ? "h-16 w-full top-0 left-0 fixed shadow-lg shadow-green-500/20 transition-all ease-in-out bg-white z-50 py-4 lg:py-3"
+          ? "h-16 w-full top-0 left-0 fixed shadow-lg shadow-green-500/20 transition-all ease-out bg-white z-50 py-4 lg:py-3"
           : "h-20 w-full bg-gray-100 py-5"
       } bg-white px-3 sm:px-5 `}
     >
@@ -68,7 +68,7 @@ const Navbar = () => {
                 width={25}
                 height={25}
                 alt="profile"
-                className=" object-contain "
+                className="object-contain"
               />
               <div
                 className={`${

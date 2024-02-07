@@ -1,4 +1,3 @@
-
 "use client";
 
 import { MeatsData } from "@/assets/GroceriesData";
@@ -107,7 +106,7 @@ const Meat = ({ params }: any) => {
       </Link>
 
       <div className="grid w-full gap-4 lg:gap-10 sm:grid-cols-5">
-        <div className="relative object-contain w-full sm:bg-white h-80 sm:h-96 sm:col-span-2">
+        <div className="relative object-contain w-full sm:bg-white h-80 sm:h-96 sm:col-span-2 overflow-hidden">
           <Image
             src={`/images/${image}`}
             fill

@@ -39,7 +39,7 @@ const Background = () => {
        </div>
       </div>
       <div className="lg:col-span-3 lg:px-10">
-        <video src="/about.mp4" muted autoPlay loop className="h-full w-full" />
+        <video src="/about.mp4" muted autoPlay loop  className="h-full w-full" />
       </div>
     </div>
   );

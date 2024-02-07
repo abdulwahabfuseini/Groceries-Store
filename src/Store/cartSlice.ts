@@ -22,9 +22,9 @@ interface CartState {
   totalQuantity: number;
 }
 
+// ===== load Cart From LocalStorage ==== 
 const loadCartFromLocalStorage = (): CartItem[] => {
   if (typeof window === 'undefined') {
-    
     return [];
   }
 
@@ -32,10 +32,12 @@ const loadCartFromLocalStorage = (): CartItem[] => {
   return storedCart ? JSON.parse(storedCart) : [];
 };
 
+// ===== Save Cart To LocalStorage ===== 
 const saveCartToLocalStorage = (cart: CartItem[]) => {
   localStorage.setItem('cart', JSON.stringify(cart));
 };
 
+// ==== calculate To talQuantity ==== 
 const calculateTotalQuantity = (items: ProductType[]) => {
   return items.reduce((total, item) => total + item.quantity, 0);
 };
@@ -50,6 +52,7 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
+    // ==== Add to Cart ==== 
     addToCart: (state, action: PayloadAction<ProductType>) => {
       const newItem = action.payload;
       const existingItem = state.items.find(item => item.id === newItem.id);
@@ -68,6 +71,8 @@ const cartSlice = createSlice({
       state.totalQuantity++;
       saveCartToLocalStorage(state.items);
     },
+
+    // ===== Remove from Cart ==== 
     removeFromCart: (state, action: PayloadAction<number>) => {
       const idToRemove = action.payload;
       const existingItem = state.items.find(item => item.id === idToRemove);
@@ -83,24 +88,16 @@ const cartSlice = createSlice({
         saveCartToLocalStorage(state.items);
       }
     },
+
+    // ==== Delete From Cart ===== 
     deleteFromCart: (state, action: PayloadAction<number>) => {
       const idToDelete = action.payload;
       state.items = state.items.filter(item => item.id !== idToDelete);
       state.totalQuantity--;
       saveCartToLocalStorage(state.items);
     },
-    // getItemQuantity: (state, action: PayloadAction<number>) => {
-    //   const itemId = action.payload;
-    //   const item = state.items.find(item => item.id === itemId);
-      
-    //   // Update state with the item quantity
-    //   if (item) {
-    //     return item.quantity;
-    //   } else {
-    //     // If the item is not found, return 0
-    //     return 0;
-    //   }
-    // },
+
+    // ==== Clear Cart ==== 
     clearCart: state => {
       state.items = [];
       state.totalQuantity = 0;

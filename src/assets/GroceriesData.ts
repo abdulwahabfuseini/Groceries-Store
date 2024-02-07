@@ -1688,7 +1688,7 @@ export const VegetablesData = [
         id: 4,
         name: "Pepper",
         price: 10,
-        image: "pepper.jpg",
+        image: "pepper.png",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur sint odit earum quod temporibus consequuntur quas eius vel, expedita, modi maiores dicta ad ea laborum aliquam praesentium non doloremque iste voluptas? Saepe, sit earum.",
         rating: 4.5,
       },

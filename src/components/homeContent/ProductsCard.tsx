@@ -60,7 +60,7 @@ const ProductsCard = ({
   };
 
   return (
-    <div className="bg-white rounded-lg relative">
+    <div className="bg-white rounded-lg relative overflow-hidden">
       <Tooltip
         color="green"
         title={isFavorite ? "Remove From Favorite" : "Add To Favorite"}
@@ -83,11 +83,11 @@ const ProductsCard = ({
           src={`/images/${image}`}
           fill
           alt={name}
-          className="lg:hover:scale-105 object-contain"
+          className="lg:hover:scale-110 object-contain"
         />
       </div>
-      <div className="py-2 px-2">
-        <h1 className="font-semibold truncate">{name}</h1>
+      <div className="py-1 px-2">
+        <h1 className="font-semibold truncate text-lg">{name}</h1>
         <Typography.Paragraph className=" font-semibold">
           GH₵: {price}
           <Typography.Text delete type="danger" className="pl-4">

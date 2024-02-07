@@ -36,7 +36,7 @@ const MyFavorite = () => {
             <h1 className="text-xl sm:text-2xl font-semibold">
               {session?.user?.name},{" "}
               <span className="text-lg sm:text-xl font-medium">
-                Your Favorite Cart is Empty
+                Your Favorite is Empty
               </span>
             </h1>
             <Button

@@ -13,6 +13,7 @@ import { CartActions } from "@/Store/cartSlice";
 import { FavoriteActions } from "@/Store/FavoritesSlice";
 import { useSelector } from "react-redux";
 import { selectFavoriteItems } from "@/Store/FavoritesSlice";
+import { FaEye } from "react-icons/fa6";
 
 const VegetableCard = ({ id, name, image, price }: CardProps) => {
   const dispatch = useDispatch();
@@ -65,7 +66,7 @@ const VegetableCard = ({ id, name, image, price }: CardProps) => {
       {isLoading ? (
         <div className="cardloader w-full"></div>
       ) : (
-        <div className="bg-white rounded-lg relative">
+        <div className="bg-white rounded-lg relative overflow-hidden">
           <Tooltip color="green" title={isFavorite ? "Remove From Favorite" : "Add To Favorite"} className="hidden lg:block">
             <Heart
             fill={isFavorite ? "red" : "white"}
@@ -79,13 +80,16 @@ const VegetableCard = ({ id, name, image, price }: CardProps) => {
               className="absolute top-0 right-0 lg:hidden text-green-400 bg-green-100 p-1 w-9 h-9 rounded-bl-2xl z-40 hover:text-green-400 hover:bg-green-100 cursor-pointer duration-200"
             />
           <Link href={`/category/vegetables/${name}`}>
-            <div className="relative h-36 sm:h-40 w-full">
+          <div className="relative h-36 sm:h-40 w-full group">
               <Image
                 src={`/images/${image}`}
                 fill
                 alt={name}
-                className="lg:hover:scale-105 object-contain"
+                className="lg:group-hover:scale-110 object-contain"
               />
+              <button className="bg-black top-0 left-0 w-full h-full absolute bg-opacity-20 right-0  hidden group-hover:flex items-center justify-center">
+              <FaEye className="text-white text-3xl" />
+              </button>
             </div>
             <div className="pb-2 px-3">
               <h1 className="pt-2 font-semibold text-lg">{name}</h1>

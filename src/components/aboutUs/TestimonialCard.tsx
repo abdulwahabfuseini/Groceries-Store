@@ -15,7 +15,7 @@ const TestimonialCard = ({ name, email, message }: TestimonialProps) => {
         />
         <div>
           <h1 className=" font-semibold ">{name}</h1>
-          <p className="text-sm text-green-600">{email}</p>
+          <p className="text-sm text-green-600 truncate">{email}</p>
         </div>
       </div>
       <p className="py-2">{message}</p>
