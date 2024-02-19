@@ -101,7 +101,7 @@ const Shopping = () => {
             }`}
           >
             <Popconfirm
-              title="Clear Your Cart"
+              title="Clear Your Shopping Cart"
               description={`${session?.user?.name}, Are you sure want to clear your cart?`}
               icon={
                 <QuestionCircleOutlined
@@ -112,13 +112,13 @@ const Shopping = () => {
               }
               onConfirm={ClearCart}
               onCancel={cancel}
-              okText="Ok"
-              cancelText="No"
+              color="brown"
+              okText="Confirm"
+              cancelText="Cancel"
             >
               <Button
                 danger
                 type="primary"
-                style={{ background: "red" }}
                 className="h-12 mb-2 text-lg border-2 rounded-lg bg-red-600"
               >
                 Clear Cart

@@ -9,6 +9,7 @@ import Link from "next/link";
 import toast from "react-hot-toast";
 import { useSession } from "next-auth/react";
 import { Button, Popconfirm } from "antd";
+import { QuestionCircleOutlined } from "@ant-design/icons";
 import { useRouter } from "next/navigation";
 
 const MyFavorite = () => {
@@ -20,6 +21,10 @@ const MyFavorite = () => {
   const clearFavorite = () => {
     dispatch(FavoriteActions.clearFavorites());
     toast.success("Favorite Cart Cleared Successfully");
+  };
+
+  const cancel = () => {
+    toast.error("You Clicked on No");
   };
 
 
@@ -57,12 +62,31 @@ const MyFavorite = () => {
                 Your Favourite Groceries
               </h1>
               
-              <button
-                onClick={clearFavorite}
-                className="bg-red-600 text-white font-semibold rounded-lg py-1.5 px-2"
+              <Popconfirm
+              title="Clear Your Favorite Cart"
+              description={`${session?.user?.name}, Are you sure want to clear your cart?`}
+              icon={
+                <QuestionCircleOutlined
+                  style={{
+                    color: "red",
+                  }}
+                />
+              }
+              onConfirm={clearFavorite}
+              onCancel={cancel}
+              color="brown"
+             
+              okText="Confirm"
+              cancelText="Cancel"
+            >
+              <Button
+                danger
+                type="primary"
+                className="h-12 mb-2 text-lg border-2 rounded-lg bg-red-600"
               >
-                Delete All
-              </button>
+                Clear Cart
+              </Button>
+            </Popconfirm>
             </header>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-2 py-10">
               {FavoriteGroceries.map((favorite) => (

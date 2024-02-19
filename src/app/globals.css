@@ -101,6 +101,7 @@
   }
 }
 
+/* ==== Spin Loader ====  */
 .spin {
   animation: rotate 1s infinite;
   height: 50px;

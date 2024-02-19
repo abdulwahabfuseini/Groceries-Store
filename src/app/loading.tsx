@@ -15,7 +15,7 @@ const Loading = ({ children }: { children: React.ReactNode }) => {
     <div className="overflow-hidden">
       {isLoading ? (
         <div className="flex flex-col items-center justify-center w-full h-screen gap-14 relative ">
-          <span className="spin "></span>
+          <span className="spin"></span>
           <h1 className="text-xl spinloader font-semibold">Please Wait</h1>
         </div>
       ) : (
