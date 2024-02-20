@@ -74,8 +74,7 @@ const MyFavorite = () => {
               }
               onConfirm={clearFavorite}
               onCancel={cancel}
-              color="brown"
-             
+              color="#F1E6E6"
               okText="Confirm"
               cancelText="Cancel"
             >

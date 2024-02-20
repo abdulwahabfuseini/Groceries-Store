@@ -112,7 +112,7 @@ const Shopping = () => {
               }
               onConfirm={ClearCart}
               onCancel={cancel}
-              color="brown"
+              color="#F1E6E6"
               okText="Confirm"
               cancelText="Cancel"
             >
