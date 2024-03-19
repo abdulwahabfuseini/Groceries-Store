@@ -34,7 +34,7 @@ const BakedCard = ({ id, name, image, price }: CardProps) => {
         totalQuantity: 0,
       })
     );
-    toast.success(`${name} added to cart`);
+    toast.success(`${name} Added to cart`);
   };
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const BakedCard = ({ id, name, image, price }: CardProps) => {
   const handleToggleFavorite = () => {
     if (isFavorite) {
       dispatch(FavoriteActions.deleteFavorite(id));
-      toast.success(`${name} removed from Favorites`);
+      toast.error(`${name} Removed from Favorites`);
     } else {
       dispatch(
         FavoriteActions.addToFavorite({
@@ -57,7 +57,7 @@ const BakedCard = ({ id, name, image, price }: CardProps) => {
           quantity: 0,
         })
       );
-      toast.success(`${name} added to Favorites`);
+      toast.success(`${name} Added to Favorites`);
     }
   };
 

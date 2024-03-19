@@ -61,7 +61,7 @@ const Categories = () => {
               className={`${category?.bg} w-full bg-amber-00 h-56 sm:h-64 lg:h-40 pt-4  relative grid lg:grid-cols-2 overflow-hidden  px-3 roundg `}
             >
               <div>
-                <h1 className="text-xl sm:text-2xl font-semibold text-white">
+                <h1 className="text-xl sm:text-2xl font-bold text-white">
                   {category?.title}
                 </h1>
                  <button className="bg-white py-1 px-2 text-lg hover:bg-black hover:text-white transition-all ease-in rounded-lg my-3">Show Now</button>

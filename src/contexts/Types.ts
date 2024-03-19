@@ -69,3 +69,22 @@ export type TestimonialProps = {
    email: string
    message: string
 }
+
+export type FadeIn = {
+  hidden: {
+    x: number;
+    y: number;
+    opacity: number;
+  };
+  show: {
+    x: number;
+    y: number;
+    opacity: number;
+    transition: {
+      type: string;
+      delay: number;
+      duration: number;
+      ease: number[];
+    };
+  };
+}

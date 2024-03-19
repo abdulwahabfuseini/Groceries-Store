@@ -32,9 +32,32 @@
   }
 }
 
+.red-background {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.black-background {
+  background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+}
+
+.yellow-background {
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
+.green-background {
+  background: linear-gradient(90deg, #3ad59f 0%, #f8ff00 100%);
+}
+
+.light-background {
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+.aqua-background {
+  background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+}
+
 /* ==== Card Loading ====  */
 .cardloader {
-  /* width: 200px; */
   height: 200px;
   display: block;
   margin: auto;

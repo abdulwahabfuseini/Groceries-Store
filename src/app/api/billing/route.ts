@@ -12,6 +12,7 @@ export const POST = async (req: NextRequest) => {
   console.log("🚀 ~ POST ~ street:", street)
   console.log("🚀 ~ POST ~ postalAddress:", postalAddress)
   console.log("🚀 ~ POST ~ zipCode:", zipCode)
+
   try {
     await connectMongoDB()
     
@@ -57,6 +58,33 @@ export const POST = async (req: NextRequest) => {
     return NextResponse.json(
       { message: "Failed to Submit Billing Details" },
       { status: 500 }
+    );
+  }
+};
+
+
+export const GET = async (req: NextRequest) => {
+  try {
+    await connectMongoDB();
+    
+    const billingDetails = await BillingDetails.find();
+
+    if (!billingDetails) {
+      return NextResponse.json(
+        { message: "Reviews Not Found" },
+        { status: 404 }
+      );
+    }
+    return NextResponse.json(
+      { message: "All Reviews", data: billingDetails },
+      { status: 201 }
+    );
+  } catch (error) {
+    return NextResponse.json(
+      { message: "Oops! Failed to get all reviews" },
+      {
+        status: 500,
+      }
     );
   }
 };

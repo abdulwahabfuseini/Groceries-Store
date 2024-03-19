@@ -1,18 +1,15 @@
 "use client";
 
-import { Drawer } from "antd";
 import { useState } from "react";
 import { LiaTimesSolid } from "react-icons/lia";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Link from "next/link";
 import { MobileNavigation } from "@/assets/Navigation";
-import { signOut, useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { signOut } from "next-auth/react";
+
 
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const router = useRouter();
-  const { data: session } = useSession();
 
   return (
     <div className="lg:hidden  relative">

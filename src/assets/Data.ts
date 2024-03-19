@@ -54,7 +54,7 @@ export const HeroData = [
     id: 1,
     title: "Fresh & Organic Groceries",
     subTitle: "For Healthy Life",
-    desc: "Groceries store is dedicated to fresh and produce, offering a variety of fruits, vegetables, and herbs. We prioritize the quality and freshness of these items.",
+    desc: "Groceries store is dedicated to fresh and organic produce, offering a variety of fruits, vegetables, and herbs. We prioritize the quality and freshness of these items.",
     button: "Shop Now",
     cover: "gro.png",
     link: "/category",

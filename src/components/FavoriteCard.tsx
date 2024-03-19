@@ -28,12 +28,12 @@ const FavoriteCard = ({ id, name, image, price }: CardProps) => {
         totalQuantity: 0,
       })
     );
-    toast.success(`${name} added to cart`);
+    toast.success(`${name} Added to cart`);
   };
 
   const DeleteFromFavorite = () => {
     dispatch(FavoriteActions.deleteFavorite(id));
-    toast.success(`${name} removed from favorite`);
+    toast.error(`${name} Removed from favorite`);
   };
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const FavoriteCard = ({ id, name, image, price }: CardProps) => {
       {isLoading ? (
         <div className="cardloader w-full"></div>
       ) : (
-        <div className="bg-white rounded-lg relative">
+        <div className="bg-white rounded-lg relative cursor-pointer overflow-hidden">
           <Tooltip color="red" title="Remove From favorite">
             <FaTrash
               onClick={DeleteFromFavorite}
@@ -55,34 +55,34 @@ const FavoriteCard = ({ id, name, image, price }: CardProps) => {
             />
           </Tooltip>
           <FaTrash
-              onClick={DeleteFromFavorite}
-              className="absolute top-1 right-1  lg:hidden  text-red-600 p-1.5 w-7 h-7 z-40 cursor-pointer duration-200"
+            onClick={DeleteFromFavorite}
+            className="absolute top-1 right-1  lg:hidden  text-red-600 p-1.5 w-7 h-7 z-40 cursor-pointer duration-200"
+          />
+          <div className="relative h-36 sm:h-44 w-full">
+            <Image
+              src={`/images/${image}`}
+              fill
+              alt="fruits"
+              className="lg:hover:scale-105 object-contain"
             />
-            <div className="relative h-36 sm:h-44 w-full">
-              <Image
-                src={`/images/${image}`}
-                fill
-                alt="fruits"
-                className="lg:hover:scale-105 object-contain"
-              />
-            </div>
-       
+          </div>
+
           <div className="py-2 px-3">
             <h4 className="pt-2 font-semibold text-lg">{name}</h4>
-            <p className="font-semibold">
+            <p className="font-medium">
               GH₵: <span>{price.toLocaleString()}</span>
             </p>
-         
-              <Tooltip color="yellow" title="Add to favorite">
-                <FaPlus
-                  onClick={AddToCart}
-                  className="absolute bottom-0 right-0 hidden lg:block  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
-                />
-              </Tooltip>
+
+            <Tooltip color="yellow" title="Add to favorite">
               <FaPlus
-                  onClick={AddToCart}
-                  className="absolute bottom-0 right-0 lg:hidden  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
-                />
+                onClick={AddToCart}
+                className="absolute bottom-0 right-0 hidden lg:block  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
+              />
+            </Tooltip>
+            <FaPlus
+              onClick={AddToCart}
+              className="absolute bottom-0 right-0 lg:hidden  text-yellow-400 bg-yellow-100 p-1.5 w-9 h-9 rounded-tl-2xl z-40 hover:text-yellow-400 hover:bg-yellow-100 cursor-pointer duration-200"
+            />
           </div>
         </div>
       )}
